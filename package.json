@@ -13,7 +13,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "isomorphic-dompurify": "^2.36.0",
     "keen-slider": "^6.8.6",
-    "next": "15.3.2",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
