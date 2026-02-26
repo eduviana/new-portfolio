@@ -27,9 +27,9 @@ export const Hero = () => {
             web.
           </p>
 
-          <Link href="/about" className="mt-4 self-start bg-brand-primary text-text-base py-2 px-10 rounded-md transition-colors duration-300 cursor-pointer hover:bg-brand-hover">
+          {/* <Link href="/about" className="mt-4 self-start bg-brand-primary text-text-base py-2 px-10 rounded-md transition-colors duration-300 cursor-pointer hover:bg-brand-hover">
             Ver más
-          </Link>
+          </Link> */}
 
           {/* Imagen solo visible en breakpoints < md */}
           <div className="mt-10 md:hidden flex justify-center w-full">
