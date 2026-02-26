@@ -11,7 +11,7 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/typography": "^0.5.19",
-    "isomorphic-dompurify": "^2.36.0",
+    "dompurify": "^3.3.1",
     "keen-slider": "^6.8.6",
     "next": "15.3.8",
     "react": "^19.0.0",

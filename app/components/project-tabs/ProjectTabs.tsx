@@ -1,8 +1,7 @@
 "use client";
 
-import { sanitizeHtml } from "@/app/helpers/sanitizeHtml";
 import { useState } from "react";
-
+import { SafeHtml } from "../safe-html/SafeHtml";
 
 interface Tab {
   key: string;
@@ -47,14 +46,7 @@ export function ProjectTabs({ tabs }: ProjectTabsProps) {
       </div>
 
       {/* Tab content */}
-      {currentTab && (
-        <div
-          className="prose prose-invert max-w-none text-text-muted"
-          dangerouslySetInnerHTML={{
-            __html: sanitizeHtml(currentTab.body),
-          }}
-        />
-      )}
+      {currentTab && <SafeHtml html={currentTab.body} />}
     </div>
   );
 }

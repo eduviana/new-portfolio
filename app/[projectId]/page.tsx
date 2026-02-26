@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import Slider from "../components/slider/Slider";
 import { getProjectBySlug } from "../helpers/getProject";
-import { sanitizeHtml } from "../helpers/sanitizeHtml";
 import { Back } from "../components/back/Back";
 import { ProjectTabs } from "../components/project-tabs/ProjectTabs";
+import { SafeHtml } from "../components/safe-html/SafeHtml";
 
 interface ProjectDetailsPageProps {
   params: Promise<{
@@ -115,14 +115,7 @@ export default async function ProjectDetailsPage({
 
       {/* Content */}
       <div className="flex flex-col gap-10 mt-24 mb-12 max-w-screen-xl mx-auto px-4">
-        {content.type === "single" && (
-          <div
-            className="prose prose-invert max-w-none text-text-muted"
-            dangerouslySetInnerHTML={{
-              __html: sanitizeHtml(content.body),
-            }}
-          />
-        )}
+        {content.type === "single" && <SafeHtml html={content.body} />}
 
         {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
       </div>
