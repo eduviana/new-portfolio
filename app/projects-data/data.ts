@@ -1,6 +1,380 @@
 import { Project } from "./data.interface";
 
 export const projects: Project[] = [
+  //mediflow
+  {
+    id: 28,
+    title: "Mediflow",
+    slug: "mediflow",
+    githubUrl: "https://github.com/eduviana/mediflow",
+    desc: "Sistema web de gestión de turnos médicos con integración de pagos online",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "MercadoPago",
+      "React Query",
+    ],
+    categories: ["Fullstack"],
+    thumbnail: "/projects/fullstack/mediflow/9.png",
+    images: [
+      "/projects/fullstack/mediflow/1.png",
+      "/projects/fullstack/mediflow/2.png",
+      "/projects/fullstack/mediflow/4.png",
+      "/projects/fullstack/mediflow/5.png",
+      "/projects/fullstack/mediflow/6.png",
+      "/projects/fullstack/mediflow/7.png",
+      "/projects/fullstack/mediflow/8.png",
+      "/projects/fullstack/mediflow/9.png",
+      "/projects/fullstack/mediflow/secretary-1.png",
+      "/projects/fullstack/mediflow/secretary-2.png",
+      "/projects/fullstack/mediflow/professional-1.png",
+      "/projects/fullstack/mediflow/professional-2.png",
+    ],
+
+    content: {
+      type: "tabs",
+      tabs: [
+        {
+          key: "nivel-1",
+          label: "Nivel 1",
+          body: `
+<h2>Mediflow — Sistema de gestión de turnos médicos</h2>
+
+<p>
+  <strong>Mediflow</strong> es una aplicación web desarrollada como demo funcional para un centro médico privado,
+  con el objetivo de presentar una propuesta moderna de organización de turnos, atención al paciente y gestión administrativa.
+</p>
+
+<p>
+  El proyecto busca simular situaciones reales que ocurren diariamente dentro de una institución médica,
+  contemplando tanto la experiencia del paciente como las necesidades operativas de secretarias y profesionales.
+</p>
+
+<p>
+  Los pacientes pueden registrarse, iniciar sesión —incluyendo acceso mediante Google— y gestionar turnos de forma completamente online.
+  El flujo permite seleccionar <strong>especialidad</strong>, <strong>profesional</strong>, <strong>fecha</strong> y <strong>horario disponible</strong>,
+  para luego realizar el pago mediante <em>MercadoPago</em>.
+</p>
+
+<p>
+  Una vez finalizado el pago, el sistema informa el estado actualizado del turno,
+  permitiendo confirmar, cancelar o reintentar el pago según corresponda.
+  Además, las reservas poseen un tiempo límite configurable;
+  si el pago no se completa dentro de ese período, el horario se libera automáticamente para otros pacientes.
+</p>
+
+<p>
+  El sistema también contempla escenarios habituales en centros médicos reales.
+  Por ejemplo, las secretarias pueden crear turnos para personas que llaman por teléfono,
+  incluso aunque nunca se hayan registrado en la plataforma.
+</p>
+
+<p>
+  En esos casos, Mediflow permite crear pacientes manualmente y compartir un link de pago mediante WhatsApp, email o copia directa del enlace.
+</p>
+
+<p>
+  A su vez, si ese mismo paciente decide registrarse en el futuro,
+  el sistema detecta automáticamente la información existente y vincula la nueva cuenta con el historial previo,
+  evitando duplicados y manteniendo la continuidad de los datos médicos y administrativos.
+</p>
+
+<p>
+  Las secretarias disponen de vistas en formato tabla y calendario para organizar la agenda diaria,
+  mientras que los profesionales pueden acceder únicamente a sus propios turnos,
+  iniciar consultas, registrar observaciones y finalizar atenciones.
+</p>
+
+<p>
+  Todos estos cambios se reflejan automáticamente entre usuarios conectados,
+  permitiendo mantener una visión sincronizada y actualizada del estado general del sistema.
+</p>
+
+<p>
+  El objetivo principal de la demo es servir como punto de partida para futuras reuniones con el centro médico,
+  donde se analizarán posibles mejoras, cambios funcionales y nuevas necesidades operativas antes de una eventual versión productiva.
+</p>
+`,
+        },
+
+        {
+          key: "nivel-2",
+          label: "Nivel 2",
+          body: `
+<h2>Mediflow — Sistema de gestión de turnos médicos</h2>
+
+<p>
+  <strong>Mediflow</strong> es una aplicación fullstack desarrollada como demo funcional para un centro médico privado,
+  orientada a validar flujos reales de gestión de turnos, pagos online y administración operativa.
+</p>
+
+<p>
+  El sistema fue diseñado contemplando distintos perfiles de usuario:
+  <strong>pacientes, secretarias y profesionales</strong>,
+  adaptando la interfaz y las funcionalidades disponibles según el rol autenticado.
+</p>
+
+<p>
+  Los pacientes pueden registrarse utilizando credenciales tradicionales o autenticación con Google mediante <strong>NextAuth</strong>.
+  Una vez autenticados, acceden a un flujo guiado para seleccionar especialidad,
+  profesional, fecha y horario disponible antes de completar el pago mediante <em>MercadoPago</em>.
+</p>
+
+<p>
+  El estado del turno no depende únicamente de la navegación del usuario.
+  La confirmación del pago se procesa posteriormente y el sistema permite recuperar correctamente el estado incluso si el usuario abandona el flujo de pago o cierra la pestaña.
+</p>
+
+<p>
+  Además, cada reserva posee una expiración configurable.
+  Si el pago no se completa dentro del tiempo establecido,
+  el sistema libera automáticamente el horario para evitar bloqueos innecesarios en la agenda.
+</p>
+
+<p>
+  Uno de los escenarios más importantes contemplados en el proyecto es la creación de turnos por parte de secretarias para pacientes que no poseen cuenta en la plataforma.
+</p>
+
+<p>
+  Para resolver esto, la secretaria puede:
+</p>
+
+<ul>
+  <li>buscar pacientes existentes</li>
+  <li>crear nuevos pacientes manualmente</li>
+  <li>generar turnos sin autenticación del paciente</li>
+  <li>compartir links de pago externos</li>
+</ul>
+
+<p>
+  Esto introdujo otro problema de dominio:
+  evitar duplicados cuando un paciente previamente creado por secretaria decide registrarse posteriormente desde la web.
+</p>
+
+<p>
+  Para resolverlo, el sistema intenta asociar automáticamente la nueva cuenta con el registro de paciente existente,
+  preservando historial, turnos y referencias previas.
+</p>
+
+<p>
+  Las secretarias cuentan con una vista diaria de turnos tanto en formato tabla como calendario,
+  mientras que los profesionales visualizan únicamente su propia agenda,
+  pudiendo iniciar consultas, registrar observaciones y actualizar estados de atención.
+</p>
+
+<p>
+  A nivel técnico, el proyecto utiliza <strong>PostgreSQL</strong> junto con <strong>Prisma</strong>,
+  modelando entidades como usuarios, pacientes, profesionales, turnos y pagos.
+</p>
+
+<p>
+  La sincronización entre múltiples usuarios conectados se resuelve mediante <strong>TanStack Query</strong> y polling automático,
+  permitiendo actualizar calendarios y estados sin recargar manualmente la aplicación.
+</p>
+
+<p>
+  La disponibilidad de turnos se calcula dinámicamente combinando:
+</p>
+
+<ul>
+  <li>horarios del profesional</li>
+  <li>turnos existentes</li>
+  <li>estado de pagos</li>
+</ul>
+
+<p>
+  El objetivo de esta demo es servir como base de discusión con el centro médico,
+  permitiendo validar decisiones de negocio, detectar nuevas necesidades y evolucionar el sistema hacia una posible implementación real.
+</p>
+`,
+        },
+
+        {
+          key: "nivel-3",
+          label: "Nivel 3",
+          body: `
+<h2>Mediflow — Sistema de gestión de turnos médicos</h2>
+
+<p>
+  <strong>Mediflow</strong> es una aplicación fullstack desarrollada con <strong>Next.js App Router</strong>,
+  concebida como demo funcional para un centro médico privado y diseñada bajo un enfoque modular orientado a dominio.
+</p>
+
+<p>
+  La arquitectura adopta una estructura <em>feature-first</em>,
+  donde cada dominio encapsula su propia lógica, componentes, hooks, servicios y tipos:
+</p>
+
+<ul>
+  <li>autenticación</li>
+  <li>pacientes</li>
+  <li>profesionales</li>
+  <li>especialidades</li>
+  <li>turnos</li>
+  <li>pagos</li>
+  <li>calendario</li>
+</ul>
+
+<p>
+  La autenticación se implementa mediante <strong>NextAuth</strong> utilizando estrategia JWT,
+  soportando:
+</p>
+
+<ul>
+  <li>credenciales locales</li>
+  <li>OAuth con Google</li>
+  <li>recuperación de contraseña</li>
+</ul>
+
+<p>
+  El modelo de usuarios diferencia roles tipados:
+</p>
+
+<ul>
+  <li><code>PATIENT</code></li>
+  <li><code>SECRETARY</code></li>
+  <li><code>PROFESSIONAL</code></li>
+</ul>
+
+<p>
+  Durante la construcción del sistema apareció un escenario de negocio relevante:
+  las secretarias debían poder generar turnos para pacientes sin cuenta registrada.
+</p>
+
+<p>
+  Para resolverlo, se desacopló completamente:
+</p>
+
+<ul>
+  <li>flujo de autenticación</li>
+  <li>flujo de creación del turno</li>
+  <li>flujo de pago</li>
+</ul>
+
+<p>
+  Cuando una secretaria crea un turno, el sistema permite:
+</p>
+
+<ul>
+  <li>buscar pacientes existentes</li>
+  <li>crear pacientes inline</li>
+  <li>generar links externos de pago</li>
+  <li>delegar el pago fuera del contexto autenticado</li>
+</ul>
+
+<p>
+  Esto introdujo otro problema de consistencia:
+  evitar registros duplicados cuando un paciente previamente creado manualmente decide registrarse posteriormente desde la web.
+</p>
+
+<p>
+  Para resolverlo, durante el registro se ejecuta una estrategia de reconciliación de identidad,
+  intentando asociar automáticamente el nuevo usuario autenticado con un registro <code>Patient</code> existente,
+  preservando:
+</p>
+
+<ul>
+  <li>historial de turnos</li>
+  <li>pagos</li>
+  <li>referencias previas</li>
+  <li>trazabilidad operativa</li>
+</ul>
+
+<p>
+  El núcleo del dominio gira alrededor de la entidad <strong>Appointment</strong>,
+  cuyo ciclo de vida se modela mediante estados explícitos:
+</p>
+
+<ul>
+  <li><code>PENDING</code></li>
+  <li><code>CONFIRMED</code></li>
+  <li><code>IN_PROGRESS</code></li>
+  <li><code>COMPLETED</code></li>
+  <li><code>CANCELLED</code></li>
+</ul>
+
+<p>
+  Las transiciones se validan mediante reglas centralizadas reutilizadas entre frontend y backend.
+</p>
+
+<p>
+  La disponibilidad de slots no se persiste directamente en base de datos.
+  Se calcula dinámicamente combinando:
+</p>
+
+<ul>
+  <li>disponibilidad laboral del profesional</li>
+  <li>turnos existentes</li>
+  <li>estado de pagos</li>
+  <li>expiración de reservas</li>
+</ul>
+
+<p>
+  El modelo de pagos desacopla completamente la confirmación del turno.
+  Cada appointment puede tener múltiples intentos de pago,
+  identificados mediante <code>attemptNumber</code>,
+  almacenando:
+</p>
+
+<ul>
+  <li>estado</li>
+  <li>timestamps</li>
+  <li>referencias externas</li>
+  <li>respuesta de MercadoPago</li>
+</ul>
+
+<p>
+  El sistema nunca utiliza el frontend como fuente de verdad para confirmar pagos.
+  La actualización final ocurre mediante <strong>webhooks</strong>,
+  persistiendo el resultado validado directamente en PostgreSQL.
+</p>
+
+<p>
+  Para evitar bloqueos permanentes de agenda,
+  los turnos poseen expiración configurable.
+  La liberación de slots se implementa mediante una estrategia híbrida:
+</p>
+
+<ul>
+  <li><strong>cron jobs</strong> para limpieza periódica</li>
+  <li><strong>validaciones en endpoints críticos</strong> para consistencia inmediata</li>
+</ul>
+
+<p>
+  La sincronización multi-cliente se implementa mediante <strong>TanStack Query</strong> y polling inteligente:
+</p>
+
+<ul>
+  <li>30 segundos con pestaña activa</li>
+  <li>60 segundos en background</li>
+</ul>
+
+<p>
+  Esta decisión permitió mantener consistencia entre secretarias y profesionales
+  evitando la complejidad operativa de WebSockets para el tamaño actual del proyecto.
+</p>
+
+<p>
+  La persistencia utiliza <strong>PostgreSQL</strong> junto con <strong>Prisma ORM</strong>,
+  incluyendo seeds independientes para poblar usuarios, pacientes, profesionales,
+  especialidades, disponibilidad y turnos de prueba.
+</p>
+
+<p>
+  El proyecto se encuentra actualmente en etapa demo/pre-productiva,
+  pensado como base para reuniones funcionales con el centro médico,
+  donde se analizarán necesidades reales, ajustes de negocio y evolución futura del dominio antes de una eventual puesta en producción.
+</p>
+`,
+        },
+      ],
+    },
+  },
+
   // medical-healt
   {
     id: 27,
@@ -1527,7 +1901,6 @@ ADMIN > SUPERVISOR > OPERATOR
   `,
     },
   },
-
 
   //car showcase
 ];
