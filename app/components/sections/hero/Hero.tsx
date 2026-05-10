@@ -1,12 +1,10 @@
 import Image from "next/image";
 
-
 export const Hero = () => {
   return (
     <section className="flex flex-col md:flex-row items-center my-12 md:my-36 lg:my-48 justify-between">
       <div className="flex flex-col gap-4 w-full md:w-6/12 lg:w-6/12 xl:w-6/12">
         <div className="flex flex-col">
-          {/* <span className="text-xl xl:text-2xl font-semibold">Hi I am</span> */}
           <span className="text-[1.5rem] xl:text-[2rem] font-semibold text-brand-primary">
             Eduardo Viana
           </span>
@@ -14,7 +12,7 @@ export const Hero = () => {
 
         <div className="flex flex-col w-full md:w-[340px] lg:w-[455px] xl:w-[568px]">
           <span className="font-bold text-[2.40rem] lg:text-5xl xl:text-6xl self-start">
-            FRONTEND
+            FULLSTACK
           </span>
           <span className="font-bold text-[2.40rem] lg:text-5xl xl:text-6xl self-end">
             DEVELOPER
@@ -26,10 +24,6 @@ export const Hero = () => {
             trabajado, que reflejan mis habilidades y experiencia en desarrollo
             web.
           </p>
-
-          {/* <Link href="/about" className="mt-4 self-start bg-brand-primary text-text-base py-2 px-10 rounded-md transition-colors duration-300 cursor-pointer hover:bg-brand-hover">
-            Ver más
-          </Link> */}
 
           {/* Imagen solo visible en breakpoints < md */}
           <div className="mt-10 md:hidden flex justify-center w-full">

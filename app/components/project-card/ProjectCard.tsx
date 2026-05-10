@@ -13,12 +13,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     <Link href={`${slug}`}>
       <div className="flex flex-col">
         <div className="relative w-full aspect-[10/7] border border-gray-200 rounded-sm ">
-          <Image
-            src={thumbnail}
-            alt={title}
-            fill
-            className="rounded-sm"
-          />
+          <Image src={thumbnail} alt={title} fill className="rounded-sm" />
         </div>
 
         <div className="mt-4 flex flex-col gap-2">
