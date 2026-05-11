@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import Slider from "../components/slider/Slider";
 import { getProjectBySlug } from "../helpers/getProject";
+import { getAllProjects } from "../helpers/getProject";
 import { Back } from "../components/back/Back";
 import { ProjectTabs } from "../components/project-tabs/ProjectTabs";
 import { SafeHtml } from "../components/safe-html/SafeHtml";
@@ -9,6 +11,51 @@ interface ProjectDetailsPageProps {
   params: Promise<{
     projectId: string;
   }>;
+}
+
+export async function generateStaticParams() {
+  const projects = getAllProjects();
+  return projects.map((project) => ({
+    projectId: project.slug,
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: ProjectDetailsPageProps): Promise<Metadata> {
+  const { projectId } = await params;
+  const project = getProjectBySlug(projectId);
+
+  if (!project) {
+    return {
+      title: "Proyecto no encontrado",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.desc,
+    openGraph: {
+      title: `${project.title} | Eduardo Viana`,
+      description: project.desc,
+      url: `https://eduardoviana.dev/${project.slug}`,
+      type: "article",
+      images: [
+        {
+          url: project.thumbnail,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Eduardo Viana`,
+      description: project.desc,
+      images: [project.thumbnail],
+    },
+  };
 }
 
 export default async function ProjectDetailsPage({

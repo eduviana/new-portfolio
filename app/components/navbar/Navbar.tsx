@@ -6,6 +6,8 @@ import Link from "next/link";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <nav className="flex justify-between items-center my-0 py-2 relative border-b-2 border-l-2 border-r-2 px-2 border-brand-borderDark rounded-lg bg-black">
       <Link href="/" className="text-text-muted font-extrabold text-xl lg:text-3xl">
@@ -18,7 +20,7 @@ export const Navbar = () => {
           Inicio
         </Link>
         <li className="lg:text-lg cursor-pointer hover:text-text-muted transition-colors duration-300">
-          Sobre Mí
+          <a href="#about">Sobre Mí</a>
         </li>
         <li className="lg:text-lg cursor-pointer hover:text-text-muted transition-colors duration-300">
           <a href="#my-projects">Proyectos</a>
@@ -42,7 +44,7 @@ export const Navbar = () => {
       {/* Overlay desenfocado cuando el menú está abierto */}
       {menuOpen && (
         <div
-          onClick={() => setMenuOpen(false)}
+          onClick={closeMenu}
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
         />
       )}
@@ -57,7 +59,7 @@ export const Navbar = () => {
         <div className="flex justify-end p-4">
           <button
             aria-label="Cerrar menú"
-            onClick={() => setMenuOpen(false)}
+            onClick={closeMenu}
             className="text-text-base hover:text-text-muted transition-colors duration-300"
           >
             <XMarkIcon className="h-8 w-8" />
@@ -66,13 +68,13 @@ export const Navbar = () => {
 
         <ul className="flex flex-col items-center gap-12 p-6 text-white">
           <li className="text-lg cursor-pointer hover:text-text-muted transition-colors duration-300">
-            Inicio
+            <Link href="/" onClick={closeMenu}>Inicio</Link>
           </li>
           <li className="text-lg cursor-pointer hover:text-text-muted transition-colors duration-300">
-            Sobre Mí
+            <a href="#about" onClick={closeMenu}>Sobre Mí</a>
           </li>
           <li className="text-lg cursor-pointer hover:text-text-muted transition-colors duration-300">
-            Proyectos
+            <a href="#my-projects" onClick={closeMenu}>Proyectos</a>
           </li>
           <li className="bg-brand-primary text-text-base py-2 px-4 rounded-md transition-colors duration-300 cursor-pointer hover:bg-brand-hover">
             <a href="/cv/cv.pdf" download className="block">

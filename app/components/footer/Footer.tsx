@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <footer className="flex flex-col items-center gap-12 pt-12 border-t-2 border-brand-borderDark bg-gradient-to-b from-brand-background to-black">
@@ -20,10 +23,42 @@ export const Footer = () => {
       </ul>
 
       <div className="flex gap-6">
-        <img src="/social-icons/facebook.webp" alt="" />
-        <img src="/social-icons/instagram.webp" alt="" />
-        <img src="/social-icons/linkedin.webp" alt="" />
-        <img src="/social-icons/twitter.webp" alt="" />
+        <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <Image
+            src="/social-icons/facebook.webp"
+            alt="Facebook"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+          />
+        </Link>
+        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <Image
+            src="/social-icons/instagram.webp"
+            alt="Instagram"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+          />
+        </Link>
+        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <Image
+            src="/social-icons/linkedin.webp"
+            alt="LinkedIn"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+          />
+        </Link>
+        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <Image
+            src="/social-icons/twitter.webp"
+            alt="Twitter"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+          />
+        </Link>
       </div>
 
       {/* Bloque inferior con fondo más oscuro */}

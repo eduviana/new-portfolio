@@ -83,7 +83,7 @@ export const MyProjects = () => {
         );
 
   return (
-    <section className="my-48" id="my-projects">
+    <section className="my-24 md:my-32" id="my-projects">
       <Title
         title="Mis Proyectos"
         description="Explora mis trabajos más recientes y las tecnologías que utilizo."
