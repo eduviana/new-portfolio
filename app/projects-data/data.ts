@@ -1265,7 +1265,7 @@ ADMIN > SUPERVISOR > OPERATOR
   // apex-soporte
   {
     id: 24,
-    title: "Apex Sporote",
+    title: "Apex Soporte",
     slug: "apex-soporte",
     liveSiteUrl: "",
     githubUrl: "",

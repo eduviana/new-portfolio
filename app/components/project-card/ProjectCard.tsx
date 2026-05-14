@@ -3,6 +3,7 @@ import { Project } from "@/app/projects-data/data.interface";
 import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
+import { getTechColor } from "@/app/helpers/getTechColors";
 
 interface ProjectItemProps {
   item: Project;
@@ -22,7 +23,7 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
       }`}
     >
       {/* Contenedor de Imagen */}
-      <div className="relative h-[390px] flex-1 rounded-xl overflow-hidden shadow-lg group">
+      <div className="relative h-[390px] flex-1 rounded-md overflow-hidden group ring-2 ring-white/20 shadow-xl shadow-black/20">
         <Image
           src={item.thumbnail}
           alt={item.title}
@@ -42,14 +43,17 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
         </p>
 
         <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
-          {item.technologies.map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 text-xs font-semibold bg-gray-100 dark:bg-gray-800 rounded-full"
-            >
-              {tech}
-            </span>
-          ))}
+          {item.technologies.map((tech) => {
+            const colors = getTechColor(tech);
+            return (
+              <span
+                key={tech}
+                className={`px-6 py-3 text-sm font-bold rounded-3xl border flex items-center capitalize ${colors.bg} ${colors.text} ${colors.border}`}
+              >
+                {tech}
+              </span>
+            );
+          })}
         </div>
 
         <Link
@@ -62,12 +66,3 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
     </div>
   );
 };
-
-
-
-
-
-
-
-
-

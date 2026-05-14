@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
+import { ParticleBackground } from "./components/background/ParticleBackground";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -72,10 +73,11 @@ export default function RootLayout({
       <body
         className={`bg-brand-background text-text-base ${poppins.variable} antialiased`}
       >
-        <div className="custom-container">
-          <Navbar />
+        <ParticleBackground />
+        <Navbar />
+        <main className="relative z-10">
           {children}
-        </div>
+        </main>
         <Footer />
       </body>
     </html>

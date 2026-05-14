@@ -14,17 +14,23 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          background: colors.zinc[900],
+          background: colors.zinc[950],
           primary: colors.orange[700],
           hover: colors.orange[800],
+          accent: colors.orange[600],
           borderDark: colors.zinc[800],
           borderLight: colors.slate[500],
         },
         text: {
           base: colors.white,
-          muted: "rgba(255, 255, 255, 0.6)",
+          muted: "rgba(255, 255, 255, 0.7)",
+          light: "rgba(255, 255, 255, 0.5)",
           contrast: colors.black,
         },
+      },
+      
+      fontFamily: {
+        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
 
       typography: (theme) => ({

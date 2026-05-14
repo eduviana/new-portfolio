@@ -83,11 +83,12 @@ export const MyProjects = () => {
         );
 
   return (
-    <section className="my-24 md:my-32" id="my-projects">
-      <Title
-        title="Mis Proyectos"
-        description="Explora mis trabajos más recientes y las tecnologías que utilizo."
-      />
+    <section id="projects" className="w-full py-24 bg-black/20">
+      <div className="w-full max-w-7xl mx-auto px-6">
+        <Title
+          title="Mis Proyectos"
+          description="Explora mis trabajos más recientes y las tecnologías que utilizo."
+        />
 
       <div className="mb-12 flex justify-center">
         <FilterButtons
@@ -100,6 +101,7 @@ export const MyProjects = () => {
         {filteredProjects.map((project) => (
           <ProjectCard key={project.id} item={project} />
         ))}
+      </div>
       </div>
     </section>
   );

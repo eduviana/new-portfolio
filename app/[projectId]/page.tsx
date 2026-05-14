@@ -80,91 +80,86 @@ export default async function ProjectDetailsPage({
   } = project;
 
   return (
-    <section className="my-8">
-      {/* Header */}
-      <div className="w-full flex flex-col gap-4 md:flex-row md:gap-0 items-center md:mb-8">
-        <div className="flex-1 self-start">
-          <Back />
-        </div>
-
-        <div className="flex-1 text-center">
-          <h2 className="text-2xl font-extrabold">{title}</h2>
-        </div>
-
-        <div className="flex-1" />
+    <section className="pt-24 pb-12">
+      {/* Botón Back - arriba a la izquierda con mismos márgenes */}
+      <div className="custom-container mb-6">
+        <Back />
       </div>
 
-      {/* Slider + metadata */}
-      <div className="w-full">
-        {/* <Slider images={images} /> */}
-        {video ? (
-          <div className="w-full max-w-[1200px] mx-auto aspect-video rounded-lg overflow-hidden">
-            <iframe
-              src={video}
-              title={title}
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        ) : (
-          <Slider images={images} />
-        )}
+      <div className="custom-container">
+        {/* Título del proyecto */}
+        <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-8">{title}</h1>
 
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center max-w-[1200px] mx-auto mt-8 border-y border-white/5 py-6">
-          {/* Tecnologías */}
-          <div className="flex flex-col items-center gap-2 md:items-start">
-            <h4 className="text-lg font-semibold md:hidden">
-              Tecnologías utilizadas
-            </h4>
-
-            <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
-              {technologies.map((technology) => (
-                <span
-                  key={technology}
-                  // className="bg-white text-text-contrast py-1 px-4 lg:py-2 lg:px-4 rounded-md capitalize"
-                  className="px-3 py-2 bg-white/5 border border-white/10 rounded text-xs font-medium text-white"
-                >
-                  {technology}
-                </span>
-              ))}
+        {/* Slider */}
+        <div className="w-full mb-8">
+          {video ? (
+            <div className="w-full aspect-video rounded-lg overflow-hidden">
+              <iframe
+                src={video}
+                title={title}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
-          </div>
+          ) : (
+            <Slider images={images} />
+          )}
+        </div>
 
-          {/* Links */}
-          <div className="flex flex-col items-center gap-2 md:items-start">
-            <h4 className="text-lg font-semibold md:hidden">Links</h4>
+        {/* Tecnologías y Links - fondo con menos transparencia */}
+        <div className="w-full bg-zinc-900/80 rounded-lg p-6 mb-8 border border-white/5">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+            {/* Tecnologías */}
+            <div className="flex flex-col gap-3">
+              <h4 className="text-lg font-semibold text-white">
+                Tecnologías utilizadas
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {technologies.map((technology) => (
+                  <span
+                    key={technology}
+                    className="px-3 py-1 bg-white/10 rounded-full text-sm text-white/80"
+                  >
+                    {technology}
+                  </span>
+                ))}
+              </div>
+            </div>
 
-            <div className="flex items-center gap-6 justify-center md:justify-start">
-              {liveSiteUrl && (
+            {/* Links */}
+            <div className="flex flex-col gap-3">
+              <h4 className="text-lg font-semibold text-white">Links</h4>
+              <div className="flex items-center gap-4">
+                {liveSiteUrl && (
+                  <a
+                    href={liveSiteUrl}
+                    className="bg-brand-primary text-white py-2 px-4 rounded-md hover:bg-brand-hover transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver sitio
+                  </a>
+                )}
+
                 <a
-                  href={liveSiteUrl}
-                  className="bg-brand-primary text-text-base py-1 px-4 lg:py-2 lg:px-4 rounded-md hover:bg-brand-hover transition-colors duration-300"
+                  href={githubUrl}
+                  className="bg-brand-primary text-white px-6 py-2 rounded text-sm font-medium transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Ver sitio
+                  Repositorio
                 </a>
-              )}
-
-              <a
-                href={githubUrl}
-                className="bg-brand-primary text-white px-6 py-2 rounded text-sm font-medium transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Repositorio
-              </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Content */}
-      <div className="flex flex-col gap-10 mt-24 mb-12 max-w-screen-xl mx-auto px-4">
-        {content.type === "single" && <SafeHtml html={content.body} />}
-
-        {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
+        {/* Content - fondo con menos transparencia */}
+        <div className="w-full bg-zinc-900/80 rounded-lg p-8 border border-white/5">
+          {content.type === "single" && <SafeHtml html={content.body} />}
+          {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
+        </div>
       </div>
     </section>
   );
