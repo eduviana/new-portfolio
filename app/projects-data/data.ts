@@ -11,12 +11,12 @@ export const projects: Project[] = [
     technologies: [
       "Next.js",
       "TypeScript",
-      "Tailwind",
+      "Tailwind CSS",
       "Prisma",
       "PostgreSQL",
       "NextAuth",
       "MercadoPago",
-      "React Query",
+      "TanStack Query",
     ],
     categories: ["Fullstack"],
     thumbnail: "/projects/fullstack/mediflow/9.png",
@@ -384,8 +384,8 @@ export const projects: Project[] = [
     desc: "Sistema web de gestión de turnos para obra social",
     technologies: [
       "Next.js",
-      "Tailwind",
-      "Shadcn",
+      "Tailwind CSS",
+      "Shadcn UI",
       "Prisma",
       "PostgreSQL",
       "Pusher",
@@ -828,7 +828,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://hard360.vercel.app",
     githubUrl: "https://github.com/eduviana/hard360",
     desc: "Sitio web para una tienda de informática",
-    technologies: ["next", "tailwind"],
+    technologies: ["Next.js", "Tailwind CSS"],
     categories: ["Nextjs"],
     thumbnail: "/projects/personales/hard360/hard360-1.webp",
     images: [
@@ -1072,7 +1072,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "",
     githubUrl: "",
     desc: "Sitio web para un vivero con panel administrativo y Mercadopago integrado.",
-    technologies: ["next", "tailwind", "mongo"],
+    technologies: ["Next.js", "Tailwind CSS", "MongoDB"],
     categories: ["Freelance", "Nextjs", "Fullstack"],
     thumbnail: "/projects/fullstack/vivarium/vivarium-1.webp",
     images: [
@@ -1270,7 +1270,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "",
     githubUrl: "",
     desc: "Sitio web que permite gestionar reclamos de los usuarios y visualizar la información en tablas y gráficos.",
-    technologies: ["next", "tailwind", "mongo"],
+    technologies: ["Next.js", "Tailwind CSS", "MongoDB"],
     categories: ["Freelance", "Nextjs", "Fullstack"],
     thumbnail: "/projects/fullstack/apex/apex-1.webp",
     images: [
@@ -1355,7 +1355,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://linktree-clone-gray.vercel.app/",
     githubUrl: "https://github.com/eduviana/linktree-clone",
     desc: "Clon moderno y personalizable de Linktree para centralizar enlaces sociales y profesionales con diseño minimalista.",
-    technologies: ["next", "tailwind", "clerk", "prisma"],
+    technologies: ["Next.js", "Tailwind CSS", "Clerk", "Prisma"],
     categories: ["Nextjs", "Prueba Técnica"],
     thumbnail: "/projects/fullstack/linktreeclone/linktree-2.webp",
     images: [
@@ -1446,7 +1446,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://kass-tienda.vercel.app/",
     githubUrl: "https://github.com/eduviana/kassTienda",
     desc: "Sitio web para una tienda de accesorios y productos tecnológicos con pasarela de pagos.",
-    technologies: ["next", "tailwind"],
+    technologies: ["Next.js", "Tailwind CSS"],
     categories: ["Freelance", "Nextjs", "Fullstack"],
     thumbnail: "/projects/fullstack/kassTienda/kass_1.png",
     images: [
@@ -1537,7 +1537,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://movix-nu-six.vercel.app/",
     githubUrl: "https://github.com/eduviana/movix",
     desc: "Página web de películas y series que utiliza la API gratuita 'The Movie Database'. ",
-    technologies: ["react", "sass", "redux"],
+    technologies: ["React", "Sass", "Redux"],
     categories: ["React"],
     thumbnail: "/projects/fullstack/movix/movix-1.webp",
     images: [
@@ -1621,7 +1621,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "",
     githubUrl: "",
     desc: "Plataforma que permite visualizar y realizar transmisiones en vivo.",
-    technologies: ["next", "shadcn"],
+    technologies: ["Next.js", "Shadcn UI"],
     categories: ["Nextjs"],
     thumbnail: "/projects/fullstack/gamehub/gamehub-1.webp",
     images: [],
@@ -1711,7 +1711,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://sanity-ecommerce-orcin.vercel.app/",
     githubUrl: "https://github.com/eduviana/Sanity-Ecommerce",
     desc: "Tienda online de venta de indumentaria realizado con Sanity y Next 13.",
-    technologies: ["next", "tailwind", "sanity"],
+    technologies: ["Next.js", "Tailwind CSS", "Sanity"],
     categories: ["Nextjs"],
     thumbnail: "/projects/fullstack/flair/flair-1.webp",
     images: [
@@ -1797,7 +1797,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://challenge-books-midudev.vercel.app/",
     githubUrl: "https://github.com/eduviana/Challenge-Books-Midudev",
     desc: "Challenge extraído del creador de contenido Midudev que consiste en una página web de una editorial de libros.",
-    technologies: ["react", "sass"],
+    technologies: ["React", "Sass"],
     categories: ["Prueba Técnica"],
     thumbnail: "/projects/personales/libros/libros-1.webp", // Adaptado de 'image' a 'thumbnail'
     images: [
@@ -1850,7 +1850,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://react-dashboard-recharts-nff7.vercel.app/",
     githubUrl: "https://github.com/eduviana/React-Dashboard-Recharts",
     desc: "Panel de administración para visualización de datos mediante gráficos interactivos y tablas dinámicas.",
-    technologies: ["react", "material", "sass"],
+    technologies: ["React", "Material UI", "Sass"],
     categories: ["React"],
     thumbnail: "/projects/fullstack/adminRecharts/adminUI-1.webp",
     images: [

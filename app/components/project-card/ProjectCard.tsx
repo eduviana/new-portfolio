@@ -3,7 +3,7 @@ import { Project } from "@/app/projects-data/data.interface";
 import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
-import { getTechColor } from "@/app/helpers/getTechColors";
+import { TechBadge } from "../tech-badge/TechBadge";
 
 interface ProjectItemProps {
   item: Project;
@@ -43,17 +43,9 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
         </p>
 
         <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
-          {item.technologies.map((tech) => {
-            const colors = getTechColor(tech);
-            return (
-              <span
-                key={tech}
-                className={`px-6 py-3 text-sm font-bold rounded-3xl border flex items-center capitalize ${colors.bg} ${colors.text} ${colors.border}`}
-              >
-                {tech}
-              </span>
-            );
-          })}
+          {item.technologies.map((tech) => (
+            <TechBadge key={tech} tech={tech} />
+          ))}
         </div>
 
         <Link
