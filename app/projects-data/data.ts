@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "TanStack Query",
     ],
     categories: ["Fullstack"],
-    thumbnail: "/projects/fullstack/mediflow/9.png",
+    thumbnail: "/projects/fullstack/mediflow/mediflow-thumbnail.png",
     images: [
       "/projects/fullstack/mediflow/1.png",
       "/projects/fullstack/mediflow/2.png",
@@ -39,336 +39,472 @@ export const projects: Project[] = [
       type: "tabs",
       tabs: [
         {
-          key: "nivel-1",
-          label: "Nivel 1",
+          key: "resumen",
+          label: "Resumen",
           body: `
-<h2>Mediflow — Sistema de gestión de turnos médicos</h2>
+<div class="flex flex-col gap-[6rem]">
 
-<p>
-  <strong>Mediflow</strong> es una aplicación web desarrollada como demo funcional para un centro médico privado,
-  con el objetivo de presentar una propuesta moderna de organización de turnos, atención al paciente y gestión administrativa.
-</p>
+  <!-- Problema -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  El proyecto busca simular situaciones reales que ocurren diariamente dentro de una institución médica,
-  contemplando tanto la experiencia del paciente como las necesidades operativas de secretarias y profesionales.
-</p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  Los pacientes pueden registrarse, iniciar sesión —incluyendo acceso mediante Google— y gestionar turnos de forma completamente online.
-  El flujo permite seleccionar <strong>especialidad</strong>, <strong>profesional</strong>, <strong>fecha</strong> y <strong>horario disponible</strong>,
-  para luego realizar el pago mediante <em>MercadoPago</em>.
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Problema
+        </h3>
 
-<p>
-  Una vez finalizado el pago, el sistema informa el estado actualizado del turno,
-  permitiendo confirmar, cancelar o reintentar el pago según corresponda.
-  Además, las reservas poseen un tiempo límite configurable;
-  si el pago no se completa dentro de ese período, el horario se libera automáticamente para otros pacientes.
-</p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  El sistema también contempla escenarios habituales en centros médicos reales.
-  Por ejemplo, las secretarias pueden crear turnos para personas que llaman por teléfono,
-  incluso aunque nunca se hayan registrado en la plataforma.
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La gestión de turnos médicos suele involucrar múltiples actores, procesos manuales y una fuerte dependencia de llamadas telefónicas, agendas fragmentadas y coordinación constante entre pacientes, secretarias y profesionales.
+        </p>
 
-<p>
-  En esos casos, Mediflow permite crear pacientes manualmente y compartir un link de pago mediante WhatsApp, email o copia directa del enlace.
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          En este contexto aparecen situaciones habituales que complejizan la operación diaria: pacientes que todavía no poseen cuenta, turnos gestionados por teléfono, horarios bloqueados por pagos incompletos o información dispersa entre distintos usuarios del sistema.
+        </p>
 
-<p>
-  A su vez, si ese mismo paciente decide registrarse en el futuro,
-  el sistema detecta automáticamente la información existente y vincula la nueva cuenta con el historial previo,
-  evitando duplicados y manteniendo la continuidad de los datos médicos y administrativos.
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          <span class="font-semibold text-white">Mediflow</span>
+          fue desarrollado tomando como referencia conversaciones mantenidas con un centro médico privado real, buscando modelar procesos cotidianos de atención, organización de agenda y coordinación operativa dentro de una propuesta funcional de gestión médica.
+        </p>
+      </div>
 
-<p>
-  Las secretarias disponen de vistas en formato tabla y calendario para organizar la agenda diaria,
-  mientras que los profesionales pueden acceder únicamente a sus propios turnos,
-  iniciar consultas, registrar observaciones y finalizar atenciones.
-</p>
+    </div>
+  </section>
 
-<p>
-  Todos estos cambios se reflejan automáticamente entre usuarios conectados,
-  permitiendo mantener una visión sincronizada y actualizada del estado general del sistema.
-</p>
+  <!-- Solución -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  El objetivo principal de la demo es servir como punto de partida para futuras reuniones con el centro médico,
-  donde se analizarán posibles mejoras, cambios funcionales y nuevas necesidades operativas antes de una eventual versión productiva.
-</p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Solución
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema propone una experiencia centralizada donde los pacientes pueden
+          <span class="font-semibold text-white">
+            registrarse, iniciar sesión y gestionar turnos de forma online
+          </span>,
+          seleccionando especialidad, profesional, fecha y horario disponible desde una interfaz guiada.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          A su vez, contempla escenarios reales que suelen quedar fuera de una implementación idealizada. Por ejemplo, las secretarias pueden crear turnos para pacientes que llaman por teléfono, incluso cuando todavía no poseen una cuenta registrada, compartiendo posteriormente enlaces de pago externos para completar la reserva.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los desafíos más interesantes del proyecto fue resolver la continuidad de información: si un paciente creado manualmente decide registrarse más adelante, el sistema puede
+          <span class="font-semibold text-white">
+            vincular automáticamente la nueva cuenta con el historial existente
+          </span>,
+          evitando duplicados y preservando la consistencia de turnos, pagos e información previa.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Más allá de la demo técnica, Mediflow fue concebido como una
+          <span class="font-semibold text-white">
+            propuesta funcional de validación
+          </span>
+          para explorar reglas del dominio médico, evaluar distintos flujos de atención y analizar cómo interactúan pacientes, secretarias y profesionales dentro de un mismo ecosistema operativo.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto fue pensado para acompañar conversaciones con un centro médico privado real, permitiendo iterar sobre procesos, detectar necesidades operativas y evolucionar progresivamente hacia una eventual implementación productiva.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 `,
         },
 
         {
-          key: "nivel-2",
-          label: "Nivel 2",
+          key: "funcionalidad",
+          label: "Funcionalidad",
           body: `
-<h2>Mediflow — Sistema de gestión de turnos médicos</h2>
+<div class="flex flex-col gap-[6rem]">
 
-<p>
-  <strong>Mediflow</strong> es una aplicación fullstack desarrollada como demo funcional para un centro médico privado,
-  orientada a validar flujos reales de gestión de turnos, pagos online y administración operativa.
-</p>
+  <!-- Pacientes -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  El sistema fue diseñado contemplando distintos perfiles de usuario:
-  <strong>pacientes, secretarias y profesionales</strong>,
-  adaptando la interfaz y las funcionalidades disponibles según el rol autenticado.
-</p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  Los pacientes pueden registrarse utilizando credenciales tradicionales o autenticación con Google mediante <strong>NextAuth</strong>.
-  Una vez autenticados, acceden a un flujo guiado para seleccionar especialidad,
-  profesional, fecha y horario disponible antes de completar el pago mediante <em>MercadoPago</em>.
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Pacientes
+        </h3>
 
-<p>
-  El estado del turno no depende únicamente de la navegación del usuario.
-  La confirmación del pago se procesa posteriormente y el sistema permite recuperar correctamente el estado incluso si el usuario abandona el flujo de pago o cierra la pestaña.
-</p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  Además, cada reserva posee una expiración configurable.
-  Si el pago no se completa dentro del tiempo establecido,
-  el sistema libera automáticamente el horario para evitar bloqueos innecesarios en la agenda.
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los pacientes pueden
+          <span class="font-semibold text-white">
+            registrarse mediante credenciales tradicionales o autenticación con Google
+          </span>,
+          iniciar sesión y recuperar su contraseña en caso de ser necesario.
+        </p>
 
-<p>
-  Uno de los escenarios más importantes contemplados en el proyecto es la creación de turnos por parte de secretarias para pacientes que no poseen cuenta en la plataforma.
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Una vez autenticados, acceden a un dashboard donde pueden consultar sus próximos turnos, visualizar estados de pago, fechas, horarios, especialidades y profesionales asignados, además de acceder al historial completo desde una sección dedicada.
+        </p>
 
-<p>
-  Para resolver esto, la secretaria puede:
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El flujo de reserva permite seleccionar
+          <span class="font-semibold text-white">
+            especialidad, profesional, fecha y horario disponible
+          </span>,
+          para luego completar el pago mediante MercadoPago. Si el pago no se realiza dentro del tiempo establecido, el turno expira automáticamente y el horario vuelve a quedar disponible para otros pacientes.
+        </p>
+      </div>
 
-<ul>
-  <li>buscar pacientes existentes</li>
-  <li>crear nuevos pacientes manualmente</li>
-  <li>generar turnos sin autenticación del paciente</li>
-  <li>compartir links de pago externos</li>
-</ul>
+    </div>
+  </section>
 
-<p>
-  Esto introdujo otro problema de dominio:
-  evitar duplicados cuando un paciente previamente creado por secretaria decide registrarse posteriormente desde la web.
-</p>
+  <!-- Secretaría -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  Para resolverlo, el sistema intenta asociar automáticamente la nueva cuenta con el registro de paciente existente,
-  preservando historial, turnos y referencias previas.
-</p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  Las secretarias cuentan con una vista diaria de turnos tanto en formato tabla como calendario,
-  mientras que los profesionales visualizan únicamente su propia agenda,
-  pudiendo iniciar consultas, registrar observaciones y actualizar estados de atención.
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Secretaría y operación diaria
+        </h3>
 
-<p>
-  A nivel técnico, el proyecto utiliza <strong>PostgreSQL</strong> junto con <strong>Prisma</strong>,
-  modelando entidades como usuarios, pacientes, profesionales, turnos y pagos.
-</p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  La sincronización entre múltiples usuarios conectados se resuelve mediante <strong>TanStack Query</strong> y polling automático,
-  permitiendo actualizar calendarios y estados sin recargar manualmente la aplicación.
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los objetivos principales del sistema fue contemplar escenarios reales de operación médica. Por esta razón, el rol de
+          <span class="font-semibold text-white">
+            secretaria
+          </span>
+          no depende exclusivamente de pacientes registrados en la plataforma.
+        </p>
 
-<p>
-  La disponibilidad de turnos se calcula dinámicamente combinando:
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Las secretarias pueden crear turnos manualmente para personas que llaman por teléfono o prefieren no utilizar la web, generando reservas incluso cuando el paciente todavía no posee una cuenta registrada. Posteriormente, el sistema permite compartir enlaces de pago externos para completar el proceso.
+        </p>
 
-<ul>
-  <li>horarios del profesional</li>
-  <li>turnos existentes</li>
-  <li>estado de pagos</li>
-</ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además, disponen de una vista global del consultorio mediante dos formatos de trabajo:
+          <span class="font-semibold text-white">
+            próximas citas y calendario
+          </span>.
+          Desde allí pueden monitorear todos los turnos de todos los profesionales, facilitando la organización diaria y el seguimiento general de la agenda médica.
+        </p>
+      </div>
 
-<p>
-  El objetivo de esta demo es servir como base de discusión con el centro médico,
-  permitiendo validar decisiones de negocio, detectar nuevas necesidades y evolucionar el sistema hacia una posible implementación real.
-</p>
+    </div>
+  </section>
+
+  <!-- Profesionales -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Profesionales médicos
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El rol <span class="font-semibold text-white">profesional</span> comparte parte de la experiencia de secretaría, pero adaptada únicamente a los turnos que le corresponden. Tanto en la vista de próximas citas como en el calendario, cada profesional visualiza exclusivamente su propia agenda.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Desde el panel de próximas citas, el profesional puede
+          <span class="font-semibold text-white">
+            iniciar una atención médica
+          </span>,
+          accediendo a una pantalla donde se muestra la información del paciente, observaciones relacionadas a la consulta y controles para cancelar o finalizar la atención.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esto permite modelar un flujo de trabajo más cercano a un escenario real, donde el estado del turno evoluciona durante el proceso de atención y queda reflejado dentro del sistema.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Estado compartido -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Estado compartido del sistema
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          A medida que los turnos cambian de estado —por ejemplo, cuando un profesional inicia o finaliza una atención— la información se actualiza automáticamente entre usuarios conectados.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esto permite que secretarias y profesionales trabajen sobre una visión sincronizada del estado actual del consultorio, manteniendo coherencia operativa sin necesidad de refrescar manualmente la aplicación.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 `,
         },
 
         {
-          key: "nivel-3",
-          label: "Nivel 3",
+          key: "arquitectura",
+          label: "Arquitectura",
           body: `
-<h2>Mediflow — Sistema de gestión de turnos médicos</h2>
+<div class="flex flex-col gap-[6rem]">
 
-<p>
-  <strong>Mediflow</strong> es una aplicación fullstack desarrollada con <strong>Next.js App Router</strong>,
-  concebida como demo funcional para un centro médico privado y diseñada bajo un enfoque modular orientado a dominio.
-</p>
+  <!-- Arquitectura del proyecto -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  La arquitectura adopta una estructura <em>feature-first</em>,
-  donde cada dominio encapsula su propia lógica, componentes, hooks, servicios y tipos:
-</p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<ul>
-  <li>autenticación</li>
-  <li>pacientes</li>
-  <li>profesionales</li>
-  <li>especialidades</li>
-  <li>turnos</li>
-  <li>pagos</li>
-  <li>calendario</li>
-</ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Arquitectura del proyecto
+        </h3>
 
-<p>
-  La autenticación se implementa mediante <strong>NextAuth</strong> utilizando estrategia JWT,
-  soportando:
-</p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<ul>
-  <li>credenciales locales</li>
-  <li>OAuth con Google</li>
-  <li>recuperación de contraseña</li>
-</ul>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto fue desarrollado utilizando
+          <span class="font-semibold text-white">
+            Next.js App Router, TypeScript y Tailwind CSS
+          </span>,
+          siguiendo un enfoque modular orientado a separación de responsabilidades.
+        </p>
 
-<p>
-  El modelo de usuarios diferencia roles tipados:
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La carpeta
+          <span class="font-semibold text-white"> app/ </span>
+          se utiliza únicamente para definir páginas y routing, mientras que toda la lógica de negocio se encuentra desacoplada dentro de una estructura
+          <span class="font-semibold text-white">
+            feature-first
+          </span>,
+          organizada por dominios funcionales.
+        </p>
 
-<ul>
-  <li><code>PATIENT</code></li>
-  <li><code>SECRETARY</code></li>
-  <li><code>PROFESSIONAL</code></li>
-</ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cada módulo encapsula sus propios componentes, hooks, schemas, helpers, tipos y servicios, permitiendo una estructura más mantenible, escalable y fácil de extender conforme el dominio evoluciona.
+        </p>
+      </div>
 
-<p>
-  Durante la construcción del sistema apareció un escenario de negocio relevante:
-  las secretarias debían poder generar turnos para pacientes sin cuenta registrada.
-</p>
+    </div>
+  </section>
 
-<p>
-  Para resolverlo, se desacopló completamente:
-</p>
+  <!-- Autenticación y permisos -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<ul>
-  <li>flujo de autenticación</li>
-  <li>flujo de creación del turno</li>
-  <li>flujo de pago</li>
-</ul>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  Cuando una secretaria crea un turno, el sistema permite:
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Autenticación y permisos
+        </h3>
 
-<ul>
-  <li>buscar pacientes existentes</li>
-  <li>crear pacientes inline</li>
-  <li>generar links externos de pago</li>
-  <li>delegar el pago fuera del contexto autenticado</li>
-</ul>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  Esto introdujo otro problema de consistencia:
-  evitar registros duplicados cuando un paciente previamente creado manualmente decide registrarse posteriormente desde la web.
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La autenticación fue implementada mediante
+          <span class="font-semibold text-white">
+            NextAuth
+          </span>,
+          soportando credenciales tradicionales, login con Google y recuperación de contraseña.
+        </p>
 
-<p>
-  Para resolverlo, durante el registro se ejecuta una estrategia de reconciliación de identidad,
-  intentando asociar automáticamente el nuevo usuario autenticado con un registro <code>Patient</code> existente,
-  preservando:
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema utiliza una estrategia multi-rol para diferenciar el comportamiento entre
+          <span class="font-semibold text-white">
+            pacientes, secretarias y profesionales médicos
+          </span>,
+          controlando tanto la navegación como las acciones disponibles para cada perfil.
+        </p>
 
-<ul>
-  <li>historial de turnos</li>
-  <li>pagos</li>
-  <li>referencias previas</li>
-  <li>trazabilidad operativa</li>
-</ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Para reforzar seguridad y consistencia, las solicitudes son interceptadas mediante middleware, validando permisos antes de acceder a páginas protegidas y evitando accesos no autorizados según el rol autenticado.
+        </p>
+      </div>
 
-<p>
-  El núcleo del dominio gira alrededor de la entidad <strong>Appointment</strong>,
-  cuyo ciclo de vida se modela mediante estados explícitos:
-</p>
+    </div>
+  </section>
 
-<ul>
-  <li><code>PENDING</code></li>
-  <li><code>CONFIRMED</code></li>
-  <li><code>IN_PROGRESS</code></li>
-  <li><code>COMPLETED</code></li>
-  <li><code>CANCELLED</code></li>
-</ul>
+  <!-- Gestión de disponibilidad -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  Las transiciones se validan mediante reglas centralizadas reutilizadas entre frontend y backend.
-</p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  La disponibilidad de slots no se persiste directamente en base de datos.
-  Se calcula dinámicamente combinando:
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Gestión de disponibilidad
+        </h3>
 
-<ul>
-  <li>disponibilidad laboral del profesional</li>
-  <li>turnos existentes</li>
-  <li>estado de pagos</li>
-  <li>expiración de reservas</li>
-</ul>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  El modelo de pagos desacopla completamente la confirmación del turno.
-  Cada appointment puede tener múltiples intentos de pago,
-  identificados mediante <code>attemptNumber</code>,
-  almacenando:
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          En lugar de persistir horarios disponibles directamente en base de datos, el sistema almacena únicamente la
+          <span class="font-semibold text-white">
+            disponibilidad laboral del profesional
+          </span>
+          y los turnos existentes.
+        </p>
 
-<ul>
-  <li>estado</li>
-  <li>timestamps</li>
-  <li>referencias externas</li>
-  <li>respuesta de MercadoPago</li>
-</ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La disponibilidad final se calcula dinámicamente combinando horarios configurados, reservas activas, estados de pago y expiración de turnos pendientes.
+        </p>
 
-<p>
-  El sistema nunca utiliza el frontend como fuente de verdad para confirmar pagos.
-  La actualización final ocurre mediante <strong>webhooks</strong>,
-  persistiendo el resultado validado directamente en PostgreSQL.
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este enfoque evita inconsistencias de sincronización, reduce datos redundantes y permite recalcular slots disponibles de forma flexible frente a cambios operativos.
+        </p>
+      </div>
 
-<p>
-  Para evitar bloqueos permanentes de agenda,
-  los turnos poseen expiración configurable.
-  La liberación de slots se implementa mediante una estrategia híbrida:
-</p>
+    </div>
+  </section>
 
-<ul>
-  <li><strong>cron jobs</strong> para limpieza periódica</li>
-  <li><strong>validaciones en endpoints críticos</strong> para consistencia inmediata</li>
-</ul>
+  <!-- Sincronización multi-cliente -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<p>
-  La sincronización multi-cliente se implementa mediante <strong>TanStack Query</strong> y polling inteligente:
-</p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<ul>
-  <li>30 segundos con pestaña activa</li>
-  <li>60 segundos en background</li>
-</ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Sincronización multi-cliente
+        </h3>
 
-<p>
-  Esta decisión permitió mantener consistencia entre secretarias y profesionales
-  evitando la complejidad operativa de WebSockets para el tamaño actual del proyecto.
-</p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  La persistencia utiliza <strong>PostgreSQL</strong> junto con <strong>Prisma ORM</strong>,
-  incluyendo seeds independientes para poblar usuarios, pacientes, profesionales,
-  especialidades, disponibilidad y turnos de prueba.
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los principales desafíos técnicos del proyecto fue mantener consistencia entre múltiples usuarios conectados simultáneamente, especialmente entre secretarias y profesionales visualizando agendas distintas.
+        </p>
 
-<p>
-  El proyecto se encuentra actualmente en etapa demo/pre-productiva,
-  pensado como base para reuniones funcionales con el centro médico,
-  donde se analizarán necesidades reales, ajustes de negocio y evolución futura del dominio antes de una eventual puesta en producción.
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Para resolverlo, se adoptó
+          <span class="font-semibold text-white">
+            TanStack Query
+          </span>
+          como capa de sincronización de datos, incorporando cache inteligente, invalidación automática luego de mutaciones y actualización periódica de información relevante.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Aunque se evaluó una arquitectura basada en WebSockets, se decidió implementar
+          <span class="font-semibold text-white">
+            polling inteligente
+          </span>
+          como estrategia inicial, priorizando simplicidad operativa y menor complejidad de mantenimiento para el volumen actual del sistema.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El calendario y los horarios disponibles se sincronizan automáticamente cada
+          <span class="font-semibold text-white">
+            30 segundos con la pestaña activa y 60 segundos en segundo plano
+          </span>,
+          permitiendo mantener información consistente entre usuarios sin necesidad de recargar manualmente la aplicación.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Persistencia -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Persistencia y entorno
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La persistencia del sistema se implementó utilizando
+          <span class="font-semibold text-white">
+            PostgreSQL + Prisma ORM
+          </span>,
+          modelando entidades relacionadas con usuarios, pacientes, profesionales, especialidades, disponibilidad y turnos médicos.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El entorno de desarrollo fue containerizado mediante
+          <span class="font-semibold text-white">
+            Docker
+          </span>,
+          acompañado de scripts de seed para poblar datos iniciales y facilitar escenarios de prueba reproducibles durante el desarrollo de nuevas funcionalidades.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
 `,
         },
       ],
@@ -384,11 +520,13 @@ export const projects: Project[] = [
     desc: "Sistema web de gestión de turnos para obra social",
     technologies: [
       "Next.js",
+      "TypeScript",
       "Tailwind CSS",
       "Shadcn UI",
       "Prisma",
       "PostgreSQL",
       "Pusher",
+      "Clerk",
     ],
     categories: ["Fullstack"],
     thumbnail: "/projects/fullstack/medicalHealt/edu.webp",
@@ -420,401 +558,347 @@ export const projects: Project[] = [
       type: "tabs",
       tabs: [
         {
-          key: "nivel-1",
-          label: "Nivel 1",
+          key: "summary",
+          label: "Resumen",
           body: `
-  <p>
-    Sistema web interno diseñado para organizar y supervisar la gestión de turnos dentro de una obra social.
-  </p>
 
-  <p>
-    El proyecto simula un entorno real de trabajo con distintos niveles de responsabilidad y necesidades operativas,
-    estructurando el funcionamiento diario en tres áreas claramente diferenciadas.
-  </p>
+<div class="flex flex-col gap-[6rem]">
 
-  <h3>Panel interno de gestión</h3>
+  <!-- Problema -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <p>
-    Los empleados deben iniciar sesión para acceder al sistema. Existen tres tipos de usuarios:
-    administrador, supervisor y operador, cada uno con permisos específicos según su rol.
-  </p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-  <ul>
-    <li><strong>Administrador:</strong> acceso total y capacidad de configuración.</li>
-    <li><strong>Supervisor:</strong> acceso completo a la información sin permisos de edición.</li>
-    <li><strong>Operador:</strong> atención de turnos en áreas específicas asignadas.</li>
-  </ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Problema
+        </h3>
 
-  <p>
-    Desde el panel principal se puede visualizar el estado general del sistema,
-    consultar métricas de rendimiento por área o por operador y mantener trazabilidad
-    sobre las acciones realizadas dentro de la organización.
-  </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-  <h3>Turnero digital</h3>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Muchas obras sociales todavía dependen de procesos fragmentados para la gestión de atención: generación manual de turnos, ausencia de trazabilidad operativa y poca visibilidad sobre tiempos de espera, rendimiento del personal o carga de trabajo entre áreas.
+        </p>
 
-  <p>
-    El afiliado ingresa su DNI, selecciona el área donde desea ser atendido y obtiene
-    un ticket impreso con un código identificador (por ejemplo: FM-1).
-    Este proceso organiza la atención y evita filas desestructuradas.
-  </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          A medida que el sistema crece en cantidad de servicios, usuarios y reglas de negocio, también aumenta la complejidad: permisos diferenciados, sincronización entre múltiples operadores y necesidad de métricas confiables para la toma de decisiones.
+        </p>
 
-  <h3>Pantalla pública de llamados</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este proyecto surge con el objetivo de modelar un entorno interno de atención para una obra social, contemplando escenarios reales de operación y buscando una arquitectura capaz de evolucionar junto al dominio del negocio.
+        </p>
+      </div>
 
-  <p>
-    En la sala de espera se visualiza el turno actual y el historial reciente de llamados.
-    El afiliado puede seguir el avance de la atención de manera clara y transparente.
-  </p>
+    </div>
+  </section>
 
-  <p>
-    En conjunto, el sistema prioriza orden, control interno y visibilidad operativa,
-    simulando un entorno institucional donde la organización y la trazabilidad
-    son elementos centrales.
-  </p>
+  <!-- Solución -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <p>
-    Fue desarrollado como ejercicio práctico avanzado para recrear un sistema organizacional completo,
-    incorporando gestión jerárquica de permisos y sincronización en tiempo real.
-  </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Solución
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Se desarrolló un sistema interno de gestión de turnos para múltiples áreas de una obra social, con una arquitectura basada en roles
+          <span class="font-semibold text-white">
+            ADMIN, SUPERVISOR y OPERATOR
+          </span>,
+          cada uno con permisos y responsabilidades claramente diferenciadas.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema permite a los afiliados generar turnos para distintas áreas, mientras que los operadores trabajan sobre paneles operativos en tiempo real para llamar turnos, iniciar atención, gestionar ausencias y finalizar operaciones registrando métricas precisas del proceso.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además de la operatoria diaria, la plataforma incorpora estadísticas, auditorías, sincronización en tiempo real y un sistema de permisos jerárquico orientado a entornos internos con múltiples actores simultáneos.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este proyecto tuvo dos objetivos principales:
+          <span class="font-semibold text-white">
+            construir un sistema significativamente más complejo
+          </span>
+          que los desarrollados anteriormente y, al mismo tiempo, incorporar tecnologías de sincronización en tiempo real dentro de un entorno de negocio con reglas operativas reales.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También funcionó como un ejercicio de evolución arquitectónica, obligándome a enfrentar problemas de escalabilidad, organización del código y separación de responsabilidades, identificando limitaciones tempranas y refactorizando progresivamente hacia una estructura más mantenible.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
 `,
         },
+
         {
-          key: "nivel-2",
-          label: "Nivel 2",
+          key: "functionality",
+          label: "Funcionamiento",
           body: `
-  <p>
-  El sistema está desarrollado como una aplicación fullstack utilizando Nextjs
-  con App Router, integrando frontend y backend dentro del mismo proyecto.
-</p>
 
-<p>
-  La estructura del código está organizada bajo un enfoque modular mediante
-  una carpeta <code>features/</code>, donde cada módulo representa un dominio
-  funcional claramente diferenciado del sistema (usuarios, servicios,
-  afiliados, turnos, auditorías, etc.).
-</p>
+<div class="flex flex-col gap-[6rem]">
 
-<p>
-  Cada módulo mantiene una estructura interna consistente según sus necesidades,
-  pudiendo incluir carpetas como:
-</p>
+  <!-- Roles -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-<ul>
-  <li><code>components</code> (UI específica del dominio)</li>
-  <li><code>hooks</code> (lógica reutilizable y manejo de estado)</li>
-  <li><code>services</code> (interacción con API y lógica de negocio)</li>
-  <li><code>types</code> (tipado del dominio)</li>
-  <li><code>lib</code> (utilidades internas)</li>
-  <li><code>context</code> (cuando el módulo requiere estado compartido)</li>
-</ul>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  No todos los módulos incluyen todas las carpetas; cada uno implementa
-  únicamente las capas necesarias para su funcionamiento.
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Roles del sistema
+        </h3>
 
-<p>
-  En <code>app/</code> se definen las páginas (Server Components),
-  las cuales importan los componentes correspondientes desde <code>features</code>.
-  Esto permite una separación clara entre renderizado del servidor y componentes
-  de cliente, manteniendo la lógica de dominio encapsulada y desacoplada de la
-  estructura de rutas.
-</p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-<p>
-  Los endpoints REST se encuentran en <code>app/api</code>, consolidando
-  la capa backend dentro del mismo proyecto y manteniendo una arquitectura
-  monolítica modular.
-</p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema utiliza una estructura de permisos basada en tres roles:
+          <span class="font-semibold text-white">
+            ADMIN, SUPERVISOR y OPERATOR
+          </span>.
+        </p>
 
-  <p>
-  La persistencia se gestiona con <strong>PostgreSQL</strong> utilizando <strong>Prisma</strong> como ORM tipado. La base de datos corre en un entorno Dockerizado para garantizar aislamiento y consistencia en desarrollo.
-</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los usuarios ADMIN pueden administrar completamente el sistema: habilitar servicios, editar cuentas, visualizar estadísticas y configurar la operación. Los SUPERVISOR comparten prácticamente la misma interfaz, pero operan bajo un esquema de solo lectura.
+        </p>
 
-  <h4>Autenticación y Sincronización</h4>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El rol OPERATOR representa al personal operativo de la obra social y accede únicamente a las áreas asignadas por un administrador, permitiendo que una misma cuenta pueda trabajar en uno o múltiples servicios.
+        </p>
+      </div>
 
-  <p>
-    La autenticación está delegada a <strong>Clerk</strong>, mientras que el sistema mantiene su propia base de datos interna de usuarios. En el primer inicio de sesión exitoso, se crea el registro interno si no existe,asignando por defecto el rol <code>OPERATOR</code>.
-  </p>
+    </div>
+  </section>
 
-  <p>
-    Se utilizan dos webhooks:
-  </p>
-  <ul>
-    <li>Webhook de sesiones para registrar actividad (login/logout).</li>
-    <li>Webhook de usuarios para sincronizar cuentas externas con la base interna.</li>
-  </ul>
+  <!-- Flujo -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <p>
-    Los endpoints de los webhooks validan firma conforme a la documentación oficial,
-    evitando requests no autorizados.
-  </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-  <h4>Modelo de Roles y Seguridad</h4>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Flujo operativo
+        </h3>
 
-  <p>
-    El sistema implementa una jerarquía de roles (<code>OPERATOR</code>, 
-    <code>SUPERVISOR</code>, <code>ADMIN</code>) validada en backend mediante 
-    una función <code>requireRole</code> que:
-  </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-  <ul>
-    <li>Verifica sesión activa.</li>
-    <li>Consulta el rol real desde base de datos.</li>
-    <li>Compara niveles jerárquicos.</li>
-    <li>Retorna 401 o 403 según corresponda.</li>
-  </ul>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El flujo de atención fue modelado explícitamente:
+          <span class="font-semibold text-white">
+            generación de turno → llamado → inicio de atención → finalización
+          </span>.
+        </p>
 
-  <p>
-    Las rutas privadas también validan sesión en el layout del servidor,
-    evitando depender exclusivamente del estado del cliente.
-  </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esta separación permite registrar tiempos independientes para cada etapa, evitando distorsiones estadísticas. Por ejemplo, el tiempo que un afiliado tarda en presentarse luego de ser llamado no penaliza artificialmente el tiempo real de atención del operador.
+        </p>
 
-  <h4>Modelo de Datos</h4>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Durante la atención, el operador dispone de un panel visual que muestra el tiempo transcurrido mediante una barra progresiva que cambia de color según el tiempo ideal estimado, funcionando como referencia operativa sin aplicar penalizaciones automáticas.
+        </p>
+      </div>
 
-  <p>
-    El esquema relacional está diseñado para reflejar la operación real del sistema:
-  </p>
+    </div>
+  </section>
 
-  <ul>
-    <li>
-      <strong>Usuarios</strong> con soft delete y relación many-to-many con servicios mediante <code>UserService</code>.
-    </li>
-    <li>
-      <strong>Afiliados</strong> normalizados con provincia, ciudad y organización.
-    </li>
-    <li>
-      <strong>Servicios</strong> con índice incremental (<code>currentIndex</code>) para generación de tickets.
-    </li>
-    <li>
-      <strong>Tickets</strong> con estados tipados (<code>PENDING</code>, <code>CALLED</code>, 
-      <code>IN_PROGRESS</code>, <code>COMPLETED</code>, etc.) y métricas temporales 
-      (<code>waitingSeconds</code>, <code>durationSeconds</code>).
-    </li>
-    <li>
-      <strong>Auditorías</strong> clasificadas por tipo (<code>FUNCTIONAL</code>, 
-      <code>SECURITY</code>, <code>SYSTEM</code>) con índices optimizados para dashboards.
-    </li>
-  </ul>
+  <!-- Realtime -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <p>
-  Las áreas de farmacia (General y Medicamentos) están modeladas como
-  entidades independientes, aun cuando actualmente comparten una estructura
-  similar. Esta decisión permite que cada área evolucione de manera autónoma
-  en el futuro sin afectar a la otra, evitando acoplamientos innecesarios
-  en la capa de dominio.
-</p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-<p>
-  Son las únicas áreas del sistema que gestionan venta de productos y generan
-  órdenes asociadas a un ticket, operador y afiliado, por lo que se modelaron
-  con sus propias entidades y relaciones específicas.
-</p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Sincronización en tiempo real
+        </h3>
 
-  <h4>Sistema de Turnos y Realtime</h4>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-  <p>
-    El panel de turnos combina persistencia en base de datos con notificaciones en tiempo real
-    mediante 
-    <strong>Pusher</strong>.
-  </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema implementa sincronización en tiempo real utilizando
+          <span class="font-semibold text-white">
+            Pusher
+          </span>,
+          permitiendo que los paneles operativos y las pantallas de sala de espera se actualicen instantáneamente sin necesidad de refrescar la página.
+        </p>
 
-  <p>
-    Cada servicio utiliza un canal independiente (<code>turn-queue-{serviceId}</code>).
-    Cuando un operador ejecuta una acción (llamar siguiente, iniciar atención,
-    cancelar, marcar ausente o completar), el flujo es:
-  </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cuando un operador llama un turno, el evento impacta simultáneamente en el panel de trabajo y en el visor de turnos distribuido en las salas de espera, mostrando el ticket llamado y el historial reciente de atención.
+        </p>
+      </div>
 
-  <ol>
-    <li>Se ejecuta un endpoint REST específico.</li>
-    <li>Se actualiza el estado del ticket en base de datos.</li>
-    <li>Se emite un evento <code>updated</code> vía Pusher.</li>
-    <li>Los clientes suscriptos refrescan el estado actual.</li>
-  </ol>
+    </div>
+  </section>
 
-  <p>
-    El hook <code>useTurnQueue</code> encapsula:
-  </p>
+</div>
 
-  <ul>
-    <li>Fetch inicial del estado.</li>
-    <li>Mutaciones controladas.</li>
-    <li>Manejo de loading y errores.</li>
-    <li>Suscripción y limpieza automática del canal realtime.</li>
-  </ul>
-
-  <h4>Trazabilidad y Auditoría</h4>
-
-  <p>
-    El sistema registra eventos funcionales (cambios de estado),
-    intentos de acceso no autorizado y eventos del sistema (login/logout),
-    permitiendo análisis operativo y detección de comportamientos anómalos.
-  </p>
-
-  <p>
-    Actualmente el proyecto no se encuentra desplegado en producción
-    debido a la ausencia de hosting persistente para la base de datos,
-    aunque la arquitectura está preparada para su despliegue en entornos cloud.
-  </p>
 `,
         },
+
         {
-          key: "nivel-3",
-          label: "Nivel 3",
+          key: "architecture",
+          label: "Arquitectura",
           body: `
-  <p>
-    Sistema fullstack orientado a dominio para la gestión interna de turnos de una obra social.
-    Diseñado para operar en entorno controlado con múltiples roles, reglas diferenciadas
-    y sincronización en tiempo real.
-  </p>
 
-  <h3>Arquitectura</h3>
+<div class="flex flex-col gap-[6rem]">
 
-  <p>
-    Implementa una Modular Feature Architecture (feature-first).
-    El directorio <code>app/</code> se utiliza exclusivamente para routing,
-    mientras que cada dominio encapsula su UI, tipos, validaciones,
-    servicios y lógica de negocio dentro de <code>features/</code>.
-  </p>
+  <!-- Arquitectura -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <p>
-    Principios aplicados:
-  </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-  <ul>
-    <li>Alta cohesión interna por dominio.</li>
-    <li>Bajo acoplamiento entre módulos.</li>
-    <li>Backend-driven frontend.</li>
-    <li>Separación estricta entre UI y lógica transaccional.</li>
-  </ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Organización del proyecto
+        </h3>
 
-  <p>
-    Los servicios siguen una convención basada en acciones
-    (<code>get/create/update/delete</code>) para expresar intención explícita.
-  </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-  <h3>Dominio de Turnos</h3>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            Next.js 16, TypeScript, Prisma, PostgreSQL, Clerk, Pusher, Tailwind y shadcn/ui
+          </span>.
+        </p>
 
-  <p>
-    El ciclo de vida está modelado como transiciones explícitas:
-  </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          A nivel organizacional se implementó una
+          <span class="font-semibold text-white">
+            Modular Feature Architecture
+          </span>,
+          donde la carpeta <span class="font-semibold text-white">app/</span> contiene únicamente el routing y cada dominio del negocio encapsula su propia lógica, tipos, componentes y servicios dentro de <span class="font-semibold text-white">features/</span>.
+        </p>
 
-  <pre>
-generateTicket()
-callNextTicket()
-handleCurrentTicket()
-  </pre>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esta decisión permitió mantener alta cohesión, reducir acoplamiento entre dominios y facilitar la evolución independiente de cada área del sistema.
+        </p>
+      </div>
 
-  <p>
-    Cada transición registra timestamps independientes
-    (calledAt, startedAt, completedAt) para permitir:
-  </p>
+    </div>
+  </section>
 
-  <ul>
-    <li>Tiempo hasta llamado.</li>
-    <li>Tiempo real de atención.</li>
-    <li>Métricas por operador y por área.</li>
-    <li>Análisis histórico sin distorsión.</li>
-  </ul>
+  <!-- Seguridad -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <p>
-    Se implementa control de concurrencia:
-  </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-  <ul>
-    <li><code>FOR UPDATE SKIP LOCKED</code> en selección de siguiente turno.</li>
-    <li>Actualizaciones condicionales para evitar race conditions.</li>
-    <li>Índice compuesto optimizado para consultas críticas.</li>
-  </ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Seguridad y RBAC
+        </h3>
 
-  <h3>Realtime</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-  <p>
-    Sincronización mediante Pusher con canales dinámicos:
-  </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La autenticación fue implementada con
+          <span class="font-semibold text-white">
+            Clerk
+          </span>,
+          mientras que la autorización se resolvió mediante un sistema RBAC propio basado en jerarquías de permisos.
+        </p>
 
-  <pre>
-turn-queue-{serviceId}
-  </pre>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El middleware centraliza autenticación, redirección dinámica de dashboards y control de acceso por rutas. Además, las APIs críticas aplican validaciones adicionales según rol para evitar confiar únicamente en el cliente o en el routing.
+        </p>
 
-  <p>
-    El backend emite eventos tras cada transición válida,
-    desacoplando el core de negocio de la capa de transporte.
-  </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema también registra eventos sensibles de seguridad mediante auditorías persistentes, incluyendo intentos de acceso indebido, dispositivo, IP y rol del usuario.
+        </p>
+      </div>
 
-  <h3>Seguridad</h3>
+    </div>
+  </section>
 
-  <p>
-    Implementa defensa en profundidad con tres capas diferenciadas:
-  </p>
+  <!-- Decisiones -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-  <ul>
-    <li><strong>Middleware (proxy.ts):</strong> Autenticación, RBAC jerárquico y redirección inteligente.</li>
-    <li><strong>Private Layout:</strong> Garantiza sesión activa + consistencia con usuario en base de datos.</li>
-    <li><strong>API / Server Actions:</strong> Autorización funcional mediante requireRole.</li>
-  </ul>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-  <p>
-    Autenticación delegada a Clerk.
-    Autorización implementada mediante RBAC propio con jerarquía formal:
-  </p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Decisiones técnicas
+        </h3>
 
-  <pre>
-ADMIN > SUPERVISOR > OPERATOR
-  </pre>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-  <p>
-    Se registran intentos indebidos con IP, userAgent y rol requerido.
-  </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Se priorizó el uso de
+          <span class="font-semibold text-white">
+            Server Components
+          </span>
+          siempre que fue posible, delegando únicamente la interacción al cliente mediante <span class="font-semibold text-white">use client</span> y endpoints específicos cuando un Client Component necesitaba datos persistidos.
+        </p>
 
-  <p>
-    Las cuentas se crean exclusivamente desde el panel de Clerk.
-    La aplicación sincroniza usuarios mediante webhooks
-    para mantener trazabilidad y auditoría persistente.
-  </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También se implementó una arquitectura basada en
+          <span class="font-semibold text-white">
+            adapters
+          </span>
+          para desacoplar reglas específicas de áreas similares, evitando dependencias cruzadas entre módulos que podrían evolucionar de forma distinta en el futuro.
+        </p>
 
-  <h3>Separación de Dominios Comerciales</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Muchas decisiones arquitectónicas surgieron de problemas encontrados durante el desarrollo y posteriores refactorizaciones, convirtiendo al proyecto en un proceso de aprendizaje práctico sobre mantenibilidad, escalabilidad y diseño de software.
+        </p>
+      </div>
 
-  <p>
-    Farmacia General y Farmacia Medicamentos se implementan como módulos independientes.
-    Aunque actualmente comparten estructura de datos similar,
-    se prioriza desacoplamiento para permitir evolución divergente
-    sin dependencia cruzada.
-  </p>
+    </div>
+  </section>
 
-  <p>
-    La lógica específica de cada servicio se delega mediante adapters,
-    evitando que reglas particulares impacten en otros dominios.
-  </p>
+</div>
 
-  <h3>Data Layer</h3>
-
-  <ul>
-    <li>PostgreSQL ejecutándose en contenedor Docker.</li>
-    <li>Prisma con migraciones versionadas.</li>
-    <li>Seeds independientes para reproducibilidad.</li>
-    <li>Cache controlado en endpoints de bajo cambio.</li>
-  </ul>
-
-  <p>
-    Todo componente que puede ser Server Component se implementa como tal.
-    Los Client Components acceden a datos exclusivamente mediante
-    endpoints o Server Actions.
-  </p>
-
-  <h3>Objetivos del Proyecto</h3>
-
-  <ul>
-    <li>Construir un sistema de mayor escala y complejidad arquitectónica.</li>
-    <li>Implementar sincronización realtime desacoplada del core.</li>
-    <li>Ejercitar refactorización iterativa ante problemas reales de diseño.</li>
-  </ul>
-
-  <p>
-    El foco estuvo en mantenibilidad, trazabilidad y evolución del dominio
-    por encima de velocidad inicial de implementación.
-  </p>
-  `,
+`,
         },
       ],
     },
@@ -828,7 +912,7 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://hard360.vercel.app",
     githubUrl: "https://github.com/eduviana/hard360",
     desc: "Sitio web para una tienda de informática",
-    technologies: ["Next.js", "Tailwind CSS"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     categories: ["Nextjs"],
     thumbnail: "/projects/personales/hard360/hard360-1.webp",
     images: [
@@ -844,221 +928,333 @@ ADMIN > SUPERVISOR > OPERATOR
       type: "tabs",
       tabs: [
         {
-          key: "nivel-1",
-          label: "Nivel 1",
+          key: "summary",
+          label: "Resumen",
           body: `
-      <p>
-      Ecommerce tecnológico desarrollado con Next.js y TypeScript
-      como proyecto de portfolio enfocado en arquitectura frontend, tipado estricto
-      y organización escalable del código.
-    </p>
 
-    <p>
-      Simula el funcionamiento de una tienda real de hardware,
-      incluyendo navegación por categorías, filtros dinámicos,
-      páginas de detalle, carrito de compras y renderizado optimizado
-      del lado del servidor.
-    </p>
+<div class="flex flex-col gap-[6rem]">
 
-    <h3>Objetivo del Proyecto</h3>
+  <!-- Problema -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      El proyecto fue concebido para consolidar buenas prácticas modernas
-      de desarrollo frontend:
-    </p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <ul>
-      <li>Renderizado SSR con App Router.</li>
-      <li>Estructura modular y desacoplada.</li>
-      <li>Modelado de datos fuertemente tipado.</li>
-      <li>Separación clara entre datos, lógica y presentación.</li>
-    </ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Problema
+        </h3>
 
-    <h3>Arquitectura de Datos</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      Toda la información de productos se centraliza en un archivo tipado
-      que actúa como fuente de datos interna.
-      Cada producto implementa un contrato común y puede extenderse
-      mediante especificaciones técnicas específicas según categoría.
-    </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los ecommerce tecnológicos suelen enfrentarse a un desafío importante: ofrecer grandes catálogos de productos con múltiples variantes técnicas sin comprometer la experiencia de navegación ni volver inmantenible la estructura de datos.
+        </p>
 
-    <p>
-      Esta estrategia permite mantener control total sobre los datos,
-      evitar dependencias externas y priorizar estabilidad en un entorno
-      de demostración técnica.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          A medida que aumentan las categorías y subcategorías, aparecen problemas comunes como filtros difíciles de escalar, especificaciones inconsistentes entre productos y lógica repetida para renderizar vistas dinámicas.
+        </p>
 
-    <h3>Experiencia de Usuario</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          <span class="font-semibold text-white">Hard360</span> surge como un proyecto orientado a resolver estos desafíos, priorizando escalabilidad estructural, modelado tipado de datos y una experiencia de usuario fluida dentro de un ecommerce tecnológico moderno.
+        </p>
+      </div>
 
-    <p>
-      La navegación está diseñada para ser clara y predecible:
-      categorías, subcategorías, filtros contextuales y páginas
-      de detalle especializadas según el tipo de producto.
-    </p>
+    </div>
+  </section>
 
-    <p>
-      El carrito global se gestiona mediante Context API,
-      y los precios se almacenan en centavos para evitar
-      errores de redondeo, formateándose dinámicamente
-      a moneda local en el frontend.
-    </p>
-      `,
+  <!-- Solución -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Solución
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Se desarrolló un ecommerce fullstack enfocado en productos tecnológicos utilizando
+          <span class="font-semibold text-white">
+            Next.js, TypeScript y SSR
+          </span>,
+          buscando una navegación rápida, mejor posicionamiento SEO y una arquitectura capaz de crecer sin degradar mantenibilidad.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema permite navegar categorías, subcategorías y productos mediante rutas dinámicas, aplicar filtros contextuales y consultar especificaciones técnicas adaptadas al tipo de producto, evitando estructuras genéricas poco representativas del dominio.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además, incorpora un carrito global, renderizado optimizado y una estructura de datos fuertemente tipada para garantizar consistencia entre productos con características técnicas muy diferentes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este proyecto tuvo como objetivo profundizar el uso de
+          <span class="font-semibold text-white">
+            TypeScript estricto, renderizado SSR y organización modular
+          </span>,
+          incorporando decisiones arquitectónicas más sólidas respecto a proyectos anteriores.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También funcionó como un espacio para mejorar el desacoplamiento entre lógica y presentación, explorando patrones de organización más mantenibles y modelando un dominio técnico complejo sin depender de APIs externas.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+`,
         },
 
         {
-          key: "nivel-2",
-          label: "Nivel 2",
+          key: "functionality",
+          label: "Funcionamiento",
           body: `
-      <p>
-      Hard360 fue estructurado bajo un enfoque modular orientado a escalabilidad.
-      La aplicación utiliza el App Router de Next.js con renderizado del lado
-      del servidor (SSR) para mejorar performance inicial y posicionamiento SEO.
-    </p>
 
-    <h3>Routing Dinámico</h3>
+<div class="flex flex-col gap-[6rem]">
 
-    <p>
-      La navegación se organiza mediante rutas dinámicas basadas en categorías
-      y subcategorías. Cada página de detalle de producto se genera a partir
-      de parámetros tipados, garantizando coherencia entre URL, datos y renderizado.
-    </p>
+  <!-- Navegación -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      Esta estrategia permite escalar el catálogo sin necesidad de duplicar lógica
-      de presentación.
-    </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <h3>Modelado de Datos y Tipado</h3>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Navegación dinámica
+        </h3>
 
-    <p>
-      El catálogo se modela mediante interfaces y tipos discriminados.
-      Todos los productos comparten un contrato base, mientras que cada
-      categoría puede extender sus especificaciones técnicas mediante
-      tipos específicos.
-    </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      Esto permite:
-    </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La navegación del ecommerce se construyó mediante una ruta dinámica utilizando
+          <span class="font-semibold text-white">
+            app/[...slug]/page.tsx
+          </span>,
+          permitiendo interpretar distintos segmentos de URL para renderizar categorías, subcategorías o páginas de producto individuales.
+        </p>
 
-    <ul>
-      <li>Autocompletado y validación estricta en desarrollo.</li>
-      <li>Evitar estados inconsistentes en runtime.</li>
-      <li>Renderizado condicional tipado según tipo de producto.</li>
-    </ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este enfoque evita duplicación de páginas, reduce complejidad de routing y permite escalar el catálogo sin necesidad de crear nuevas estructuras manuales por cada categoría agregada.
+        </p>
+      </div>
 
-    <h3>Renderizado de Especificaciones Dinámicas</h3>
+    </div>
+  </section>
 
-    <p>
-      Las especificaciones técnicas no se renderizan de forma rígida.
-      Se implementa un patrón de mapeo dinámico que asocia cada tipo
-      de producto con su componente de especificaciones correspondiente.
-    </p>
+  <!-- Filtros -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      Esto desacopla completamente la lógica de datos del componente
-      de presentación y permite extender nuevas categorías sin modificar
-      el núcleo de la aplicación.
-    </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <h3>Gestión de Estado</h3>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Sistema de filtros
+        </h3>
 
-    <p>
-      El carrito de compras se gestiona mediante Context API,
-      permitiendo acceso global y actualizaciones reactivas
-      sin necesidad de librerías externas.
-    </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      Los precios se almacenan internamente en centavos para evitar
-      problemas de precisión numérica, aplicando formateo
-      a moneda local únicamente en la capa de presentación.
-    </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Toda la lógica de filtrado fue desacoplada y centralizada dentro de un
+          <span class="font-semibold text-white">
+            custom hook
+          </span>,
+          permitiendo reutilizar comportamiento entre distintas categorías sin contaminar componentes de UI con lógica de negocio.
+        </p>
 
-    <h3>Principios Aplicados</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los filtros se adaptan dinámicamente según la categoría activa, permitiendo trabajar con distintas combinaciones de atributos sin generar estructuras rígidas o difíciles de mantener.
+        </p>
+      </div>
 
-    <ul>
-      <li>Separación clara entre datos, lógica y UI.</li>
-      <li>Arquitectura preparada para backend real.</li>
-      <li>Escalabilidad por extensión, no por modificación.</li>
-      <li>Tipado fuerte como herramienta de diseño.</li>
-    </ul>
-      `,
+    </div>
+  </section>
+
+  <!-- Productos y carrito -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Productos y carrito
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cada producto cuenta con un sistema de especificaciones adaptado a su categoría. Por ejemplo, un SSD posee propiedades distintas a un HDD o una notebook, evitando estructuras genéricas poco representativas del dominio técnico.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El carrito de compras utiliza
+          <span class="font-semibold text-white">
+            Context API
+          </span>
+          como estado global, permitiendo persistir selección de productos y sincronizar la experiencia de compra entre distintas vistas del ecommerce.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los precios se almacenan internamente en centavos como <span class="font-semibold text-white">string</span> y se formatean dinámicamente en el frontend, evitando problemas de precisión numérica y errores de redondeo monetario.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+`,
         },
 
         {
-          key: "nivel-3",
-          label: "Nivel 3",
+          key: "architecture",
+          label: "Arquitectura",
           body: `
-      <p>
-      Ecommerce diseñado con una arquitectura preparada para evolucionar
-      hacia un entorno productivo real sin necesidad de reescritura.
-      Aunque actualmente utiliza una fuente de datos interna,
-      la estructura del proyecto permite desacoplar fácilmente
-      el frontend de un backend externo.
-    </p>
 
-    <h3>Preparación para Backend Real</h3>
+<div class="flex flex-col gap-[6rem]">
 
-    <p>
-      El modelado de datos tipado funciona como contrato.
-      Esto facilita una futura integración con una API REST o GraphQL,
-      ya que los tipos pueden reutilizarse como capa de validación
-      y mapeo de respuestas.
-    </p>
+  <!-- Organización -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      La separación entre capa de datos y componentes UI
-      permite reemplazar la fuente actual por fetch requests
-      sin afectar la estructura visual ni la navegación.
-    </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <h3>Estrategia de Renderizado</h3>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Organización del proyecto
+        </h3>
 
-    <p>
-      El uso de SSR en el App Router fue una decisión consciente
-      para priorizar performance inicial y SEO.
-      La arquitectura permite migrar selectivamente a
-      SSG o ISR según necesidades de negocio.
-    </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <h3>Extensibilidad por Diseño</h3>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            Next.js, TypeScript, Tailwind CSS y SSR
+          </span>,
+          priorizando performance, SEO y mantenibilidad del código.
+        </p>
 
-    <p>
-      Las categorías y especificaciones técnicas se agregan
-      por extensión, no por modificación.
-      El sistema de mapeo dinámico evita condicionales rígidos
-      y reduce el acoplamiento entre tipos y componentes.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La estructura del proyecto se organizó de forma modular mediante carpetas especializadas:
+          <span class="font-semibold text-white">
+            app, components, hooks, contexts, lib y data
+          </span>,
+          separando claramente responsabilidades entre routing, UI, lógica de negocio y utilidades compartidas.
+        </p>
+      </div>
 
-    <h3>Calidad y Mantenibilidad</h3>
+    </div>
+  </section>
 
-    <ul>
-      <li>Tipado estricto como herramienta de diseño preventivo.</li>
-      <li>Precios almacenados en centavos para evitar errores de precisión.</li>
-      <li>Estructura modular orientada a responsabilidad única.</li>
-      <li>Código preparado para crecimiento del catálogo.</li>
-    </ul>
+  <!-- Modelado -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <h3>Evolución Potencial</h3>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      El proyecto puede evolucionar hacia:
-    </p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Modelado de datos
+        </h3>
 
-    <ul>
-      <li>Integración con base de datos y autenticación.</li>
-      <li>Persistencia de carrito mediante almacenamiento seguro.</li>
-      <li>Panel administrativo desacoplado.</li>
-      <li>Optimización con cacheo e incremental static regeneration.</li>
-    </ul>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      Más que un ecommerce estático, Hard360 fue concebido
-      como una base arquitectónica lista para escalar.
-    </p>
-      `,
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los focos principales del proyecto fue el
+          <span class="font-semibold text-white">
+            tipado estricto del dominio
+          </span>.
+          Cada categoría de producto posee entidades y especificaciones técnicas propias, como <span class="font-semibold text-white">NotebookSpecs</span>, <span class="font-semibold text-white">TvSpecs</span> o <span class="font-semibold text-white">RamSpecs</span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esto permitió modelar información mucho más precisa y escalable, evitando objetos excesivamente genéricos que terminan degradando consistencia y mantenibilidad con el crecimiento del catálogo.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Para este proyecto de portfolio se priorizó una fuente de datos local tipada mediante archivos <span class="font-semibold text-white">.ts</span>, permitiendo un mayor control sobre el modelado, la consistencia de datos y la estabilidad del entorno de desarrollo.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Aprendizajes -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Aprendizajes
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este proyecto consolidó el uso de buenas prácticas de frontend moderno, especialmente en
+          <span class="font-semibold text-white">
+            desacoplamiento de lógica, renderizado SSR, modelado tipado y reutilización de componentes
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También permitió mejorar el criterio arquitectónico respecto a organización del código, entendiendo cuándo abstraer lógica y cómo construir estructuras preparadas para crecer sin perder claridad.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+`,
         },
       ],
     },
@@ -1072,7 +1268,15 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "",
     githubUrl: "",
     desc: "Sitio web para un vivero con panel administrativo y Mercadopago integrado.",
-    technologies: ["Next.js", "Tailwind CSS", "MongoDB"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MySQL",
+      "NextAuth",
+      "MercadoPago",
+      "Cloudinary",
+    ],
     categories: ["Freelance", "Nextjs", "Fullstack"],
     thumbnail: "/projects/fullstack/vivarium/vivarium-1.webp",
     images: [
@@ -1089,173 +1293,320 @@ ADMIN > SUPERVISOR > OPERATOR
       type: "tabs",
       tabs: [
         {
-          key: "nivel-1",
-          label: "Nivel 1",
+          key: "resumen",
+          label: "Resumen",
           body: `
-      <p>
-          Desarrollo de una plataforma web para un vivero que necesitaba
-          exhibir y gestionar su catálogo de productos de forma autónoma.
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Problema -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Problema
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          <span class="font-semibold text-white">Vivarium</span>
+          fue desarrollado para un vivero real que necesitaba una presencia digital profesional capaz de exhibir su catálogo de productos sin depender constantemente de soporte técnico para realizar cambios o actualizaciones.
         </p>
 
-        <p>
-          El sistema permite al cliente administrar sus productos
-          desde un panel privado con login seguro, donde puede
-          crear, editar o eliminar artículos sin conocimientos técnicos.
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El negocio manejaba una gran variedad de plantas, insumos y productos organizados en múltiples categorías, lo que requería una forma clara y escalable de estructurar el catálogo y mantener la navegación simple para el usuario final.
         </p>
 
-        <h3>Qué resuelve el proyecto</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además, la operatoria comercial no seguía un modelo de ecommerce tradicional: muchos productos se trabajaban bajo demanda o con disponibilidad variable, lo que hacía necesario un sistema flexible capaz de adaptarse a cambios del negocio.
+        </p>
+      </div>
 
-        <ul>
-          <li>Gestión completa de productos desde un panel administrativo.</li>
-          <li>Organización del catálogo mediante categorías jerárquicas.</li>
-          <li>Sección configurable de “Productos destacados” en la página principal.</li>
-          <li>Venta online integrada (actualmente deshabilitada por decisión comercial).</li>
-          <li>Contacto directo vía WhatsApp para consultas personalizadas.</li>
-        </ul>
+    </div>
+  </section>
 
-        <p>
-          Inicialmente el sitio permitía realizar pagos online,
-          pero debido a que el modelo de negocio funciona bajo demanda,
-          se desactivó temporalmente la compra directa para evitar
-          ventas de productos no disponibles.
+  <!-- Solución -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Solución
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema propone una plataforma administrable donde el cliente puede
+          <span class="font-semibold text-white">
+            gestionar productos, categorías y contenido destacado de forma autónoma
+          </span>,
+          sin conocimientos técnicos y sin depender del desarrollador para actualizar el sitio.
         </p>
 
-        <p>
-          En su lugar, se implementó un sistema de contacto directo
-          que mantiene la experiencia simple y alineada con la operativa real del vivero.
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Se implementó un panel privado con autenticación segura desde donde es posible crear, editar y eliminar productos, además de organizar el catálogo utilizando categorías jerárquicas que impactan automáticamente sobre la navegación del sitio.
         </p>
 
-        <p>
-          El resultado es una plataforma profesional que brinda autonomía,
-          visibilidad digital y una base sólida para futuras mejoras.
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Inicialmente el proyecto incorporó compra online integrada con MercadoPago. Sin embargo, al evolucionar el modelo comercial del vivero hacia ventas bajo demanda, el flujo de checkout fue deshabilitado y reemplazado por contacto directo vía WhatsApp, manteniendo una experiencia alineada con la operación real del negocio.
         </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El objetivo del proyecto fue construir una plataforma que brindara
+          <span class="font-semibold text-white">
+            autonomía operativa y presencia digital profesional
+          </span>
+          al emprendimiento, permitiendo administrar el catálogo de forma simple y sostenible en el tiempo.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Al mismo tiempo, el sistema fue diseñado como una base flexible capaz de adaptarse a cambios comerciales, permitiendo reactivar funcionalidades de ecommerce en el futuro sin necesidad de rediseñar completamente la plataforma.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
       `,
         },
 
         {
-          key: "nivel-2",
-          label: "Nivel 2",
+          key: "funcionalidad",
+          label: "Funcionalidad",
           body: `
-      <p>
-          Aplicación fullstack desarrollada con Next.js,
-          base de datos relacional y autenticación con NextAuth.
-          El sistema permite administrar productos, categorías
-          y contenido destacado desde un panel protegido.
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Catálogo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Catálogo y navegación
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El catálogo se organiza mediante un sistema de
+          <span class="font-semibold text-white">
+            categorías jerárquicas
+          </span>,
+          permitiendo estructurar productos en distintos niveles y facilitar la navegación del usuario.
         </p>
 
-        <h3>Arquitectura Funcional</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La navegación se genera dinámicamente a partir de la información persistida en base de datos, por lo que nuevas categorías o cambios estructurales se reflejan automáticamente sin necesidad de modificar código.
+        </p>
+      </div>
 
-        <p>
-          El catálogo se organiza mediante un modelo de categorías
-          jerárquicas de tres niveles basado en relaciones padre-hijo.
-          El menú de navegación se construye dinámicamente
-          a partir de la base de datos.
+    </div>
+  </section>
+
+  <!-- Administración -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Panel administrativo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El cliente dispone de un panel privado con autenticación segura para administrar el contenido del sitio de forma independiente.
         </p>
 
-        <ul>
-          <li>Categorías raíz sin padres.</li>
-          <li>Categorías intermedias con padre e hijos.</li>
-          <li>Categorías finales sin hijos.</li>
-        </ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Desde este panel es posible
+          <span class="font-semibold text-white">
+            crear, editar y eliminar productos
+          </span>,
+          gestionar categorías y definir productos destacados que aparecen en la página principal.
+        </p>
+      </div>
 
-        <p>
-          Al agregar una nueva categoría desde el panel,
-          esta se refleja automáticamente en la navegación
-          sin necesidad de modificar código.
+    </div>
+  </section>
+
+  <!-- Flujo comercial -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Flujo comercial
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema fue concebido inicialmente con soporte para ecommerce y pagos online mediante MercadoPago.
         </p>
 
-        <h3>Integración de Pagos</h3>
-
-        <p>
-          Se implementó integración con MercadoPago mediante
-          generación de preferencias de pago y un webhook
-          para procesar respuestas asincrónicas del proveedor.
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Tras un cambio en la operatoria del vivero, el checkout fue deshabilitado y reemplazado por
+          <span class="font-semibold text-white">
+            contacto directo vía WhatsApp
+          </span>,
+          manteniendo el descubrimiento de productos y simplificando la gestión comercial del cliente.
         </p>
+      </div>
 
-        <p>
-          Debido al modelo de ventas bajo demanda,
-          el módulo de pagos fue desacoplado temporalmente,
-          manteniendo intacta la arquitectura principal.
-        </p>
+    </div>
+  </section>
 
-        <h3>Gestión de Assets</h3>
-
-        <p>
-          Las imágenes se almacenan en Cloudinary,
-          permitiendo carga directa desde el panel administrativo
-          y optimización automática del contenido multimedia.
-        </p>
+</div>
       `,
         },
 
         {
-          key: "nivel-3",
-          label: "Nivel 3",
+          key: "arquitectura",
+          label: "Arquitectura",
           body: `
-      <p>
-          Plataforma fullstack orientada a dominio, diseñada para
-          gestionar catálogo, categorías jerárquicas y flujo de pagos
-          con arquitectura desacoplada y preparada para cambios comerciales.
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Arquitectura general -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Arquitectura general
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            Next.js, TypeScript, autenticación con NextAuth y base de datos relacional
+          </span>,
+          manteniendo una separación clara entre autenticación, persistencia y lógica del negocio.
         </p>
 
-        <h3>Modelo de Datos y Jerarquía</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La estructura del proyecto fue pensada para facilitar el mantenimiento y permitir incorporar nuevas funcionalidades sin afectar el resto del sistema.
+        </p>
+      </div>
 
-        <p>
-          El sistema implementa una estructura de categorías
-          multinivel utilizando relaciones autorreferenciales (parentId),
-          permitiendo construir un árbol dinámico desde base de datos.
+    </div>
+  </section>
+
+  <!-- Categorías -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Categorías jerárquicas
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema implementa una estructura multinivel basada en relaciones
+          <span class="font-semibold text-white">
+            padre-hijo (<code>parentId</code>)
+          </span>,
+          permitiendo construir un árbol dinámico de categorías desde base de datos.
         </p>
 
-        <p>
-          La generación del menú es completamente data-driven,
-          evitando hardcode y favoreciendo extensibilidad.
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esto permite que cualquier nueva categoría agregada desde el panel administrativo impacte automáticamente sobre la navegación, evitando hardcode y favoreciendo escalabilidad.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Assets y pagos -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Assets y pagos
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Las imágenes del catálogo se gestionan mediante
+          <span class="font-semibold text-white">
+            Cloudinary
+          </span>,
+          permitiendo carga de assets desde el panel administrativo y optimización automática de contenido multimedia.
         </p>
 
-        <h3>Flujo de Pagos y Webhook</h3>
-
-        <p>
-          La integración con MercadoPago se diseñó mediante:
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La integración con MercadoPago fue diseñada utilizando
+          <span class="font-semibold text-white">
+            Checkout + Webhooks
+          </span>,
+          desacoplando el flujo de pagos del resto del sistema y permitiendo deshabilitar temporalmente la compra online sin afectar el catálogo ni el panel administrativo.
         </p>
+      </div>
 
-        <ul>
-          <li>Creación de preference con información del pedido.</li>
-          <li>Recepción de eventos asincrónicos vía webhook.</li>
-          <li>Procesamiento desacoplado del estado de la transacción.</li>
-        </ul>
+    </div>
+  </section>
 
-        <p>
-          El webhook actúa como punto de confirmación externo,
-          permitiendo manejar estados de éxito o error sin bloquear
-          la experiencia del usuario.
-        </p>
-
-        <h3>Decisión Arquitectónica Clave</h3>
-
-        <p>
-          Ante el cambio del modelo de negocio hacia ventas bajo demanda,
-          el módulo de pagos pudo deshabilitarse sin afectar
-          el dominio principal del sistema.
-        </p>
-
-        <p>
-          Esta separación entre catálogo y pasarela de pago demuestra
-          un diseño con bajo acoplamiento y responsabilidad clara.
-        </p>
-
-        <h3>Infraestructura y Escalabilidad</h3>
-
-        <ul>
-          <li>Autenticación segura mediante NextAuth.</li>
-          <li>Persistencia en base de datos relacional.</li>
-          <li>Assets desacoplados en Cloudinary.</li>
-          <li>Arquitectura preparada para reactivar pagos o integrar control de stock.</li>
-        </ul>
-
-        <p>
-          El sistema fue concebido no solo como un sitio informativo,
-          sino como una base arquitectónica lista para evolucionar
-          hacia un ecommerce completo con control transaccional y escalabilidad futura.
-        </p>
+</div>
       `,
         },
       ],
@@ -1270,7 +1621,16 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "",
     githubUrl: "",
     desc: "Sitio web que permite gestionar reclamos de los usuarios y visualizar la información en tablas y gráficos.",
-    technologies: ["Next.js", "Tailwind CSS", "MongoDB"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "React Hook Form",
+      "Zod",
+      "Recharts",
+      "Jest",
+    ],
     categories: ["Freelance", "Nextjs", "Fullstack"],
     thumbnail: "/projects/fullstack/apex/apex-1.webp",
     images: [
@@ -1281,160 +1641,285 @@ ADMIN > SUPERVISOR > OPERATOR
       "/projects/fullstack/apex/apex-5.webp",
     ],
     content: {
-      type: "single",
-      body: `
-    <p>
-      Desarrollo de una aplicación interna para APEX, empresa tercerizada
-      que brinda soporte de atención al cliente para PERSONAL.
-      El objetivo fúe reemplazar un flujo basado en Google Forms y
-      Google Sheets por una solución web más robusta,
-      manteniendo una experiencia visual familiar para los usuarios del sistema.
-    </p>
+      type: "tabs",
+      tabs: [
+        {
+          key: "resumen",
+          label: "Resumen",
+          body: `
+<div class="flex flex-col gap-[6rem]">
 
-    <h3>Contexto del Proyecto</h3>
+  <!-- Problema -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      El sistema anterior consistía en formularios de Google Docs donde
-      los operadores registraban incidencias reportadas por clientes.
-      Esa información se consolidaba automáticamente en una planilla
-      que los supervisores utilizaban para analizar casos y tomar decisiones.
-    </p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      La solución funcionaba, pero presentaba limitaciones en términos
-      de análisis de datos, visualización, control y escalabilidad.
-      La empresa necesitaba una herramienta más profesional sin generar
-      fricción en la adopción por parte del equipo.
-    </p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Problema
+        </h3>
 
-    <h3>Solución Implementada</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <ul>
-      <li>Formulario de carga de incidentes para operadores.</li>
-      <li>Reporte de incidentes con tabla y gráficos analíticos.</li>
-      <li>Formulario de adelantos para supervisores.</li>
-      <li>Reporte de adelantos con visualización estructurada.</li>
-    </ul>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          
+          Aplicación desarrollado para una empresa tercerizada encargada del soporte de atención al cliente de  <span class="font-semibold text-white">
+            Telecom - Personal
+          </span>, con el objetivo de reemplazar un flujo operativo basado en Google Forms y Google Sheets.
+        </p>
 
-    <h3>Arquitectura y Stack Tecnológico</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proceso existente permitía registrar incidencias reportadas por clientes y consolidarlas automáticamente en planillas utilizadas por supervisores, pero presentaba limitaciones importantes en visualización, trazabilidad y análisis de datos.
+        </p>
 
-    <ul>
-      <li>Next.js con enfoque SSR para mejorar seguridad y performance.</li>
-      <li>MongoDB como base de datos.</li>
-      <li>Autenticación con cuenta de Google.</li>
-      <li>React Hook Form + Zod para formularios y validaciones.</li>
-      <li>Recharts para visualización de gráficos.</li>
-      <li>Tailwind CSS para estilos.</li>
-      <li>Testing con Jest y React Testing Library.</li>
-    </ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El desafío principal consistía en construir una solución más robusta y profesional, manteniendo una experiencia visual suficientemente familiar para minimizar fricción en la adopción por parte de los operadores.
+        </p>
+      </div>
 
-    <h3>Decisión Técnica Relevante</h3>
+    </div>
+  </section>
 
-    <p>
-      Debido a latencias generadas por el estado standby en el plan gratuito de Vercel,
-      se migraron determinadas operaciones de fetch al cliente,
-      mejorando tiempos de respuesta y métricas como LCP.
-    </p>
+  <!-- Solución -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <h3>Impacto</h3>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      Proyecto desarrollado en interacción directa con gerencia,
-      fortaleciendo comunicación técnica, toma de decisiones
-      y adaptación a restricciones de infraestructura.
-    </p>
-  `,
-    },
-  },
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Solución
+        </h3>
 
-  //linktree-clone
-  {
-    id: 23,
-    title: "Linktree Clone",
-    slug: "linktree-clone",
-    liveSiteUrl: "https://linktree-clone-gray.vercel.app/",
-    githubUrl: "https://github.com/eduviana/linktree-clone",
-    desc: "Clon moderno y personalizable de Linktree para centralizar enlaces sociales y profesionales con diseño minimalista.",
-    technologies: ["Next.js", "Tailwind CSS", "Clerk", "Prisma"],
-    categories: ["Nextjs", "Prueba Técnica"],
-    thumbnail: "/projects/fullstack/linktreeclone/linktree-2.webp",
-    images: [
-      "/projects/fullstack/linktreeclone/linktree-1.webp",
-      "/projects/fullstack/linktreeclone/linktree-2.webp",
-      "/projects/fullstack/linktreeclone/linktree-3.webp",
-      "/projects/fullstack/linktreeclone/linktree-4.webp",
-    ],
-    content: {
-      type: "single",
-      body: `
-    <p>
-      Aplicación full-stack desarrollada como proyecto de profundización en Next.js,
-      enfocada en arquitectura escalable, buenas prácticas y organización profesional del código.
-      Se trata de un clon moderno y personalizable de Linktree que permite a los usuarios
-      centralizar enlaces sociales, portafolios y proyectos destacados en un perfil público optimizado para SEO.
-    </p>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <h3>Objetivo del Proyecto</h3>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema reemplaza formularios y planillas dispersas por una
+          <span class="font-semibold text-white">
+            aplicación web centralizada
+          </span>,
+          permitiendo registrar incidencias, consultar reportes y analizar información desde una interfaz más estructurada.
+        </p>
 
-    <p>
-      Más allá de replicar funcionalidades, el objetivo principal fue internalizar patrones
-      de arquitectura del App Router de Next.js, separación de responsabilidades y
-      estructura modular orientada a mantenibilidad en entornos productivos.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los operadores pueden cargar incidencias mediante formularios validados, mientras que supervisores acceden a reportes con tablas y visualizaciones gráficas para interpretar métricas operativas y detectar patrones con mayor facilidad.
+        </p>
 
-    <h3>Arquitectura y Stack Tecnológico</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También se incorporó un módulo específico para la gestión de adelantos, manteniendo un flujo consistente dentro del sistema y evitando depender de múltiples herramientas externas para tareas relacionadas.
+        </p>
+      </div>
 
-    <ul>
-      <li>Next.js con App Router y renderizado estático para optimización SEO.</li>
-      <li>Clerk para autenticación segura con manejo de sesiones y multi-factor.</li>
-      <li>Prisma como ORM para interacción tipada con PostgreSQL.</li>
-      <li>shadcn/ui para componentes accesibles y sistema de temas.</li>
-      <li>Tailwind CSS para estilos utilitarios y diseño consistente.</li>
-    </ul>
+    </div>
+  </section>
 
-    <p>
-      Los perfiles se gestionan dinámicamente mediante un panel interno (CMS propio),
-      permitiendo actualizar biografía, enlaces y preferencias de tema (light/dark)
-      sin necesidad de modificar código.
-    </p>
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <h3>Performance y Accesibilidad</h3>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <ul>
-      <li>Optimización de imágenes con el componente <code>Image</code> de Next.js.</li>
-      <li>Animaciones CSS nativas para minimizar costo de render.</li>
-      <li>Componentes accesibles basados en shadcn/ui alineados con estándares WCAG.</li>
-      <li>Renderizado optimizado para mejorar métricas de Lighthouse.</li>
-    </ul>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
 
-    <h3>Metodología de Organización</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      Uno de los aprendizajes más relevantes fue la estructura modular basada en
-      segmentación por features dentro del directorio <code>app</code>.
-      Se utilizaron carpetas con la sintaxis (feature) para agrupar lógica sin
-      afectar el sistema de rutas.
-    </p>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto tuvo como objetivo modernizar una operación interna existente sin romper hábitos de trabajo ya establecidos, priorizando una transición progresiva hacia una herramienta más controlada y escalable.
+        </p>
 
-    <p>
-      Cada sección contiene su propia carpeta <code>components</code>, y cada componente
-      se encapsula en una carpeta individual con:
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además del desarrollo técnico, el trabajo implicó interacción directa con gerencia para entender restricciones operativas, validar decisiones de producto y adaptar la implementación a necesidades reales del negocio.
+        </p>
+      </div>
 
-    <ul>
-      <li>Archivo principal <code>.tsx</code>.</li>
-      <li>Archivo <code>types.ts</code> para tipado explícito.</li>
-      <li>Archivo <code>form.ts</code> cuando aplica lógica de formularios.</li>
-      <li>Archivo <code>data.ts</code> para datos estáticos.</li>
-      <li>Archivo <code>index.ts</code> para exportaciones limpias.</li>
-    </ul>
+    </div>
+  </section>
 
-    <p>
-      Esta organización reduce el acoplamiento, acorta rutas de importación
-      y mejora significativamente la mantenibilidad y escalabilidad del proyecto.
-      El resultado es una base de código clara, modular y preparada para crecimiento.
-    </p>
-  `,
+</div>
+`,
+        },
+
+        {
+          key: "funcionalidad",
+          label: "Funcionalidad",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Operadores -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Operadores
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los operadores cuentan con formularios para registrar incidencias reportadas por clientes, reemplazando el flujo previo basado en Google Forms.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La información es validada antes de persistirse, reduciendo inconsistencias y mejorando la calidad de los datos utilizados posteriormente por supervisión.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Supervisión -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Supervisión y Reportes
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los supervisores pueden consultar reportes estructurados mediante tablas y gráficos, permitiendo analizar tendencias e interpretar la información operativa con mayor claridad.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema también incorpora un flujo independiente para la gestión de adelantos, manteniendo la información centralizada y accesible desde un mismo entorno.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Experiencia de Usuario
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Una decisión importante fue mantener una experiencia visual cercana a la herramienta anterior para facilitar la adopción del sistema y reducir la curva de aprendizaje del equipo.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El objetivo no era solamente mejorar la tecnología, sino también construir una transición operativa realista para usuarios acostumbrados a otro flujo de trabajo.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "arquitectura",
+          label: "Arquitectura",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Stack -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Stack Tecnológico
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            Next.js con renderizado SSR
+          </span>,
+          buscando mejorar tiempos de carga, seguridad y experiencia general.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Se utilizó MongoDB como base de datos, autenticación con Google, React Hook Form + Zod para validaciones, Recharts para visualización de métricas y Tailwind CSS para estilos.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además, se incorporaron pruebas automatizadas mediante
+          <span class="font-semibold text-white">
+            Jest y React Testing Library
+          </span>
+          para validar partes críticas del sistema.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Decisiones técnicas -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Decisiones Técnicas
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Durante el desarrollo se identificó una degradación en tiempos de respuesta causada por el estado standby del plan gratuito de despliegue utilizado en ese momento.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Para reducir el impacto sobre métricas como LCP y mejorar percepción de velocidad, determinadas operaciones inicialmente renderizadas del lado del servidor fueron migradas al cliente.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esta decisión permitió mantener una experiencia más fluida sin comprometer el funcionamiento general del sistema.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+      ],
     },
   },
 
@@ -1446,7 +1931,13 @@ ADMIN > SUPERVISOR > OPERATOR
     liveSiteUrl: "https://kass-tienda.vercel.app/",
     githubUrl: "https://github.com/eduviana/kassTienda",
     desc: "Sitio web para una tienda de accesorios y productos tecnológicos con pasarela de pagos.",
-    technologies: ["Next.js", "Tailwind CSS"],
+    technologies: [
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Google Sheets API",
+      "Stripe",
+    ],
     categories: ["Freelance", "Nextjs", "Fullstack"],
     thumbnail: "/projects/fullstack/kassTienda/kass_1.png",
     images: [
@@ -1457,75 +1948,292 @@ ADMIN > SUPERVISOR > OPERATOR
       "/projects/fullstack/kassTienda/kass_5.png",
     ],
     content: {
-      type: "single",
-      body: `
-    <p>
-      Desarrollo de un ecommerce para una tienda de accesorios y productos tecnológicos,
-      donde el principal requerimiento del cliente era poder administrar productos
-      de forma autónoma sin depender de un panel complejo ni conocimientos técnicos avanzados.
-    </p>
+      type: "tabs",
+      tabs: [
+        {
+          key: "resumen",
+          label: "Resumen",
+          body: `
+<div class="flex flex-col gap-[6rem]">
 
-    <h3>Contexto y Decisión Estratégica</h3>
+  <!-- Problema -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      Durante el relevamiento inicial, el cliente manifestó que se sentía cómodo
-      trabajando con hojas de cálculo tipo Excel.
-      En lugar de imponer una base de datos tradicional,
-      se optó por utilizar Google Sheets como fuente de datos,
-      integrándola mediante la API oficial.
-    </p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      Cada hoja del documento representa una categoría de productos,
-      lo que facilita la organización, edición y mantenimiento
-      sin necesidad de capacitación adicional.
-      Esta decisión priorizó adopción y usabilidad sobre complejidad técnica.
-    </p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Problema
+        </h3>
 
-    <h3>Arquitectura y Stack Tecnológico</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <ul>
-      <li>Next.js como framework fullstack.</li>
-      <li>Integración con Google Sheets API como base de datos.</li>
-      <li>Stripe como pasarela de pagos.</li>
-      <li>use-shopping-cart para gestión del carrito.</li>
-      <li>Tailwind CSS para estilos.</li>
-    </ul>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          <span class="font-semibold text-white">Kass Tienda</span>
+          fue desarrollado para una tienda de accesorios y productos tecnológicos cuyo principal requerimiento era poder administrar el catálogo de productos sin depender de herramientas complejas ni conocimientos técnicos avanzados.
+        </p>
 
-    <h3>Implementación de Pagos</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Durante el relevamiento inicial surgió una limitación importante: el cliente no se sentía cómodo utilizando paneles administrativos tradicionales, pero sí trabajaba habitualmente con hojas de cálculo similares a Excel.
+        </p>
 
-    <p>
-      Para el procesamiento de pagos se integró Stripe,
-      utilizando el paquete use-shopping-cart para la gestión segura del carrito.
-      Existen dos enfoques posibles para esta integración:
-      client-side o server-side.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El desafío no era solamente construir un ecommerce funcional, sino encontrar una solución que el cliente realmente pudiera administrar de forma autónoma en el día a día.
+        </p>
+      </div>
 
-    <p>
-      Se optó por la implementación del lado del servidor,
-      alineada con el modelo de Server Components de Next.js,
-      reduciendo exposición de lógica sensible en el cliente
-      y mejorando la seguridad del flujo de pago.
-    </p>
+    </div>
+  </section>
 
-    <h3>Aprendizajes y Experiencia Profesional</h3>
+  <!-- Solución -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      Este fue mi primer proyecto freelance real,
-      donde asumí la responsabilidad completa del ciclo:
-      análisis de requerimientos, investigación de soluciones,
-      selección tecnológica e implementación.
-    </p>
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      La experiencia fortaleció mi capacidad de comunicación con el cliente,
-      toma de decisiones técnicas pragmáticas
-      y adaptación del stack a las necesidades reales del negocio.
-      Más allá de la tecnología utilizada,
-      el valor principal estuvo en diseñar una solución alineada
-      con el perfil operativo del usuario final.
-    </p>
-  `,
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Solución
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          En lugar de imponer una arquitectura tradicional con panel administrativo y base de datos propia, se optó por una solución más alineada al contexto operativo del negocio:
+          <span class="font-semibold text-white">
+            utilizar Google Sheets como fuente de datos
+          </span>
+          mediante su API oficial.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cada hoja representa una categoría de productos, permitiendo al cliente agregar, editar o eliminar información utilizando una herramienta que ya conocía, sin necesidad de capacitación adicional.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El resultado fue un ecommerce funcional con un flujo de administración extremadamente simple, priorizando adopción y mantenibilidad por encima de complejidad innecesaria.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El objetivo del proyecto fue construir una solución técnicamente sólida pero adaptada a las capacidades reales del usuario final, reduciendo fricción operativa y favoreciendo la autonomía del negocio.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además, este proyecto representó mi primera experiencia freelance completa, participando del análisis de requerimientos, evaluación de alternativas tecnológicas y toma de decisiones orientadas a negocio.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "funcionalidad",
+          label: "Funcionalidad",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Catálogo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Gestión de Catálogo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El catálogo de productos se administra completamente desde
+          <span class="font-semibold text-white">
+            Google Sheets
+          </span>,
+          eliminando la necesidad de un panel administrativo tradicional.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cada hoja del documento representa una categoría distinta, permitiendo organizar productos de manera intuitiva y mantener el catálogo actualizado sin conocimientos técnicos.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Ecommerce -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Experiencia Ecommerce
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La tienda permite navegar categorías, visualizar productos y agregarlos al carrito mediante un flujo simple orientado a conversión.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Para el procesamiento de pagos se integró
+          <span class="font-semibold text-white">
+            Stripe
+          </span>,
+          permitiendo un checkout seguro y desacoplado del frontend.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Enfoque -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Enfoque de Producto
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Una de las decisiones más importantes fue
+          <span class="font-semibold text-white">
+            adaptar la tecnología al usuario
+          </span>
+          y no al revés.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Aunque técnicamente era posible construir un panel más sofisticado, se priorizó una herramienta familiar que el cliente pudiera utilizar con confianza desde el primer día.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "arquitectura",
+          label: "Arquitectura",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Stack -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Stack Tecnológico
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto fue desarrollado utilizando
+          <span class="font-semibold text-white">
+            Next.js como framework fullstack
+          </span>,
+          integrando Google Sheets API como fuente de datos principal y Stripe como pasarela de pagos.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El carrito se implementó utilizando
+          <span class="font-semibold text-white">
+            use-shopping-cart
+          </span>,
+          simplificando el manejo de estado relacionado al checkout y al flujo de compra.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Decisiones -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-8">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Decisiones Técnicas
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La integración con Stripe podía resolverse desde cliente o servidor. Se optó por un enfoque
+          <span class="font-semibold text-white">
+            server-side
+          </span>,
+          alineado con el modelo de Server Components de Next.js para reducir exposición de lógica sensible y mejorar seguridad.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También se evitó introducir una base de datos tradicional de forma innecesaria. La arquitectura fue diseñada alrededor del contexto real del cliente, priorizando simplicidad operativa, bajo mantenimiento y facilidad de adopción.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+      ],
     },
   },
 
@@ -1546,70 +2254,302 @@ ADMIN > SUPERVISOR > OPERATOR
       "/projects/fullstack/movix/movix-4.webp",
     ],
     content: {
-      type: "single",
-      body: `
-    <p>
-      Aplicación web desarrollada en React para explorar películas y series
-      consumiendo la API pública de The Movie Database (TMDB).
-      El objetivo principal fue profundizar en el manejo de estado global,
-      arquitectura de componentes reutilizables y consumo eficiente de APIs externas.
-    </p>
+      type: "tabs",
+      tabs: [
+        {
+          key: "resumen",
+          label: "Resumen",
+          body: `
+<div class="flex flex-col gap-[6rem]">
 
-    <h3>Funcionalidades Principales</h3>
+  <!-- Proyecto -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <ul>
-      <li>Exploración de películas y series por categoría.</li>
-      <li>Filtro dinámico por género.</li>
-      <li>Búsqueda por título.</li>
-      <li>Visualización de detalles individuales.</li>
-      <li>Reproducción de trailers integrados.</li>
-    </ul>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <h3>Arquitectura y Stack</h3>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Proyecto
+        </h3>
 
-    <ul>
-      <li>React como librería principal.</li>
-      <li>Redux para manejo de estado global.</li>
-      <li>SASS para estilos modulares y organizados.</li>
-    </ul>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      Uno de los aprendizajes más importantes fue comprender que no todo estado
-      debe residir en el store global. Redux se utilizó exclusivamente
-      para datos que necesitaban estar disponibles en múltiples secciones
-      (por ejemplo, configuración global o resultados compartidos),
-      mientras que el resto de estados permanecen encapsulados
-      dentro de sus respectivos componentes.
-    </p>
+      <div class="flex flex-col gap-3">
 
-    <p>
-      Esta decisión reduce complejidad innecesaria,
-      evita sobrecarga en el store y mejora la mantenibilidad.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          <span class="font-semibold text-white">Movix</span> es una aplicación web desarrollada para profundizar conocimientos en arquitectura frontend, manejo de estado global y consumo de APIs externas.
+        </p>
 
-    <h3>Optimización de Experiencia de Usuario</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto consume datos desde la API pública de
+          <span class="font-semibold text-white">The Movie Database (TMDB)</span>,
+          permitiendo explorar películas y series mediante una interfaz orientada al descubrimiento de contenido.
+        </p>
 
-    <ul>
-      <li>dayjs para formateo eficiente de fechas.</li>
-      <li>react-circular-progressbar para visualización de calificaciones.</li>
-      <li>react-lazy-load-image para carga perezosa de imágenes.</li>
-      <li>react-player para reproducción de trailers.</li>
-      <li>react-select para filtros de género interactivos.</li>
-    </ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Más allá del resultado visual, el principal objetivo fue fortalecer habilidades relacionadas con reutilización de componentes, organización del estado de la aplicación y toma de decisiones arquitectónicas dentro de un entorno React.
+        </p>
 
-    <p>
-      El proyecto fue desarrollado con enfoque responsive,
-      priorizando una experiencia fluida tanto en dispositivos móviles
-      como en escritorio.
-    </p>
+      </div>
 
-    <p>
-      Más allá del resultado visual, el valor principal del proyecto
-      radica en la correcta separación de responsabilidades,
-      reutilización de componentes y comprensión práctica
-      del balance entre estado global y estado local en aplicaciones React.
-    </p>
-  `,
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este proyecto tuvo como propósito principal mejorar el entendimiento práctico de
+          <span class="font-semibold text-white">
+            React, Redux y la separación de responsabilidades
+          </span>
+          dentro de aplicaciones frontend de mediana complejidad.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          También sirvió como espacio de experimentación para trabajar patrones de UI reutilizable, manejo eficiente de requests y optimización de experiencia de usuario mediante lazy loading, reproducción multimedia y navegación responsive.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "funcionalidad",
+          label: "Funcionalidad",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Exploración -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Exploración de contenido
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación permite explorar
+          <span class="font-semibold text-white">
+            películas y series
+          </span>
+          consumiendo información en tiempo real desde TMDB.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Los usuarios pueden navegar diferentes categorías, filtrar contenido por género y realizar búsquedas dinámicas por título, facilitando el descubrimiento de nuevo contenido desde una única interfaz.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Detalle -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Visualización detallada
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cada película o serie cuenta con una página de detalle que centraliza información relevante como descripción, géneros, fecha de lanzamiento, puntuación y contenido multimedia asociado.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Además, se integró reproducción de trailers embebidos, permitiendo consumir contenido audiovisual sin abandonar la aplicación.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UX -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Experiencia de usuario
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Se priorizó una experiencia fluida tanto en desktop como en dispositivos móviles, incorporando optimizaciones como
+          <span class="font-semibold text-white">
+            carga perezosa de imágenes, filtros interactivos y visualización dinámica de puntuaciones
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto fue diseñado con enfoque responsive, buscando mantener consistencia visual y rendimiento durante la navegación.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "arquitectura",
+          label: "Arquitectura",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Stack -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Stack tecnológico
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            React, Redux y SASS
+          </span>,
+          integrando además librerías específicas para visualización de métricas, reproducción multimedia y optimización de carga.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El consumo de datos se realiza mediante la API pública de TMDB, desacoplando completamente la lógica de presentación del origen de información.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Redux -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Gestión de estado
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los aprendizajes más importantes del proyecto fue comprender que
+          <span class="font-semibold text-white">
+            no todo estado debe residir en Redux
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El store global se utilizó únicamente para información compartida entre múltiples secciones de la aplicación, mientras que los estados locales permanecieron encapsulados dentro de sus respectivos componentes.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esta decisión permitió reducir complejidad innecesaria, evitar sobrecarga en el store y mantener una arquitectura más mantenible.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Componentes -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Reutilización y separación de responsabilidades
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto fue estructurado priorizando
+          <span class="font-semibold text-white">
+            componentes reutilizables y responsabilidades bien delimitadas
+          </span>,
+          evitando lógica acoplada entre UI, fetch de datos y estado compartido.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este enfoque permitió convertir Movix en un proyecto de aprendizaje particularmente valioso para comprender patrones de escalabilidad en aplicaciones React.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+      ],
     },
   },
 
@@ -1627,79 +2567,300 @@ ADMIN > SUPERVISOR > OPERATOR
     images: [],
     video: "https://www.youtube.com/embed/U6XBxhTLSuU",
     content: {
-      type: "single",
-      body: `
-    <p>
-      Plataforma de streaming en vivo inspirada en Twitch,
-      desarrollada con Next.js y enfocada en integrar autenticación,
-      transmisión en tiempo real y gestión de interacción entre usuarios.
-    </p>
+      type: "tabs",
+      tabs: [
+        {
+          key: "resumen",
+          label: "Resumen",
+          body: `
+<div class="flex flex-col gap-[6rem]">
 
-    <h3>Objetivo del Proyecto</h3>
+  <!-- Proyecto -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      El propósito fue comprender e implementar una arquitectura
-      capaz de soportar streams en tiempo real, salas de transmisión,
-      chat en vivo y gestión de usuarios con roles de streamer y espectador.
-    </p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <h3>Arquitectura y Servicios Integrados</h3>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Proyecto
+        </h3>
 
-    <ul>
-      <li>Next.js como framework fullstack.</li>
-      <li>Clerk para autenticación con Google.</li>
-      <li>Webhook para sincronizar usuarios autenticados con la base de datos.</li>
-      <li>LiveKit para infraestructura de streaming en tiempo real.</li>
-      <li>shadcn/ui para construcción de interfaz accesible y consistente.</li>
-    </ul>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      La autenticación se gestiona mediante Clerk, utilizando un webhook
-      para registrar automáticamente la información del usuario
-      en la base de datos cuando se crea o actualiza una cuenta.
-      Este enfoque desacopla la gestión de identidad
-      del modelo de datos interno.
-    </p>
+      <div class="flex flex-col gap-3">
 
-    <h3>Funcionalidades del Streamer</h3>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          <span class="font-semibold text-white">GameHub</span>
+          es una plataforma de streaming en vivo inspirada en Twitch, desarrollada con el objetivo de comprender e implementar una arquitectura capaz de soportar
+          <span class="font-semibold text-white">
+            transmisión en tiempo real, autenticación, chat y gestión de usuarios
+          </span>.
+        </p>
 
-    <ul>
-      <li>Creación y configuración de canal propio.</li>
-      <li>Personalización de perfil e información del stream.</li>
-      <li>Generación de credenciales para conexión con software externo como OBS Studio.</li>
-      <li>Configuración avanzada del chat (modo lento, solo suscriptores, deshabilitar chat).</li>
-    </ul>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El proyecto fue concebido como un desafío técnico orientado a explorar tecnologías de realtime, eventos asincrónicos y servicios externos, replicando funcionalidades esenciales presentes en plataformas de streaming modernas.
+        </p>
 
-    <p>
-      La integración con LiveKit permite gestionar conexiones en tiempo real,
-      transmisión de video y mensajería dentro de salas específicas,
-      replicando la experiencia básica de plataformas de streaming profesionales.
-    </p>
+      </div>
 
-    <h3>Complejidad Técnica y Aprendizaje</h3>
+    </div>
+  </section>
 
-    <p>
-      A diferencia de otros proyectos del portafolio,
-      este sistema incorpora múltiples servicios externos,
-      eventos asincrónicos y lógica en tiempo real,
-      lo que incrementa significativamente la complejidad arquitectónica.
-    </p>
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <p>
-      El desarrollo implicó trabajar con flujos distribuidos,
-      dividir el problema en módulos manejables
-      y mantener claridad en la separación de responsabilidades.
-      Fue un ejercicio clave para fortalecer la capacidad
-      de abordar sistemas grandes y técnicamente exigentes.
-    </p>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      Debido a que el proyecto utiliza servicios pagos para funcionar,
-      no se encuentra desplegado en producción.
-      En su lugar, se incluye un video demostrativo
-      que muestra el funcionamiento completo del sistema.
-    </p>
-  `,
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los principales objetivos del proyecto fue aprender a trabajar con sistemas distribuidos y comunicación en tiempo real, enfrentando problemas relacionados con sincronización de estado, gestión de eventos y arquitectura desacoplada.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          A diferencia de otros proyectos del portfolio, aquí la complejidad estuvo menos centrada en reglas de negocio y más en la
+          <span class="font-semibold text-white">
+            integración coordinada de múltiples servicios externos
+          </span>
+          dentro de una misma experiencia de usuario.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Estado -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Estado del proyecto
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Debido a que el proyecto depende de servicios pagos para funcionar correctamente, actualmente no se encuentra desplegado en producción.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          En su lugar, el portfolio incluye un
+          <span class="font-semibold text-white">
+            video demostrativo del flujo completo
+          </span>,
+          mostrando autenticación, creación de canal, transmisión y configuración de chat.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "funcionalidad",
+          label: "Funcionalidad",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Streamer -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Experiencia del streamer
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Cada usuario autenticado puede crear y administrar su propio canal de streaming, personalizando información del perfil y configuraciones relacionadas con la transmisión.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          El sistema genera credenciales específicas para conectar software externo como
+          <span class="font-semibold text-white">
+            OBS Studio
+          </span>,
+          permitiendo transmitir video en vivo desde herramientas profesionales.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Chat -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Interacción en tiempo real
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La plataforma incorpora un sistema de chat en vivo configurable por el streamer, incluyendo opciones como
+          <span class="font-semibold text-white">
+            slow mode, solo suscriptores o chat deshabilitado
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Tanto la transmisión como la interacción entre espectadores se sincronizan en tiempo real dentro de salas específicas, replicando la experiencia básica de una plataforma moderna de streaming.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "arquitectura",
+          label: "Arquitectura",
+          body: `
+<div class="flex flex-col gap-[6rem]">
+
+  <!-- Stack -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Stack tecnológico
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            Next.js, Clerk, LiveKit y shadcn/ui
+          </span>,
+          integrando autenticación, streaming en tiempo real y sincronización de usuarios dentro de una arquitectura fullstack.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Clerk se utiliza para autenticación mediante Google, mientras que un webhook sincroniza automáticamente la información del usuario autenticado con la base de datos interna.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Realtime -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Streaming y realtime
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          La infraestructura de streaming se construyó sobre
+          <span class="font-semibold text-white">
+            LiveKit
+          </span>,
+          permitiendo gestionar conexiones en tiempo real, video, audio y mensajería dentro de salas independientes.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Esto implicó trabajar con eventos asincrónicos, flujos distribuidos y sincronización entre múltiples usuarios concurrentes, elevando considerablemente la complejidad técnica respecto de aplicaciones CRUD tradicionales.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Aprendizaje -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Aprendizajes técnicos
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Uno de los mayores desafíos del proyecto fue dividir un problema técnicamente complejo en módulos manejables, manteniendo separación clara entre autenticación, realtime, persistencia y experiencia de usuario.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+          Este proyecto resultó especialmente valioso para fortalecer habilidades relacionadas con
+          <span class="font-semibold text-white">
+            arquitectura de sistemas complejos, eventos asincrónicos e integración de servicios externos
+          </span>.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+      ],
     },
   },
 

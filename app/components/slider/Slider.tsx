@@ -103,7 +103,7 @@ export default function Slider({ images }: SliderProps) {
   if (!images?.length) return null;
 
   return (
-    <div className="w-full mx-auto">
+    <div className="navigation-wrapper w-full mx-auto">
       <div ref={sliderRef} className="keen-slider">
         {images.map((src, index) => (
           <div key={src} className="keen-slider__slide flex justify-center">
@@ -139,19 +139,57 @@ export default function Slider({ images }: SliderProps) {
         ))}
       </div>
 
-      {/* Dots (Tu código original) */}
+      {/* Flechas de navegación */}
       {loaded && instanceRef.current && (
-        <div className="dots mt-4">
-          {Array.from({
-            length: instanceRef.current?.track?.details?.slides.length ?? 0,
-          }).map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => instanceRef.current?.moveToIdx(idx)}
-              className={"dot" + (currentSlide === idx ? " active" : "")}
-            />
-          ))}
-        </div>
+        <>
+          <button
+            className="arrow arrow--left"
+            onClick={() => instanceRef.current?.prev()}
+            aria-label="Anterior"
+          >
+            <svg
+              className="arrow-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+
+          <button
+            className="arrow arrow--right"
+            onClick={() => instanceRef.current?.next()}
+            aria-label="Siguiente"
+          >
+            <svg
+              className="arrow-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+
+          <div className="dots mt-4">
+            {Array.from({
+              length: instanceRef.current?.track?.details?.slides.length ?? 0,
+            }).map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => instanceRef.current?.moveToIdx(idx)}
+                className={"dot" + (currentSlide === idx ? " active" : "")}
+              />
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

@@ -4,12 +4,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Inicio" },
+  { href: "#about", label: "Sobre Mí" },
+  { href: "#experience", label: "Experiencia" },
+  { href: "#education", label: "Educación" },
+  { href: "#projects", label: "Proyectos" },
+  { href: "#contact", label: "Contacto" },
 ];
 
 export const Navbar = () => {
@@ -45,7 +45,7 @@ export const Navbar = () => {
           download
           className="hidden md:inline-flex items-center px-4 py-2 bg-brand-primary hover:bg-brand-hover text-white text-sm font-medium rounded-md transition-colors duration-200"
         >
-          Download CV
+          Descargar CV
         </a>
 
         {/* Icono hamburguesa visible solo en menores a md */}

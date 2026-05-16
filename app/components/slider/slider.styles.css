@@ -36,80 +36,80 @@
   transform: scale(1.1);
 }
 .arrow {
-  width: 30px;
-  height: 30px;
+  width: 48px;
+  height: 48px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ea580c;
-  border-radius: 50%;
+  background: transparent;
+  border: none;
   cursor: pointer;
   z-index: 10;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.arrow:hover {
+  color: #ea580c;
 }
 
 .arrow-icon {
-  width: 20px;
-  height: 20px;
-  fill: whitesmoke;
+  width: 28px;
+  height: 28px;
 }
 
 .arrow--left {
-  left: 0px;
+  left: -56px;
 }
 
 .arrow--right {
-  right: 0px;
+  right: -56px;
 }
 
 .arrow--disabled {
-  fill: #d4d4d4;
+  color: #525252;
   cursor: not-allowed;
-}
-
-.arrow--disabled .arrow-icon {
-  fill: #3b3737;
 }
 
 @media (min-width: 768px) {
   .arrow {
-    width: 30px;
-    height: 30px;
+    width: 56px;
+    height: 56px;
   }
 
   .arrow-icon {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .arrow--left {
+    left: -72px;
+  }
+
+  .arrow--right {
+    right: -72px;
   }
 }
 
 @media (min-width: 1024px) {
-  .arrow--left {
-    left: 34px;
-  }
-
-  .arrow--right {
-    right: 34px;
-  }
-}
-
-@media (min-width: 1440px) {
   .arrow {
+    width: 64px;
+    height: 64px;
+  }
+
+  .arrow-icon {
     width: 40px;
     height: 40px;
   }
 
-  .arrow-icon {
-    width: 30px;
-    height: 30px;
-  }
   .arrow--left {
-    left: 0px;
+    left: -80px;
   }
 
   .arrow--right {
-    right: 0px;
+    right: -80px;
   }
 }

@@ -6,6 +6,7 @@ import { getAllProjects } from "../helpers/getProject";
 import { Back } from "../components/back/Back";
 import { ProjectTabs } from "../components/project-tabs/ProjectTabs";
 import { SafeHtml } from "../components/safe-html/SafeHtml";
+import { TechBadge } from "../components/tech-badge/TechBadge";
 
 interface ProjectDetailsPageProps {
   params: Promise<{
@@ -88,7 +89,9 @@ export default async function ProjectDetailsPage({
 
       <div className="custom-container">
         {/* Título del proyecto */}
-        <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-8">{title}</h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-8">
+          {title}
+        </h1>
 
         {/* Slider */}
         <div className="w-full mb-8">
@@ -112,24 +115,16 @@ export default async function ProjectDetailsPage({
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
             {/* Tecnologías */}
             <div className="flex flex-col gap-3">
-              <h4 className="text-lg font-semibold text-white">
-                Tecnologías utilizadas
-              </h4>
               <div className="flex flex-wrap gap-2">
                 {technologies.map((technology) => (
-                  <span
-                    key={technology}
-                    className="px-3 py-1 bg-white/10 rounded-full text-sm text-white/80"
-                  >
-                    {technology}
-                  </span>
+                  <TechBadge key={technology} tech={technology} />
                 ))}
               </div>
             </div>
 
             {/* Links */}
             <div className="flex flex-col gap-3">
-              <h4 className="text-lg font-semibold text-white">Links</h4>
+              {/* <h4 className="text-lg font-semibold text-white">Links</h4> */}
               <div className="flex items-center gap-4">
                 {liveSiteUrl && (
                   <a
@@ -156,8 +151,13 @@ export default async function ProjectDetailsPage({
         </div>
 
         {/* Content - fondo con menos transparencia */}
-        <div className="w-full bg-zinc-900/80 rounded-lg p-8 border border-white/5">
+        {/* <div className="w-full bg-zinc-900/80 rounded-lg px-8 pb-14 border border-white/5">
           {content.type === "single" && <SafeHtml html={content.body} />}
+          {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
+        </div> */}
+        <div className="w-full bg-zinc-900/80 rounded-lg px-16 pb-14 border border-white/5">
+          {content.type === "single" && <SafeHtml html={content.body} />}
+
           {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
         </div>
       </div>
