@@ -119,7 +119,7 @@ export function ProjectTabs({ tabs }: ProjectTabsProps) {
       </div>
 
       {/* Content */}
-      <div className="animate-in fade-in duration-300">
+      <div key={activeTab} className="fade-in-up">
         {currentTab && <SafeHtml html={currentTab.body} />}
       </div>
     </div>
