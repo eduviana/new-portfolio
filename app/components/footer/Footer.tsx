@@ -4,9 +4,9 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="py-16 bg-black/40 backdrop-blur-md border-t border-white/10">
+    <footer id="contact" className="py-12 bg-black/40 backdrop-blur-md border-t border-white/10 md:py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
           {/* Logo y descripción */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <Link href="/" className="text-2xl font-bold text-white">

@@ -113,7 +113,7 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="w-full py-24 bg-black/20">
+    <section id="experience" className="w-full py-16 bg-black/20 md:py-24">
       <div className="w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col gap-12">
           <Title title="Experiencia Profesional" />
@@ -121,12 +121,12 @@ export const Experience = () => {
           {experiences.map((exp, index) => (
             <article
               key={index}
-              className="group relative rounded-2xl border border-zinc-800 bg-zinc-900 p-8 transition-all duration-300 hover:border-brand-primary/30 hover:shadow-[0_0_30px_-15px_rgba(194,65,12,0.3)]"
+              className="group relative rounded-2xl border border-zinc-800 bg-zinc-900 p-6 transition-all duration-300 hover:border-brand-primary/30 hover:shadow-[0_0_30px_-15px_rgba(194,65,12,0.3)] md:p-8"
             >
               <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="flex flex-col gap-3">
                   <h2
-                    className="text-2xl font-bold text-white leading-tight"
+                    className="text-xl font-bold text-white leading-tight break-words md:text-2xl"
                     dangerouslySetInnerHTML={{
                       __html: exp.company,
                     }}
@@ -144,7 +144,6 @@ export const Experience = () => {
 
                 <div className="self-start rounded-full border border-zinc-800 bg-brand-background/50 px-4 py-2 text-sm font-medium text-text-muted md:self-auto">
                   {exp.period}
-                  {/* <span className="text-white/80">{exp.location}</span> */}
                 </div>
               </div>
 

@@ -2,7 +2,7 @@ import Title from "../../title/Title";
 
 export const About = () => {
   return (
-    <section id="about" className="w-full py-24">
+    <section id="about" className="w-full py-16 md:py-24">
       <div className="w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col gap-12">
           <Title title="Sobre Mí" />

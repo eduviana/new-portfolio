@@ -81,7 +81,7 @@ export default async function ProjectDetailsPage({
   } = project;
 
   return (
-    <section className="pt-24 pb-12">
+    <section className="pt-20 pb-12 md:pt-24">
       {/* Botón Back - arriba a la izquierda con mismos márgenes */}
       <div className="custom-container mb-6">
         <Back />
@@ -111,7 +111,7 @@ export default async function ProjectDetailsPage({
         </div>
 
         {/* Tecnologías y Links - fondo con menos transparencia */}
-        <div className="w-full bg-zinc-900/80 rounded-lg p-6 mb-8 border border-white/5">
+        <div className="w-full bg-zinc-900/80 rounded-lg p-4 mb-8 border border-white/5">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
             {/* Tecnologías */}
             <div className="flex flex-col gap-3">
@@ -155,7 +155,7 @@ export default async function ProjectDetailsPage({
           {content.type === "single" && <SafeHtml html={content.body} />}
           {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
         </div> */}
-        <div className="w-full bg-zinc-900/80 rounded-lg px-16 pb-14 border border-white/5">
+        <div className="w-full bg-zinc-900/80 rounded-lg px-4 pb-10 border border-white/5 md:px-16 md:pb-14">
           {content.type === "single" && <SafeHtml html={content.body} />}
 
           {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}

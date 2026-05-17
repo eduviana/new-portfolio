@@ -108,7 +108,7 @@ export default function Slider({ images }: SliderProps) {
         {images.map((src, index) => (
           <div key={src} className="keen-slider__slide flex justify-center">
             {/* CONTENEDOR PRINCIPAL */}
-            <div className="relative w-full h-[700px] rounded-sm overflow-hidden bg-[#0a0a0a]">
+            <div className="relative w-full h-[250px] sm:h-[400px] md:h-[550px] lg:h-[700px] rounded-sm overflow-hidden bg-[#0a0a0a]">
               
               {/* 1. CAPA DE FONDO (El "truco"): Imagen desenfocada para rellenar barras */}
               <div 

@@ -74,9 +74,9 @@ export function ProjectTabs({ tabs }: ProjectTabsProps) {
   return (
     <div className="w-full">
       {/* Tabs */}
-      <div className="-mx-8 mb-10 border-b-2 border-white/5 px-8">
+      <div className="mb-10 border-b-2 border-white/5 px-4 md:px-8">
         {" "}
-        <div className="flex justify-center gap-4 overflow-x-auto p-6">
+        <div className="flex justify-center gap-2 overflow-x-auto p-4 md:gap-4 md:p-6">
           {" "}
           {tabs.map((tab) => {
             const isActive = tab.key === activeTab;
@@ -86,8 +86,8 @@ export function ProjectTabs({ tabs }: ProjectTabsProps) {
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
                 className={`
-                  relative rounded-xl px-5 py-3
-                  text-sm md:text-base font-semibold
+                  relative rounded-xl px-4 py-2.5
+                  text-xs md:text-sm font-semibold
                   whitespace-nowrap transition-all duration-300
                   ${
                     isActive

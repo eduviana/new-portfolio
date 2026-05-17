@@ -42,7 +42,7 @@ export const projects: Project[] = [
           key: "resumen",
           label: "Resumen",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Problema -->
   <section>
@@ -154,7 +154,7 @@ export const projects: Project[] = [
           key: "funcionalidad",
           label: "Funcionalidad",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Pacientes -->
   <section>
@@ -304,7 +304,7 @@ export const projects: Project[] = [
           key: "arquitectura",
           label: "Arquitectura",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Arquitectura del proyecto -->
   <section>
@@ -562,7 +562,7 @@ export const projects: Project[] = [
           label: "Resumen",
           body: `
 
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Problema -->
   <section>
@@ -671,7 +671,7 @@ export const projects: Project[] = [
           label: "Funcionamiento",
           body: `
 
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Roles -->
   <section>
@@ -782,7 +782,7 @@ export const projects: Project[] = [
           label: "Arquitectura",
           body: `
 
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Arquitectura -->
   <section>
@@ -932,7 +932,7 @@ export const projects: Project[] = [
           label: "Resumen",
           body: `
 
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Problema -->
   <section>
@@ -1041,7 +1041,7 @@ export const projects: Project[] = [
           label: "Funcionamiento",
           body: `
 
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Navegación -->
   <section>
@@ -1150,7 +1150,7 @@ export const projects: Project[] = [
           label: "Arquitectura",
           body: `
 
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Organización -->
   <section>
@@ -1296,7 +1296,7 @@ export const projects: Project[] = [
           key: "resumen",
           label: "Resumen",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Problema -->
   <section>
@@ -1404,7 +1404,7 @@ export const projects: Project[] = [
           key: "funcionalidad",
           label: "Funcionalidad",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Catálogo -->
   <section>
@@ -1507,7 +1507,7 @@ export const projects: Project[] = [
           key: "arquitectura",
           label: "Arquitectura",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Arquitectura general -->
   <section>
@@ -1647,7 +1647,7 @@ export const projects: Project[] = [
           key: "resumen",
           label: "Resumen",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Problema -->
   <section>
@@ -1753,7 +1753,7 @@ export const projects: Project[] = [
           key: "funcionalidad",
           label: "Funcionalidad",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Operadores -->
   <section>
@@ -1844,7 +1844,7 @@ export const projects: Project[] = [
           key: "arquitectura",
           label: "Arquitectura",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Stack -->
   <section>
@@ -1954,7 +1954,7 @@ export const projects: Project[] = [
           key: "resumen",
           label: "Resumen",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Problema -->
   <section>
@@ -2058,7 +2058,7 @@ export const projects: Project[] = [
           key: "funcionalidad",
           label: "Funcionalidad",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Catálogo -->
   <section>
@@ -2161,7 +2161,7 @@ export const projects: Project[] = [
           key: "arquitectura",
           label: "Arquitectura",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Stack -->
   <section>
@@ -2260,7 +2260,7 @@ export const projects: Project[] = [
           key: "resumen",
           label: "Resumen",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Proyecto -->
   <section>
@@ -2338,7 +2338,7 @@ export const projects: Project[] = [
           key: "funcionalidad",
           label: "Funcionalidad",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Exploración -->
   <section>
@@ -2442,7 +2442,7 @@ export const projects: Project[] = [
           key: "arquitectura",
           label: "Arquitectura",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Stack -->
   <section>
@@ -2573,7 +2573,7 @@ export const projects: Project[] = [
           key: "resumen",
           label: "Resumen",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Proyecto -->
   <section>
@@ -2682,7 +2682,7 @@ export const projects: Project[] = [
           key: "funcionalidad",
           label: "Funcionalidad",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Streamer -->
   <section>
@@ -2757,7 +2757,7 @@ export const projects: Project[] = [
           key: "arquitectura",
           label: "Arquitectura",
           body: `
-<div class="flex flex-col gap-[6rem]">
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
   <!-- Stack -->
   <section>

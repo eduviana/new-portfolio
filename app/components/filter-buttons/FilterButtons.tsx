@@ -15,7 +15,7 @@ export const FilterButtons = ({
         <button
           key={filter}
           onClick={() => onChange(filter)}
-          className={`rounded-lg py-2 px-2 font-medium text-base xl:text-lg cursor-pointer transition-colors duration-300 ${
+          className={`rounded-lg py-2 px-4 font-medium text-sm xl:text-lg cursor-pointer transition-colors duration-300 sm:px-2 sm:text-base ${
             selectedFilter === filter
               ? "bg-brand-primary text-text-base"
               : "bg-[#F8F8F8] text-text-contrast"

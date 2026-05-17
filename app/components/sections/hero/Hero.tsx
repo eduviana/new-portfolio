@@ -7,7 +7,7 @@ export const Hero = () => {
       id="hero"
       className="flex min-h-screen w-full items-center bg-black/20"
     >
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 py-20 md:flex-row">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 py-16 md:flex-row md:py-24">
         {/* Contenido de texto */}
         <div className="flex w-full flex-col gap-8 md:w-6/12">
           <div className="flex flex-col gap-3">
@@ -15,7 +15,7 @@ export const Hero = () => {
               Hola, soy
             </span> */}
 
-            <h1 className="text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
               Eduardo <span className="text-brand-primary">Viana</span>
             </h1>
 
@@ -32,7 +32,7 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="max-w-2xl text-lg leading-8 text-text-muted">
+            <p className="max-w-md text-base leading-8 text-text-muted md:max-w-2xl md:text-lg">
               Desarrollo aplicaciones web modernas con foco en escalabilidad,
               mantenibilidad y experiencia de usuario. Trabajo principalmente
               con{" "}
@@ -117,7 +117,7 @@ export const Hero = () => {
 
         {/* Imagen de perfil */}
         <div className="mt-12 flex justify-center md:mt-0 md:w-5/12">
-          <div className="relative h-96 w-96 md:h-[28rem] md:w-[28rem]">
+          <div className="relative h-64 w-64 md:h-[28rem] md:w-[28rem]">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-primary to-brand-hover opacity-20 blur-2xl" />
 
             <div className="relative h-full w-full rounded-full border-2 border-brand-primary/30">

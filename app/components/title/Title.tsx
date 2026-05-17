@@ -7,7 +7,7 @@ interface TitleProps {
 const Title = ({title, description}: TitleProps) => {
   return (
     <header className="flex flex-col gap-8 w-full md:w-9/12 mx-auto">
-    <h2 className="text-4xl font-semibold text-text-base text-center">
+    <h2 className="text-3xl font-semibold text-text-base text-center md:text-4xl">
       {title}
     </h2>
     {description && (

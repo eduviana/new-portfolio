@@ -43,7 +43,7 @@ const courses = [
 
 export const Education = () => {
   return (
-    <section id="education" className="w-full py-24">
+    <section id="education" className="w-full py-16 md:py-24">
       <div className="mx-auto w-full max-w-7xl px-6">
         <div className="flex flex-col gap-12">
           <Title title="Educación y Certificaciones" />
@@ -53,7 +53,7 @@ export const Education = () => {
             {education.map((edu, index) => (
               <article
                 key={index}
-                className="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 p-8 md:p-10"
+                className="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 p-6 md:p-10"
               >
                 {/* Decorative icon */}
                 <div className="pointer-events-none absolute top-0 right-12 flex justify-end opacity-[0.03] transition-opacity group-hover:opacity-[0.07]">

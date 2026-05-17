@@ -83,7 +83,7 @@ export const MyProjects = () => {
         );
 
   return (
-    <section id="projects" className="w-full py-24 bg-black/20">
+    <section id="projects" className="w-full py-16 bg-black/20 md:py-24">
       <div className="w-full max-w-7xl mx-auto px-6">
         <Title
           title="Mis Proyectos"
@@ -97,7 +97,7 @@ export const MyProjects = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-32 md:gap-48">
+      <div className="flex flex-col gap-20 md:gap-48">
         {filteredProjects.map((project) => (
           <ProjectCard key={project.id} item={project} />
         ))}
