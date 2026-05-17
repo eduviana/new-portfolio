@@ -12,7 +12,7 @@ export const Footer = () => {
             <Link href="/" className="text-2xl font-bold text-white">
               <span className="text-brand-primary">&lt;</span>Eduardo<span className="text-brand-primary">&gt;</span>
             </Link>
-            <p className="text-text-muted text-center md:text-left max-w-sm">
+            <p className="text-text-muted text-center md:text-left max-w-sm text-base">
               Fullstack Developer passionate about building scalable web applications with modern technologies.
             </p>
           </div>

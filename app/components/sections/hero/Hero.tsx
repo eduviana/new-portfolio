@@ -5,22 +5,22 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex min-h-screen w-full items-center bg-black/20"
+      className="flex min-h-screen w-full items-center bg-black/20 pt-16 sm:pt-20 md:pt-24"
     >
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 py-16 md:flex-row md:py-24">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 px-6 py-12 sm:gap-10 sm:py-16 md:flex-row md:gap-12 md:py-24">
         {/* Contenido de texto */}
-        <div className="flex w-full flex-col gap-8 md:w-6/12">
+        <div className="flex w-full flex-col gap-8 md:w-7/12">
           <div className="flex flex-col gap-3">
             {/* <span className="font-medium tracking-wide text-brand-primary">
               Hola, soy
             </span> */}
 
-            <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
+            <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
               Eduardo <span className="text-brand-primary">Viana</span>
             </h1>
 
             <div className="flex flex-col gap-2">
-              <h2 className="text-3xl font-semibold text-white md:text-4xl">
+              <h2 className="text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-3xl">
                 Desarrollador{" "}
                 <span className="text-brand-primary">Full-Stack</span>
               </h2>
@@ -32,7 +32,7 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="max-w-md text-base leading-8 text-text-muted md:max-w-2xl md:text-lg">
+            <p className="max-w-md text-base leading-7 text-text-muted sm:max-w-xl md:max-w-2xl md:text-lg md:leading-8">
               Desarrollo aplicaciones web modernas con foco en escalabilidad,
               mantenibilidad y experiencia de usuario. Trabajo principalmente
               con{" "}
@@ -50,10 +50,10 @@ export const Hero = () => {
               href="https://github.com/eduviana"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-white/10 bg-white/5 p-3 transition-all hover:border-brand-primary hover:bg-white/10"
+              className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg
-                className="h-5 w-5 text-white"
+                className="h-4 w-4 text-white sm:h-5 sm:w-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -65,10 +65,10 @@ export const Hero = () => {
               href="https://linkedin.com/in/eduardo-viana83"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-white/10 bg-white/5 p-3 transition-all hover:border-brand-primary hover:bg-white/10"
+              className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg
-                className="h-5 w-5 text-white"
+                className="h-4 w-4 text-white sm:h-5 sm:w-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -78,10 +78,10 @@ export const Hero = () => {
 
             <a
               href="mailto:eduardoviana.dev@email.com"
-              className="rounded-lg border border-white/10 bg-white/5 p-3 transition-all hover:border-brand-primary hover:bg-white/10"
+              className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg
-                className="h-5 w-5 text-white"
+                className="h-4 w-4 text-white sm:h-5 sm:w-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -100,7 +100,7 @@ export const Hero = () => {
           <div className="mt-4 flex gap-4">
             <Link
               href="#projects"
-              className="inline-flex items-center rounded-lg bg-brand-primary px-6 py-3 font-medium text-white transition-colors hover:bg-brand-hover"
+              className="inline-flex items-center rounded-lg bg-brand-primary px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-hover sm:px-6 sm:py-3 sm:text-base"
             >
               Ver Proyectos
             </Link>
@@ -108,7 +108,7 @@ export const Hero = () => {
             <a
               href="/cv/cv.pdf"
               download
-              className="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-6 py-3 font-medium text-white transition-colors hover:border-brand-primary"
+              className="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:border-brand-primary sm:px-6 sm:py-3 sm:text-base"
             >
               Descargar CV
             </a>
@@ -116,8 +116,8 @@ export const Hero = () => {
         </div>
 
         {/* Imagen de perfil */}
-        <div className="mt-12 flex justify-center md:mt-0 md:w-5/12">
-          <div className="relative h-64 w-64 md:h-[28rem] md:w-[28rem]">
+        <div className="mt-12 flex justify-center md:mt-0 md:w-4/12">
+          <div className="relative h-56 w-56 sm:h-64 sm:w-64 md:h-56 md:w-56 lg:h-[28rem] lg:w-[28rem]">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-primary to-brand-hover opacity-20 blur-2xl" />
 
             <div className="relative h-full w-full rounded-full border-2 border-brand-primary/30">

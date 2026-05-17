@@ -97,7 +97,7 @@ export const MyProjects = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-20 md:gap-48">
+      <div className="flex flex-col gap-16 md:gap-24 xl:gap-48">
         {filteredProjects.map((project) => (
           <ProjectCard key={project.id} item={project} />
         ))}

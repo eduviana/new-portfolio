@@ -7,7 +7,7 @@ export const About = () => {
         <div className="flex flex-col gap-12">
           <Title title="Sobre Mí" />
 
-          <p className="text-text-muted text-lg leading-relaxed">
+          <p className="text-text-muted text-base leading-relaxed md:text-lg">
             Desarrollador web fullstack enfocado en el ecosistema{" "}
             <strong className="text-brand-primary">React/Next.js</strong> con{" "}
             <strong className="text-brand-primary">TypeScript</strong> como base

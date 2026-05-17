@@ -12,38 +12,38 @@ interface ProjectItemProps {
 export const ProjectCard = ({ item }: ProjectItemProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   return (
     <div
       ref={ref}
-      className={`flex flex-col lg:flex-row items-center gap-10 lg:gap-20 transition-all duration-1000 ease-out lg:even:flex-row-reverse ${
+      className={`flex flex-col items-center gap-6 sm:gap-8 xl:flex-row xl:gap-20 transition-all duration-1000 ease-out xl:even:flex-row-reverse ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
       {/* Contenedor de Imagen */}
-      <div className="relative h-[250px] w-full flex-1 rounded-md overflow-hidden group ring-2 ring-white/20 shadow-xl shadow-black/20 lg:h-[390px]">
+      <div className="relative w-full h-[220px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[390px] xl:flex-1 rounded-md overflow-hidden group ring-2 ring-white/20 shadow-xl shadow-black/20">
         <Image
           src={item.thumbnail}
           alt={item.title}
           fill
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 50vw"
           className="transition-transform duration-500 group-hover:scale-105 object-cover"
         />
       </div>
 
       {/* Contenido de Texto */}
-      <div className="flex-1 flex flex-col gap-8 text-center lg:text-left items-center lg:items-start">
-        <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-b from-orange-400 to-orange-600 bg-clip-text text-transparent">
+      <div className="w-full xl:flex-1 flex flex-col gap-6 text-center items-center xl:text-left xl:items-start sm:gap-8">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold bg-gradient-to-b from-orange-400 to-orange-600 bg-clip-text text-transparent">
           {item.title}
         </h3>
 
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl">
+        <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl md:text-lg">
           {item.desc}
         </p>
 
-        <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
+        <div className="flex flex-wrap gap-2 justify-center xl:justify-start">
           {item.technologies.map((tech) => (
             <TechBadge key={tech} tech={tech} />
           ))}

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="mx-auto my-16 max-w-3xl px-6 flex flex-col gap-10 text-text-muted md:my-20">
+    <section className="mx-auto my-16 max-w-3xl px-6 flex flex-col gap-10 text-text-muted text-base md:my-20 md:text-lg">
       <h1 className="text-3xl font-bold text-brand-primary">Sobre mí</h1>
 
       <p>

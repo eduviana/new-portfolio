@@ -25,28 +25,29 @@ export const Navbar = () => {
           <span className="text-brand-primary">&lt;</span>EV<span className="text-brand-primary">&gt;</span>
         </Link>
 
-        {/* Menú visible solo en md y mayores */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href + link.label}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-text-light hover:text-brand-primary transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {/* Links + CTA agrupados a la derecha, visibles md+ */}
+        <div className="hidden md:flex items-center gap-3 lg:gap-6">
+          <ul className="flex items-center gap-3 lg:gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href + link.label}>
+                <a
+                  href={link.href}
+                  className="text-xs font-medium text-text-light hover:text-brand-primary transition-colors duration-200 lg:text-sm"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* CTA - visible solo en md y mayores */}
-        <a
-          href="/cv/cv.pdf"
-          download
-          className="hidden md:inline-flex items-center px-4 py-2 bg-brand-primary hover:bg-brand-hover text-white text-sm font-medium rounded-md transition-colors duration-200"
-        >
-          Descargar CV
-        </a>
+          <a
+            href="/cv/cv.pdf"
+            download
+            className="inline-flex items-center rounded-md bg-brand-primary px-3 py-1.5 text-xs font-medium text-white transition-colors duration-200 hover:bg-brand-hover lg:px-4 lg:py-2 lg:text-sm"
+          >
+            Descargar CV
+          </a>
+        </div>
 
         {/* Icono hamburguesa visible solo en menores a md */}
         <button
