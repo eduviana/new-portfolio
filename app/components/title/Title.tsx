@@ -11,7 +11,7 @@ const Title = ({title, description}: TitleProps) => {
       {title}
     </h2>
     {description && (
-      <p className="text-text-muted font-normal text-center">{description}</p>
+      <p className="text-text-muted text-lg font-normal text-center">{description}</p>
     )}
   </header>
   )

@@ -9,7 +9,7 @@ export const Hero = () => {
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 px-6 py-12 sm:gap-10 sm:py-16 md:flex-row md:gap-12 md:py-24">
         {/* Contenido de texto */}
-        <div className="flex w-full flex-col gap-8 md:w-7/12">
+        <div className="flex w-full flex-col items-center gap-8 text-center md:w-7/12 md:items-start md:text-left">
           <div className="flex flex-col gap-3">
             {/* <span className="font-medium tracking-wide text-brand-primary">
               Hola, soy
@@ -32,7 +32,7 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="max-w-md text-base leading-7 text-text-muted sm:max-w-xl md:max-w-2xl md:text-lg md:leading-8">
+            <p className="max-w-md text-base leading-7 text-text-muted sm:max-w-xl md:max-w-2xl lg:text-lg md:leading-8">
               Desarrollo aplicaciones web modernas con foco en escalabilidad,
               mantenibilidad y experiencia de usuario. Trabajo principalmente
               con{" "}

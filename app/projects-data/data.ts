@@ -7,7 +7,7 @@ export const projects: Project[] = [
     title: "Mediflow",
     slug: "mediflow",
     githubUrl: "https://github.com/eduviana/mediflow",
-    desc: "Sistema web de gestión de turnos médicos con integración de pagos online",
+    desc: "Plataforma de gestión médica multirol con turnos online y flujos basados en operación real.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -59,15 +59,15 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La gestión de turnos médicos suele involucrar múltiples actores, procesos manuales y una fuerte dependencia de llamadas telefónicas, agendas fragmentadas y coordinación constante entre pacientes, secretarias y profesionales.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           En este contexto aparecen situaciones habituales que complejizan la operación diaria: pacientes que todavía no poseen cuenta, turnos gestionados por teléfono, horarios bloqueados por pagos incompletos o información dispersa entre distintos usuarios del sistema.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           <span class="font-semibold text-white">Mediflow</span>
           fue desarrollado tomando como referencia conversaciones mantenidas con un centro médico privado real, buscando modelar procesos cotidianos de atención, organización de agenda y coordinación operativa dentro de una propuesta funcional de gestión médica.
         </p>
@@ -91,7 +91,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema propone una experiencia centralizada donde los pacientes pueden
           <span class="font-semibold text-white">
             registrarse, iniciar sesión y gestionar turnos de forma online
@@ -99,11 +99,11 @@ export const projects: Project[] = [
           seleccionando especialidad, profesional, fecha y horario disponible desde una interfaz guiada.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           A su vez, contempla escenarios reales que suelen quedar fuera de una implementación idealizada. Por ejemplo, las secretarias pueden crear turnos para pacientes que llaman por teléfono, incluso cuando todavía no poseen una cuenta registrada, compartiendo posteriormente enlaces de pago externos para completar la reserva.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los desafíos más interesantes del proyecto fue resolver la continuidad de información: si un paciente creado manualmente decide registrarse más adelante, el sistema puede
           <span class="font-semibold text-white">
             vincular automáticamente la nueva cuenta con el historial existente
@@ -130,7 +130,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Más allá de la demo técnica, Mediflow fue concebido como una
           <span class="font-semibold text-white">
             propuesta funcional de validación
@@ -138,7 +138,7 @@ export const projects: Project[] = [
           para explorar reglas del dominio médico, evaluar distintos flujos de atención y analizar cómo interactúan pacientes, secretarias y profesionales dentro de un mismo ecosistema operativo.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto fue pensado para acompañar conversaciones con un centro médico privado real, permitiendo iterar sobre procesos, detectar necesidades operativas y evolucionar progresivamente hacia una eventual implementación productiva.
         </p>
       </div>
@@ -171,7 +171,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los pacientes pueden
           <span class="font-semibold text-white">
             registrarse mediante credenciales tradicionales o autenticación con Google
@@ -179,11 +179,11 @@ export const projects: Project[] = [
           iniciar sesión y recuperar su contraseña en caso de ser necesario.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Una vez autenticados, acceden a un dashboard donde pueden consultar sus próximos turnos, visualizar estados de pago, fechas, horarios, especialidades y profesionales asignados, además de acceder al historial completo desde una sección dedicada.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El flujo de reserva permite seleccionar
           <span class="font-semibold text-white">
             especialidad, profesional, fecha y horario disponible
@@ -210,7 +210,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los objetivos principales del sistema fue contemplar escenarios reales de operación médica. Por esta razón, el rol de
           <span class="font-semibold text-white">
             secretaria
@@ -218,11 +218,11 @@ export const projects: Project[] = [
           no depende exclusivamente de pacientes registrados en la plataforma.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Las secretarias pueden crear turnos manualmente para personas que llaman por teléfono o prefieren no utilizar la web, generando reservas incluso cuando el paciente todavía no posee una cuenta registrada. Posteriormente, el sistema permite compartir enlaces de pago externos para completar el proceso.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además, disponen de una vista global del consultorio mediante dos formatos de trabajo:
           <span class="font-semibold text-white">
             próximas citas y calendario
@@ -249,11 +249,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El rol <span class="font-semibold text-white">profesional</span> comparte parte de la experiencia de secretaría, pero adaptada únicamente a los turnos que le corresponden. Tanto en la vista de próximas citas como en el calendario, cada profesional visualiza exclusivamente su propia agenda.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Desde el panel de próximas citas, el profesional puede
           <span class="font-semibold text-white">
             iniciar una atención médica
@@ -261,7 +261,7 @@ export const projects: Project[] = [
           accediendo a una pantalla donde se muestra la información del paciente, observaciones relacionadas a la consulta y controles para cancelar o finalizar la atención.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esto permite modelar un flujo de trabajo más cercano a un escenario real, donde el estado del turno evoluciona durante el proceso de atención y queda reflejado dentro del sistema.
         </p>
       </div>
@@ -284,11 +284,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           A medida que los turnos cambian de estado —por ejemplo, cuando un profesional inicia o finaliza una atención— la información se actualiza automáticamente entre usuarios conectados.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esto permite que secretarias y profesionales trabajen sobre una visión sincronizada del estado actual del consultorio, manteniendo coherencia operativa sin necesidad de refrescar manualmente la aplicación.
         </p>
       </div>
@@ -321,7 +321,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto fue desarrollado utilizando
           <span class="font-semibold text-white">
             Next.js App Router, TypeScript y Tailwind CSS
@@ -329,7 +329,7 @@ export const projects: Project[] = [
           siguiendo un enfoque modular orientado a separación de responsabilidades.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La carpeta
           <span class="font-semibold text-white"> app/ </span>
           se utiliza únicamente para definir páginas y routing, mientras que toda la lógica de negocio se encuentra desacoplada dentro de una estructura
@@ -339,7 +339,7 @@ export const projects: Project[] = [
           organizada por dominios funcionales.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cada módulo encapsula sus propios componentes, hooks, schemas, helpers, tipos y servicios, permitiendo una estructura más mantenible, escalable y fácil de extender conforme el dominio evoluciona.
         </p>
       </div>
@@ -362,7 +362,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La autenticación fue implementada mediante
           <span class="font-semibold text-white">
             NextAuth
@@ -370,7 +370,7 @@ export const projects: Project[] = [
           soportando credenciales tradicionales, login con Google y recuperación de contraseña.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema utiliza una estrategia multi-rol para diferenciar el comportamiento entre
           <span class="font-semibold text-white">
             pacientes, secretarias y profesionales médicos
@@ -378,7 +378,7 @@ export const projects: Project[] = [
           controlando tanto la navegación como las acciones disponibles para cada perfil.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Para reforzar seguridad y consistencia, las solicitudes son interceptadas mediante middleware, validando permisos antes de acceder a páginas protegidas y evitando accesos no autorizados según el rol autenticado.
         </p>
       </div>
@@ -401,7 +401,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           En lugar de persistir horarios disponibles directamente en base de datos, el sistema almacena únicamente la
           <span class="font-semibold text-white">
             disponibilidad laboral del profesional
@@ -409,11 +409,11 @@ export const projects: Project[] = [
           y los turnos existentes.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La disponibilidad final se calcula dinámicamente combinando horarios configurados, reservas activas, estados de pago y expiración de turnos pendientes.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este enfoque evita inconsistencias de sincronización, reduce datos redundantes y permite recalcular slots disponibles de forma flexible frente a cambios operativos.
         </p>
       </div>
@@ -436,11 +436,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los principales desafíos técnicos del proyecto fue mantener consistencia entre múltiples usuarios conectados simultáneamente, especialmente entre secretarias y profesionales visualizando agendas distintas.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Para resolverlo, se adoptó
           <span class="font-semibold text-white">
             TanStack Query
@@ -448,7 +448,7 @@ export const projects: Project[] = [
           como capa de sincronización de datos, incorporando cache inteligente, invalidación automática luego de mutaciones y actualización periódica de información relevante.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Aunque se evaluó una arquitectura basada en WebSockets, se decidió implementar
           <span class="font-semibold text-white">
             polling inteligente
@@ -456,7 +456,7 @@ export const projects: Project[] = [
           como estrategia inicial, priorizando simplicidad operativa y menor complejidad de mantenimiento para el volumen actual del sistema.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El calendario y los horarios disponibles se sincronizan automáticamente cada
           <span class="font-semibold text-white">
             30 segundos con la pestaña activa y 60 segundos en segundo plano
@@ -483,7 +483,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La persistencia del sistema se implementó utilizando
           <span class="font-semibold text-white">
             PostgreSQL + Prisma ORM
@@ -491,7 +491,7 @@ export const projects: Project[] = [
           modelando entidades relacionadas con usuarios, pacientes, profesionales, especialidades, disponibilidad y turnos médicos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El entorno de desarrollo fue containerizado mediante
           <span class="font-semibold text-white">
             Docker
@@ -517,7 +517,7 @@ export const projects: Project[] = [
     title: "Medical Health",
     slug: "medical-healt",
     githubUrl: "https://github.com/eduviana/hard360",
-    desc: "Sistema web de gestión de turnos para obra social",
+    desc: "Sistema multirol para gestión de obra social con turnos, paneles operativos y sincronización en tiempo real.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -579,15 +579,15 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Muchas obras sociales todavía dependen de procesos fragmentados para la gestión de atención: generación manual de turnos, ausencia de trazabilidad operativa y poca visibilidad sobre tiempos de espera, rendimiento del personal o carga de trabajo entre áreas.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           A medida que el sistema crece en cantidad de servicios, usuarios y reglas de negocio, también aumenta la complejidad: permisos diferenciados, sincronización entre múltiples operadores y necesidad de métricas confiables para la toma de decisiones.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este proyecto surge con el objetivo de modelar un entorno interno de atención para una obra social, contemplando escenarios reales de operación y buscando una arquitectura capaz de evolucionar junto al dominio del negocio.
         </p>
       </div>
@@ -610,7 +610,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Se desarrolló un sistema interno de gestión de turnos para múltiples áreas de una obra social, con una arquitectura basada en roles
           <span class="font-semibold text-white">
             ADMIN, SUPERVISOR y OPERATOR
@@ -618,11 +618,11 @@ export const projects: Project[] = [
           cada uno con permisos y responsabilidades claramente diferenciadas.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema permite a los afiliados generar turnos para distintas áreas, mientras que los operadores trabajan sobre paneles operativos en tiempo real para llamar turnos, iniciar atención, gestionar ausencias y finalizar operaciones registrando métricas precisas del proceso.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además de la operatoria diaria, la plataforma incorpora estadísticas, auditorías, sincronización en tiempo real y un sistema de permisos jerárquico orientado a entornos internos con múltiples actores simultáneos.
         </p>
       </div>
@@ -645,7 +645,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este proyecto tuvo dos objetivos principales:
           <span class="font-semibold text-white">
             construir un sistema significativamente más complejo
@@ -653,7 +653,7 @@ export const projects: Project[] = [
           que los desarrollados anteriormente y, al mismo tiempo, incorporar tecnologías de sincronización en tiempo real dentro de un entorno de negocio con reglas operativas reales.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También funcionó como un ejercicio de evolución arquitectónica, obligándome a enfrentar problemas de escalabilidad, organización del código y separación de responsabilidades, identificando limitaciones tempranas y refactorizando progresivamente hacia una estructura más mantenible.
         </p>
       </div>
@@ -688,18 +688,18 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema utiliza una estructura de permisos basada en tres roles:
           <span class="font-semibold text-white">
             ADMIN, SUPERVISOR y OPERATOR
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los usuarios ADMIN pueden administrar completamente el sistema: habilitar servicios, editar cuentas, visualizar estadísticas y configurar la operación. Los SUPERVISOR comparten prácticamente la misma interfaz, pero operan bajo un esquema de solo lectura.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El rol OPERATOR representa al personal operativo de la obra social y accede únicamente a las áreas asignadas por un administrador, permitiendo que una misma cuenta pueda trabajar en uno o múltiples servicios.
         </p>
       </div>
@@ -722,18 +722,18 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El flujo de atención fue modelado explícitamente:
           <span class="font-semibold text-white">
             generación de turno → llamado → inicio de atención → finalización
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esta separación permite registrar tiempos independientes para cada etapa, evitando distorsiones estadísticas. Por ejemplo, el tiempo que un afiliado tarda en presentarse luego de ser llamado no penaliza artificialmente el tiempo real de atención del operador.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Durante la atención, el operador dispone de un panel visual que muestra el tiempo transcurrido mediante una barra progresiva que cambia de color según el tiempo ideal estimado, funcionando como referencia operativa sin aplicar penalizaciones automáticas.
         </p>
       </div>
@@ -756,7 +756,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema implementa sincronización en tiempo real utilizando
           <span class="font-semibold text-white">
             Pusher
@@ -764,7 +764,7 @@ export const projects: Project[] = [
           permitiendo que los paneles operativos y las pantallas de sala de espera se actualicen instantáneamente sin necesidad de refrescar la página.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cuando un operador llama un turno, el evento impacta simultáneamente en el panel de trabajo y en el visor de turnos distribuido en las salas de espera, mostrando el ticket llamado y el historial reciente de atención.
         </p>
       </div>
@@ -799,14 +799,14 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación fue desarrollada utilizando
           <span class="font-semibold text-white">
             Next.js 16, TypeScript, Prisma, PostgreSQL, Clerk, Pusher, Tailwind y shadcn/ui
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           A nivel organizacional se implementó una
           <span class="font-semibold text-white">
             Modular Feature Architecture
@@ -814,7 +814,7 @@ export const projects: Project[] = [
           donde la carpeta <span class="font-semibold text-white">app/</span> contiene únicamente el routing y cada dominio del negocio encapsula su propia lógica, tipos, componentes y servicios dentro de <span class="font-semibold text-white">features/</span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esta decisión permitió mantener alta cohesión, reducir acoplamiento entre dominios y facilitar la evolución independiente de cada área del sistema.
         </p>
       </div>
@@ -837,7 +837,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La autenticación fue implementada con
           <span class="font-semibold text-white">
             Clerk
@@ -845,11 +845,11 @@ export const projects: Project[] = [
           mientras que la autorización se resolvió mediante un sistema RBAC propio basado en jerarquías de permisos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El middleware centraliza autenticación, redirección dinámica de dashboards y control de acceso por rutas. Además, las APIs críticas aplican validaciones adicionales según rol para evitar confiar únicamente en el cliente o en el routing.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema también registra eventos sensibles de seguridad mediante auditorías persistentes, incluyendo intentos de acceso indebido, dispositivo, IP y rol del usuario.
         </p>
       </div>
@@ -872,7 +872,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Se priorizó el uso de
           <span class="font-semibold text-white">
             Server Components
@@ -880,7 +880,7 @@ export const projects: Project[] = [
           siempre que fue posible, delegando únicamente la interacción al cliente mediante <span class="font-semibold text-white">use client</span> y endpoints específicos cuando un Client Component necesitaba datos persistidos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También se implementó una arquitectura basada en
           <span class="font-semibold text-white">
             adapters
@@ -888,7 +888,7 @@ export const projects: Project[] = [
           para desacoplar reglas específicas de áreas similares, evitando dependencias cruzadas entre módulos que podrían evolucionar de forma distinta en el futuro.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Muchas decisiones arquitectónicas surgieron de problemas encontrados durante el desarrollo y posteriores refactorizaciones, convirtiendo al proyecto en un proceso de aprendizaje práctico sobre mantenibilidad, escalabilidad y diseño de software.
         </p>
       </div>
@@ -911,7 +911,7 @@ export const projects: Project[] = [
     slug: "hard360",
     liveSiteUrl: "https://hard360.vercel.app",
     githubUrl: "https://github.com/eduviana/hard360",
-    desc: "Sitio web para una tienda de informática",
+    desc: "Ecommerce tecnológico con catálogo dinámico, filtros contextuales y modelado tipado de productos.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     categories: ["Nextjs"],
     thumbnail: "/projects/personales/hard360/hard360-1.webp",
@@ -949,15 +949,15 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los ecommerce tecnológicos suelen enfrentarse a un desafío importante: ofrecer grandes catálogos de productos con múltiples variantes técnicas sin comprometer la experiencia de navegación ni volver inmantenible la estructura de datos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           A medida que aumentan las categorías y subcategorías, aparecen problemas comunes como filtros difíciles de escalar, especificaciones inconsistentes entre productos y lógica repetida para renderizar vistas dinámicas.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           <span class="font-semibold text-white">Hard360</span> surge como un proyecto orientado a resolver estos desafíos, priorizando escalabilidad estructural, modelado tipado de datos y una experiencia de usuario fluida dentro de un ecommerce tecnológico moderno.
         </p>
       </div>
@@ -980,7 +980,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Se desarrolló un ecommerce fullstack enfocado en productos tecnológicos utilizando
           <span class="font-semibold text-white">
             Next.js, TypeScript y SSR
@@ -988,11 +988,11 @@ export const projects: Project[] = [
           buscando una navegación rápida, mejor posicionamiento SEO y una arquitectura capaz de crecer sin degradar mantenibilidad.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema permite navegar categorías, subcategorías y productos mediante rutas dinámicas, aplicar filtros contextuales y consultar especificaciones técnicas adaptadas al tipo de producto, evitando estructuras genéricas poco representativas del dominio.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además, incorpora un carrito global, renderizado optimizado y una estructura de datos fuertemente tipada para garantizar consistencia entre productos con características técnicas muy diferentes.
         </p>
       </div>
@@ -1015,7 +1015,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este proyecto tuvo como objetivo profundizar el uso de
           <span class="font-semibold text-white">
             TypeScript estricto, renderizado SSR y organización modular
@@ -1023,7 +1023,7 @@ export const projects: Project[] = [
           incorporando decisiones arquitectónicas más sólidas respecto a proyectos anteriores.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También funcionó como un espacio para mejorar el desacoplamiento entre lógica y presentación, explorando patrones de organización más mantenibles y modelando un dominio técnico complejo sin depender de APIs externas.
         </p>
       </div>
@@ -1058,7 +1058,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La navegación del ecommerce se construyó mediante una ruta dinámica utilizando
           <span class="font-semibold text-white">
             app/[...slug]/page.tsx
@@ -1066,7 +1066,7 @@ export const projects: Project[] = [
           permitiendo interpretar distintos segmentos de URL para renderizar categorías, subcategorías o páginas de producto individuales.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este enfoque evita duplicación de páginas, reduce complejidad de routing y permite escalar el catálogo sin necesidad de crear nuevas estructuras manuales por cada categoría agregada.
         </p>
       </div>
@@ -1089,7 +1089,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Toda la lógica de filtrado fue desacoplada y centralizada dentro de un
           <span class="font-semibold text-white">
             custom hook
@@ -1097,7 +1097,7 @@ export const projects: Project[] = [
           permitiendo reutilizar comportamiento entre distintas categorías sin contaminar componentes de UI con lógica de negocio.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los filtros se adaptan dinámicamente según la categoría activa, permitiendo trabajar con distintas combinaciones de atributos sin generar estructuras rígidas o difíciles de mantener.
         </p>
       </div>
@@ -1120,11 +1120,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cada producto cuenta con un sistema de especificaciones adaptado a su categoría. Por ejemplo, un SSD posee propiedades distintas a un HDD o una notebook, evitando estructuras genéricas poco representativas del dominio técnico.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El carrito de compras utiliza
           <span class="font-semibold text-white">
             Context API
@@ -1132,7 +1132,7 @@ export const projects: Project[] = [
           como estado global, permitiendo persistir selección de productos y sincronizar la experiencia de compra entre distintas vistas del ecommerce.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los precios se almacenan internamente en centavos como <span class="font-semibold text-white">string</span> y se formatean dinámicamente en el frontend, evitando problemas de precisión numérica y errores de redondeo monetario.
         </p>
       </div>
@@ -1167,7 +1167,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación fue desarrollada utilizando
           <span class="font-semibold text-white">
             Next.js, TypeScript, Tailwind CSS y SSR
@@ -1175,7 +1175,7 @@ export const projects: Project[] = [
           priorizando performance, SEO y mantenibilidad del código.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La estructura del proyecto se organizó de forma modular mediante carpetas especializadas:
           <span class="font-semibold text-white">
             app, components, hooks, contexts, lib y data
@@ -1202,7 +1202,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los focos principales del proyecto fue el
           <span class="font-semibold text-white">
             tipado estricto del dominio
@@ -1210,11 +1210,11 @@ export const projects: Project[] = [
           Cada categoría de producto posee entidades y especificaciones técnicas propias, como <span class="font-semibold text-white">NotebookSpecs</span>, <span class="font-semibold text-white">TvSpecs</span> o <span class="font-semibold text-white">RamSpecs</span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esto permitió modelar información mucho más precisa y escalable, evitando objetos excesivamente genéricos que terminan degradando consistencia y mantenibilidad con el crecimiento del catálogo.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Para este proyecto de portfolio se priorizó una fuente de datos local tipada mediante archivos <span class="font-semibold text-white">.ts</span>, permitiendo un mayor control sobre el modelado, la consistencia de datos y la estabilidad del entorno de desarrollo.
         </p>
       </div>
@@ -1237,14 +1237,14 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este proyecto consolidó el uso de buenas prácticas de frontend moderno, especialmente en
           <span class="font-semibold text-white">
             desacoplamiento de lógica, renderizado SSR, modelado tipado y reutilización de componentes
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También permitió mejorar el criterio arquitectónico respecto a organización del código, entendiendo cuándo abstraer lógica y cómo construir estructuras preparadas para crecer sin perder claridad.
         </p>
       </div>
@@ -1267,7 +1267,7 @@ export const projects: Project[] = [
     slug: "vivarium",
     liveSiteUrl: "",
     githubUrl: "",
-    desc: "Sitio web para un vivero con panel administrativo y Mercadopago integrado.",
+    desc: "Plataforma web para vivero con catálogo administrable y panel de gestión de productos.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -1313,16 +1313,16 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           <span class="font-semibold text-white">Vivarium</span>
           fue desarrollado para un vivero real que necesitaba una presencia digital profesional capaz de exhibir su catálogo de productos sin depender constantemente de soporte técnico para realizar cambios o actualizaciones.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El negocio manejaba una gran variedad de plantas, insumos y productos organizados en múltiples categorías, lo que requería una forma clara y escalable de estructurar el catálogo y mantener la navegación simple para el usuario final.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además, la operatoria comercial no seguía un modelo de ecommerce tradicional: muchos productos se trabajaban bajo demanda o con disponibilidad variable, lo que hacía necesario un sistema flexible capaz de adaptarse a cambios del negocio.
         </p>
       </div>
@@ -1345,7 +1345,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema propone una plataforma administrable donde el cliente puede
           <span class="font-semibold text-white">
             gestionar productos, categorías y contenido destacado de forma autónoma
@@ -1353,11 +1353,11 @@ export const projects: Project[] = [
           sin conocimientos técnicos y sin depender del desarrollador para actualizar el sitio.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Se implementó un panel privado con autenticación segura desde donde es posible crear, editar y eliminar productos, además de organizar el catálogo utilizando categorías jerárquicas que impactan automáticamente sobre la navegación del sitio.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Inicialmente el proyecto incorporó compra online integrada con MercadoPago. Sin embargo, al evolucionar el modelo comercial del vivero hacia ventas bajo demanda, el flujo de checkout fue deshabilitado y reemplazado por contacto directo vía WhatsApp, manteniendo una experiencia alineada con la operación real del negocio.
         </p>
       </div>
@@ -1380,7 +1380,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El objetivo del proyecto fue construir una plataforma que brindara
           <span class="font-semibold text-white">
             autonomía operativa y presencia digital profesional
@@ -1388,7 +1388,7 @@ export const projects: Project[] = [
           al emprendimiento, permitiendo administrar el catálogo de forma simple y sostenible en el tiempo.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Al mismo tiempo, el sistema fue diseñado como una base flexible capaz de adaptarse a cambios comerciales, permitiendo reactivar funcionalidades de ecommerce en el futuro sin necesidad de rediseñar completamente la plataforma.
         </p>
       </div>
@@ -1421,7 +1421,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El catálogo se organiza mediante un sistema de
           <span class="font-semibold text-white">
             categorías jerárquicas
@@ -1429,7 +1429,7 @@ export const projects: Project[] = [
           permitiendo estructurar productos en distintos niveles y facilitar la navegación del usuario.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La navegación se genera dinámicamente a partir de la información persistida en base de datos, por lo que nuevas categorías o cambios estructurales se reflejan automáticamente sin necesidad de modificar código.
         </p>
       </div>
@@ -1452,11 +1452,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El cliente dispone de un panel privado con autenticación segura para administrar el contenido del sitio de forma independiente.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Desde este panel es posible
           <span class="font-semibold text-white">
             crear, editar y eliminar productos
@@ -1483,11 +1483,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema fue concebido inicialmente con soporte para ecommerce y pagos online mediante MercadoPago.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Tras un cambio en la operatoria del vivero, el checkout fue deshabilitado y reemplazado por
           <span class="font-semibold text-white">
             contacto directo vía WhatsApp
@@ -1524,7 +1524,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación fue desarrollada utilizando
           <span class="font-semibold text-white">
             Next.js, TypeScript, autenticación con NextAuth y base de datos relacional
@@ -1532,7 +1532,7 @@ export const projects: Project[] = [
           manteniendo una separación clara entre autenticación, persistencia y lógica del negocio.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La estructura del proyecto fue pensada para facilitar el mantenimiento y permitir incorporar nuevas funcionalidades sin afectar el resto del sistema.
         </p>
       </div>
@@ -1555,7 +1555,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema implementa una estructura multinivel basada en relaciones
           <span class="font-semibold text-white">
             padre-hijo (<code>parentId</code>)
@@ -1563,7 +1563,7 @@ export const projects: Project[] = [
           permitiendo construir un árbol dinámico de categorías desde base de datos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esto permite que cualquier nueva categoría agregada desde el panel administrativo impacte automáticamente sobre la navegación, evitando hardcode y favoreciendo escalabilidad.
         </p>
       </div>
@@ -1586,7 +1586,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Las imágenes del catálogo se gestionan mediante
           <span class="font-semibold text-white">
             Cloudinary
@@ -1594,7 +1594,7 @@ export const projects: Project[] = [
           permitiendo carga de assets desde el panel administrativo y optimización automática de contenido multimedia.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La integración con MercadoPago fue diseñada utilizando
           <span class="font-semibold text-white">
             Checkout + Webhooks
@@ -1620,7 +1620,7 @@ export const projects: Project[] = [
     slug: "apex-soporte",
     liveSiteUrl: "",
     githubUrl: "",
-    desc: "Sitio web que permite gestionar reclamos de los usuarios y visualizar la información en tablas y gráficos.",
+    desc: "Sistema interno para gestión de incidencias, reportes y métricas operativas de soporte al cliente.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -1664,18 +1664,18 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           
           Aplicación desarrollado para una empresa tercerizada encargada del soporte de atención al cliente de  <span class="font-semibold text-white">
             Telecom - Personal
           </span>, con el objetivo de reemplazar un flujo operativo basado en Google Forms y Google Sheets.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proceso existente permitía registrar incidencias reportadas por clientes y consolidarlas automáticamente en planillas utilizadas por supervisores, pero presentaba limitaciones importantes en visualización, trazabilidad y análisis de datos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El desafío principal consistía en construir una solución más robusta y profesional, manteniendo una experiencia visual suficientemente familiar para minimizar fricción en la adopción por parte de los operadores.
         </p>
       </div>
@@ -1698,7 +1698,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema reemplaza formularios y planillas dispersas por una
           <span class="font-semibold text-white">
             aplicación web centralizada
@@ -1706,11 +1706,11 @@ export const projects: Project[] = [
           permitiendo registrar incidencias, consultar reportes y analizar información desde una interfaz más estructurada.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los operadores pueden cargar incidencias mediante formularios validados, mientras que supervisores acceden a reportes con tablas y visualizaciones gráficas para interpretar métricas operativas y detectar patrones con mayor facilidad.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También se incorporó un módulo específico para la gestión de adelantos, manteniendo un flujo consistente dentro del sistema y evitando depender de múltiples herramientas externas para tareas relacionadas.
         </p>
       </div>
@@ -1733,11 +1733,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto tuvo como objetivo modernizar una operación interna existente sin romper hábitos de trabajo ya establecidos, priorizando una transición progresiva hacia una herramienta más controlada y escalable.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además del desarrollo técnico, el trabajo implicó interacción directa con gerencia para entender restricciones operativas, validar decisiones de producto y adaptar la implementación a necesidades reales del negocio.
         </p>
       </div>
@@ -1770,11 +1770,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los operadores cuentan con formularios para registrar incidencias reportadas por clientes, reemplazando el flujo previo basado en Google Forms.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La información es validada antes de persistirse, reduciendo inconsistencias y mejorando la calidad de los datos utilizados posteriormente por supervisión.
         </p>
       </div>
@@ -1797,11 +1797,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los supervisores pueden consultar reportes estructurados mediante tablas y gráficos, permitiendo analizar tendencias e interpretar la información operativa con mayor claridad.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema también incorpora un flujo independiente para la gestión de adelantos, manteniendo la información centralizada y accesible desde un mismo entorno.
         </p>
       </div>
@@ -1824,11 +1824,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Una decisión importante fue mantener una experiencia visual cercana a la herramienta anterior para facilitar la adopción del sistema y reducir la curva de aprendizaje del equipo.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El objetivo no era solamente mejorar la tecnología, sino también construir una transición operativa realista para usuarios acostumbrados a otro flujo de trabajo.
         </p>
       </div>
@@ -1861,7 +1861,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación fue desarrollada utilizando
           <span class="font-semibold text-white">
             Next.js con renderizado SSR
@@ -1869,11 +1869,11 @@ export const projects: Project[] = [
           buscando mejorar tiempos de carga, seguridad y experiencia general.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Se utilizó MongoDB como base de datos, autenticación con Google, React Hook Form + Zod para validaciones, Recharts para visualización de métricas y Tailwind CSS para estilos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además, se incorporaron pruebas automatizadas mediante
           <span class="font-semibold text-white">
             Jest y React Testing Library
@@ -1900,15 +1900,15 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Durante el desarrollo se identificó una degradación en tiempos de respuesta causada por el estado standby del plan gratuito de despliegue utilizado en ese momento.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Para reducir el impacto sobre métricas como LCP y mejorar percepción de velocidad, determinadas operaciones inicialmente renderizadas del lado del servidor fueron migradas al cliente.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esta decisión permitió mantener una experiencia más fluida sin comprometer el funcionamiento general del sistema.
         </p>
       </div>
@@ -1930,7 +1930,7 @@ export const projects: Project[] = [
     slug: "kass-tienda",
     liveSiteUrl: "https://kass-tienda.vercel.app/",
     githubUrl: "https://github.com/eduviana/kassTienda",
-    desc: "Sitio web para una tienda de accesorios y productos tecnológicos con pasarela de pagos.",
+    desc: "Ecommerce con catálogo administrado desde Google Sheets y pasarela de pagos integrada.",
     technologies: [
       "Next.js",
       "JavaScript",
@@ -1971,16 +1971,16 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           <span class="font-semibold text-white">Kass Tienda</span>
           fue desarrollado para una tienda de accesorios y productos tecnológicos cuyo principal requerimiento era poder administrar el catálogo de productos sin depender de herramientas complejas ni conocimientos técnicos avanzados.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Durante el relevamiento inicial surgió una limitación importante: el cliente no se sentía cómodo utilizando paneles administrativos tradicionales, pero sí trabajaba habitualmente con hojas de cálculo similares a Excel.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El desafío no era solamente construir un ecommerce funcional, sino encontrar una solución que el cliente realmente pudiera administrar de forma autónoma en el día a día.
         </p>
       </div>
@@ -2003,7 +2003,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           En lugar de imponer una arquitectura tradicional con panel administrativo y base de datos propia, se optó por una solución más alineada al contexto operativo del negocio:
           <span class="font-semibold text-white">
             utilizar Google Sheets como fuente de datos
@@ -2011,11 +2011,11 @@ export const projects: Project[] = [
           mediante su API oficial.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cada hoja representa una categoría de productos, permitiendo al cliente agregar, editar o eliminar información utilizando una herramienta que ya conocía, sin necesidad de capacitación adicional.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El resultado fue un ecommerce funcional con un flujo de administración extremadamente simple, priorizando adopción y mantenibilidad por encima de complejidad innecesaria.
         </p>
       </div>
@@ -2038,11 +2038,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El objetivo del proyecto fue construir una solución técnicamente sólida pero adaptada a las capacidades reales del usuario final, reduciendo fricción operativa y favoreciendo la autonomía del negocio.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además, este proyecto representó mi primera experiencia freelance completa, participando del análisis de requerimientos, evaluación de alternativas tecnológicas y toma de decisiones orientadas a negocio.
         </p>
       </div>
@@ -2075,7 +2075,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El catálogo de productos se administra completamente desde
           <span class="font-semibold text-white">
             Google Sheets
@@ -2083,7 +2083,7 @@ export const projects: Project[] = [
           eliminando la necesidad de un panel administrativo tradicional.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cada hoja del documento representa una categoría distinta, permitiendo organizar productos de manera intuitiva y mantener el catálogo actualizado sin conocimientos técnicos.
         </p>
       </div>
@@ -2106,11 +2106,11 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La tienda permite navegar categorías, visualizar productos y agregarlos al carrito mediante un flujo simple orientado a conversión.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Para el procesamiento de pagos se integró
           <span class="font-semibold text-white">
             Stripe
@@ -2137,7 +2137,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Una de las decisiones más importantes fue
           <span class="font-semibold text-white">
             adaptar la tecnología al usuario
@@ -2145,7 +2145,7 @@ export const projects: Project[] = [
           y no al revés.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Aunque técnicamente era posible construir un panel más sofisticado, se priorizó una herramienta familiar que el cliente pudiera utilizar con confianza desde el primer día.
         </p>
       </div>
@@ -2178,7 +2178,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto fue desarrollado utilizando
           <span class="font-semibold text-white">
             Next.js como framework fullstack
@@ -2186,7 +2186,7 @@ export const projects: Project[] = [
           integrando Google Sheets API como fuente de datos principal y Stripe como pasarela de pagos.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El carrito se implementó utilizando
           <span class="font-semibold text-white">
             use-shopping-cart
@@ -2214,7 +2214,7 @@ export const projects: Project[] = [
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La integración con Stripe podía resolverse desde cliente o servidor. Se optó por un enfoque
           <span class="font-semibold text-white">
             server-side
@@ -2222,7 +2222,7 @@ export const projects: Project[] = [
           alineado con el modelo de Server Components de Next.js para reducir exposición de lógica sensible y mejorar seguridad.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También se evitó introducir una base de datos tradicional de forma innecesaria. La arquitectura fue diseñada alrededor del contexto real del cliente, priorizando simplicidad operativa, bajo mantenimiento y facilidad de adopción.
         </p>
       </div>
@@ -2244,7 +2244,7 @@ export const projects: Project[] = [
     slug: "movix",
     liveSiteUrl: "https://movix-nu-six.vercel.app/",
     githubUrl: "https://github.com/eduviana/movix",
-    desc: "Página web de películas y series que utiliza la API gratuita 'The Movie Database'. ",
+    desc: "Aplicación web de de películas y series, enfocada en arquitectura frontend, consumo de APIs externas y gestión eficiente del estado global.",
     technologies: ["React", "Sass", "Redux"],
     categories: ["React"],
     thumbnail: "/projects/fullstack/movix/movix-1.webp",
@@ -2278,17 +2278,17 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           <span class="font-semibold text-white">Movix</span> es una aplicación web desarrollada para profundizar conocimientos en arquitectura frontend, manejo de estado global y consumo de APIs externas.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto consume datos desde la API pública de
           <span class="font-semibold text-white">The Movie Database (TMDB)</span>,
           permitiendo explorar películas y series mediante una interfaz orientada al descubrimiento de contenido.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Más allá del resultado visual, el principal objetivo fue fortalecer habilidades relacionadas con reutilización de componentes, organización del estado de la aplicación y toma de decisiones arquitectónicas dentro de un entorno React.
         </p>
 
@@ -2313,7 +2313,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este proyecto tuvo como propósito principal mejorar el entendimiento práctico de
           <span class="font-semibold text-white">
             React, Redux y la separación de responsabilidades
@@ -2321,7 +2321,7 @@ export const projects: Project[] = [
           dentro de aplicaciones frontend de mediana complejidad.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           También sirvió como espacio de experimentación para trabajar patrones de UI reutilizable, manejo eficiente de requests y optimización de experiencia de usuario mediante lazy loading, reproducción multimedia y navegación responsive.
         </p>
 
@@ -2356,7 +2356,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación permite explorar
           <span class="font-semibold text-white">
             películas y series
@@ -2364,7 +2364,7 @@ export const projects: Project[] = [
           consumiendo información en tiempo real desde TMDB.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Los usuarios pueden navegar diferentes categorías, filtrar contenido por género y realizar búsquedas dinámicas por título, facilitando el descubrimiento de nuevo contenido desde una única interfaz.
         </p>
 
@@ -2389,11 +2389,11 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cada película o serie cuenta con una página de detalle que centraliza información relevante como descripción, géneros, fecha de lanzamiento, puntuación y contenido multimedia asociado.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Además, se integró reproducción de trailers embebidos, permitiendo consumir contenido audiovisual sin abandonar la aplicación.
         </p>
 
@@ -2418,14 +2418,14 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Se priorizó una experiencia fluida tanto en desktop como en dispositivos móviles, incorporando optimizaciones como
           <span class="font-semibold text-white">
             carga perezosa de imágenes, filtros interactivos y visualización dinámica de puntuaciones
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto fue diseñado con enfoque responsive, buscando mantener consistencia visual y rendimiento durante la navegación.
         </p>
 
@@ -2460,7 +2460,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación fue desarrollada utilizando
           <span class="font-semibold text-white">
             React, Redux y SASS
@@ -2468,7 +2468,7 @@ export const projects: Project[] = [
           integrando además librerías específicas para visualización de métricas, reproducción multimedia y optimización de carga.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El consumo de datos se realiza mediante la API pública de TMDB, desacoplando completamente la lógica de presentación del origen de información.
         </p>
 
@@ -2493,18 +2493,18 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los aprendizajes más importantes del proyecto fue comprender que
           <span class="font-semibold text-white">
             no todo estado debe residir en Redux
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El store global se utilizó únicamente para información compartida entre múltiples secciones de la aplicación, mientras que los estados locales permanecieron encapsulados dentro de sus respectivos componentes.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esta decisión permitió reducir complejidad innecesaria, evitar sobrecarga en el store y mantener una arquitectura más mantenible.
         </p>
 
@@ -2529,7 +2529,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto fue estructurado priorizando
           <span class="font-semibold text-white">
             componentes reutilizables y responsabilidades bien delimitadas
@@ -2537,7 +2537,7 @@ export const projects: Project[] = [
           evitando lógica acoplada entre UI, fetch de datos y estado compartido.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este enfoque permitió convertir Movix en un proyecto de aprendizaje particularmente valioso para comprender patrones de escalabilidad en aplicaciones React.
         </p>
 
@@ -2560,7 +2560,7 @@ export const projects: Project[] = [
     slug: "gamehub",
     liveSiteUrl: "",
     githubUrl: "",
-    desc: "Plataforma que permite visualizar y realizar transmisiones en vivo.",
+    desc: "Plataforma de streaming en vivo inspirada en Twitch, con autenticación, chat en tiempo real, integración con OBS Studio y gestión de canales.",
     technologies: ["Next.js", "Shadcn UI"],
     categories: ["Nextjs"],
     thumbnail: "/projects/fullstack/gamehub/gamehub-1.webp",
@@ -2591,7 +2591,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           <span class="font-semibold text-white">GameHub</span>
           es una plataforma de streaming en vivo inspirada en Twitch, desarrollada con el objetivo de comprender e implementar una arquitectura capaz de soportar
           <span class="font-semibold text-white">
@@ -2599,7 +2599,7 @@ export const projects: Project[] = [
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El proyecto fue concebido como un desafío técnico orientado a explorar tecnologías de realtime, eventos asincrónicos y servicios externos, replicando funcionalidades esenciales presentes en plataformas de streaming modernas.
         </p>
 
@@ -2624,11 +2624,11 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los principales objetivos del proyecto fue aprender a trabajar con sistemas distribuidos y comunicación en tiempo real, enfrentando problemas relacionados con sincronización de estado, gestión de eventos y arquitectura desacoplada.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           A diferencia de otros proyectos del portfolio, aquí la complejidad estuvo menos centrada en reglas de negocio y más en la
           <span class="font-semibold text-white">
             integración coordinada de múltiples servicios externos
@@ -2657,11 +2657,11 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Debido a que el proyecto depende de servicios pagos para funcionar correctamente, actualmente no se encuentra desplegado en producción.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           En su lugar, el portfolio incluye un
           <span class="font-semibold text-white">
             video demostrativo del flujo completo
@@ -2700,11 +2700,11 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Cada usuario autenticado puede crear y administrar su propio canal de streaming, personalizando información del perfil y configuraciones relacionadas con la transmisión.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           El sistema genera credenciales específicas para conectar software externo como
           <span class="font-semibold text-white">
             OBS Studio
@@ -2733,14 +2733,14 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La plataforma incorpora un sistema de chat en vivo configurable por el streamer, incluyendo opciones como
           <span class="font-semibold text-white">
             slow mode, solo suscriptores o chat deshabilitado
           </span>.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Tanto la transmisión como la interacción entre espectadores se sincronizan en tiempo real dentro de salas específicas, replicando la experiencia básica de una plataforma moderna de streaming.
         </p>
 
@@ -2775,7 +2775,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La aplicación fue desarrollada utilizando
           <span class="font-semibold text-white">
             Next.js, Clerk, LiveKit y shadcn/ui
@@ -2783,7 +2783,7 @@ export const projects: Project[] = [
           integrando autenticación, streaming en tiempo real y sincronización de usuarios dentro de una arquitectura fullstack.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Clerk se utiliza para autenticación mediante Google, mientras que un webhook sincroniza automáticamente la información del usuario autenticado con la base de datos interna.
         </p>
 
@@ -2808,7 +2808,7 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           La infraestructura de streaming se construyó sobre
           <span class="font-semibold text-white">
             LiveKit
@@ -2816,7 +2816,7 @@ export const projects: Project[] = [
           permitiendo gestionar conexiones en tiempo real, video, audio y mensajería dentro de salas independientes.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Esto implicó trabajar con eventos asincrónicos, flujos distribuidos y sincronización entre múltiples usuarios concurrentes, elevando considerablemente la complejidad técnica respecto de aplicaciones CRUD tradicionales.
         </p>
 
@@ -2841,15 +2841,361 @@ export const projects: Project[] = [
 
       <div class="flex flex-col gap-3">
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Uno de los mayores desafíos del proyecto fue dividir un problema técnicamente complejo en módulos manejables, manteniendo separación clara entre autenticación, realtime, persistencia y experiencia de usuario.
         </p>
 
-        <p class="m-0 text-base text-text-muted !leading-[1.9] md:text-lg">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
           Este proyecto resultó especialmente valioso para fortalecer habilidades relacionadas con
           <span class="font-semibold text-white">
             arquitectura de sistemas complejos, eventos asincrónicos e integración de servicios externos
           </span>.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+      ],
+    },
+  },
+
+  // admin-ui recharts
+  {
+    id: 17,
+    title: "Admin UI Recharts",
+    slug: "admin-ui-recharts",
+    liveSiteUrl: "https://react-dashboard-recharts-nff7.vercel.app/",
+    githubUrl: "https://github.com/eduviana/React-Dashboard-Recharts",
+    desc: "Dashboard administrativo enfocado en visualización de datos, tablas reutilizables y arquitectura de interfaces escalables.",
+    technologies: ["React", "Material UI", "Sass"],
+    categories: ["React"],
+    thumbnail: "/projects/fullstack/adminRecharts/adminUI-1.webp",
+    images: [
+      "/projects/fullstack/adminRecharts/adminUI-1.webp",
+      "/projects/fullstack/adminRecharts/adminUI-2.webp",
+      "/projects/fullstack/adminRecharts/adminUI-3.webp",
+      "/projects/fullstack/adminRecharts/adminUI-4.webp",
+    ],
+    content: {
+      type: "tabs",
+      tabs: [
+        {
+          key: "resumen",
+          label: "Resumen",
+          body: `
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+
+  <!-- Proyecto -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Proyecto
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          <span class="font-semibold text-white">Admin UI Recharts</span>
+          es un dashboard administrativo desarrollado como ejercicio técnico para profundizar en la construcción de
+          <span class="font-semibold text-white">
+            interfaces complejas de gestión de datos, visualización estadística y navegación modular
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El proyecto simula un entorno administrativo profesional, incorporando gráficos interactivos, tablas avanzadas y múltiples vistas organizadas dentro de una arquitectura frontend mantenible.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El objetivo principal fue comprender cómo escalan las interfaces administrativas cuando aumenta la complejidad visual, la cantidad de información y la interacción entre componentes reutilizables.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Además de trabajar sobre experiencia visual y organización de layouts, el proyecto permitió profundizar en patrones comunes presentes en sistemas empresariales:
+          <span class="font-semibold text-white">
+            dashboards analíticos, tablas configurables, métricas visuales y navegación avanzada
+          </span>.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Resultado -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Resultado
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El resultado fue una interfaz administrativa completamente responsive, visualmente consistente y preparada para representar distintos tipos de información dentro de un flujo de navegación claro.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Más allá del resultado visual, el principal valor del proyecto estuvo en comprender cómo estructurar aplicaciones de administración manteniendo
+          <span class="font-semibold text-white">
+            reutilización, separación de responsabilidades y consistencia de diseño
+          </span>.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "funcionalidad",
+          label: "Funcionalidad",
+          body: `
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+
+  <!-- Dashboard -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Dashboard y visualización
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El sistema simula un panel administrativo moderno con múltiples vistas orientadas a visualización y análisis de datos mediante
+          <span class="font-semibold text-white">
+            gráficos de área, barras y métricas visuales
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          La interfaz fue diseñada para representar información de forma clara, manteniendo jerarquía visual y consistencia entre distintas secciones del dashboard.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Data Grid -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Tablas reutilizables
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Uno de los componentes más relevantes fue la implementación de tablas administrativas utilizando
+          <span class="font-semibold text-white">
+            Material UI Data Grid
+          </span>,
+          con soporte para ordenamiento, filtrado y paginación.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          En lugar de construir componentes específicos para cada entidad, la lógica fue abstraída para crear una estructura reutilizable, desacoplando columnas, filas y comportamiento dinámico entre módulos.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UX -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Experiencia de uso
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          La navegación entre secciones se construyó utilizando
+          <span class="font-semibold text-white">
+            React Router DOM v6
+          </span>,
+          permitiendo mantener una experiencia fluida y organizada dentro del dashboard.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Todo el proyecto fue desarrollado con enfoque responsive, asegurando adaptabilidad entre distintos tamaños de pantalla sin comprometer legibilidad ni estructura visual.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "arquitectura",
+          label: "Arquitectura",
+          body: `
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+
+  <!-- Stack -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Stack tecnológico
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            React, Vite, React Router DOM, Material UI, Recharts y Sass
+          </span>,
+          combinando librerías orientadas a navegación, visualización de datos e interfaces administrativas.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El stack fue seleccionado para experimentar con patrones comunes de dashboards empresariales, priorizando velocidad de desarrollo, modularidad y reutilización de componentes.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sass -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Arquitectura de estilos
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Uno de los focos técnicos del proyecto fue mejorar la organización del CSS responsive mediante
+          <span class="font-semibold text-white">
+            mixins personalizados en Sass
+          </span>.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          En lugar de centralizar media queries al final de cada archivo, los breakpoints se integraron directamente dentro de cada módulo visual, facilitando comprensión, mantenibilidad y lectura del comportamiento responsive.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Implementación -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Decisiones de implementación
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Para garantizar estabilidad permanente del proyecto y evitar dependencia de infraestructura externa, se optó por trabajar con
+          <span class="font-semibold text-white">
+            datos simulados localmente
+          </span>
+          en lugar de APIs o bases de datos reales.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Esta decisión permitió mantener el proyecto siempre funcional como pieza de portfolio, eliminando riesgos asociados a límites de uso, caídas de servicio o expiración de proveedores externos.
         </p>
 
       </div>
@@ -2871,7 +3217,7 @@ export const projects: Project[] = [
     slug: "flair-store",
     liveSiteUrl: "https://sanity-ecommerce-orcin.vercel.app/",
     githubUrl: "https://github.com/eduviana/Sanity-Ecommerce",
-    desc: "Tienda online de venta de indumentaria realizado con Sanity y Next 13.",
+    desc: "Ecommerce de indumentaria construido con arquitectura Headless CMS, incorporando catálogo dinámico, filtros sincronizados por URL y Stripe como método de pago.",
     technologies: ["Next.js", "Tailwind CSS", "Sanity"],
     categories: ["Nextjs"],
     thumbnail: "/projects/fullstack/flair/flair-1.webp",
@@ -2883,185 +3229,346 @@ export const projects: Project[] = [
       "/projects/fullstack/flair/flair-5.webp",
     ],
     content: {
-      type: "single",
-      body: `
-    <p>
-      Ecommerce desarrollado con Next.js 13 y Sanity como headless CMS,
-      orientado a la venta de indumentaria con sistema de filtros dinámicos,
-      carrito de compras y pasarela de pagos integrada.
-    </p>
+      type: "tabs",
+      tabs: [
+        {
+          key: "resumen",
+          label: "Resumen",
+          body: `
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
-    <h3>Arquitectura y Stack</h3>
+  <!-- Proyecto -->
+  <section>
+    <div class="flex flex-col gap-8">
 
-    <ul>
-      <li>Next.js 13 con App Router y TypeScript.</li>
-      <li>Sanity como backend y gestor de contenido.</li>
-      <li>Stripe para procesamiento de pagos.</li>
-      <li>use-shopping-cart para gestión del carrito.</li>
-      <li>Tailwind CSS con tema personalizado (dark mode).</li>
-      <li>Radix UI y Sanity UI para componentes accesibles.</li>
-    </ul>
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
 
-    <p>
-      Sanity se utilizó como CMS headless para modelar productos,
-      categorías y variantes (talle, color, precio),
-      permitiendo administración dinámica sin modificar el código.
-      Su esquema flexible facilita escalabilidad y mantenimiento.
-    </p>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Proyecto
+        </h3>
 
-    <h3>Sistema de Filtros y Ordenamiento</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
 
-    <p>
-      El catálogo implementa dos tipos de filtros:
-      filtros por atributos del producto (categoría, talle, color)
-      y ordenamiento (precio ascendente, descendente y más recientes).
-    </p>
+      <div class="flex flex-col gap-3">
 
-    <p>
-      En lugar de manejar la comunicación entre componentes hijos y padre
-      mediante múltiples estados y efectos,
-      la sincronización se resolvió utilizando parámetros en la URL.
-      Los componentes de filtro actualizan las query params,
-      y el componente contenedor reacciona a esos cambios,
-      disparando la re-renderización correspondiente.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Ecommerce desarrollado para profundizar en la construcción de aplicaciones modernas utilizando
+          <span class="font-semibold text-white">
+            Next.js 13, App Router y arquitectura basada en Headless CMS
+          </span>.
+          El objetivo principal fue comprender cómo modelar un catálogo dinámico, administrar contenido desde una plataforma externa y construir una experiencia de compra completa.
+        </p>
 
-    <p>
-      Este enfoque desacopla la lógica de filtrado,
-      evita sobrecarga de estado compartido
-      y mantiene el comportamiento predecible y escalable.
-    </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          La aplicación permite explorar productos de indumentaria, navegar entre categorías, aplicar filtros, gestionar un carrito de compras y completar pagos mediante una pasarela externa, replicando comportamientos comunes presentes en ecommerce reales.
+        </p>
 
-    <h3>Experiencia de Usuario</h3>
+      </div>
 
-    <ul>
-      <li>Modo oscuro implementado mediante tema personalizado en Tailwind.</li>
-      <li>Diseño completamente responsive.</li>
-      <li>Gestión segura del checkout mediante Stripe.</li>
-    </ul>
+    </div>
+  </section>
 
-    <p>
-      El proyecto permitió profundizar en arquitectura de ecommerce,
-      modelado de datos en CMS headless
-      y manejo avanzado de estado derivado desde la URL,
-      una práctica clave para aplicaciones escalables.
-    </p>
-  `,
+  <!-- Objetivo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Objetivo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Uno de los principales focos del proyecto fue comprender cómo desacoplar el contenido del frontend mediante un CMS headless, permitiendo administrar productos y variantes sin necesidad de modificar el código de la aplicación.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Más allá de la implementación visual, el desafío estuvo en entender cómo escalan los sistemas ecommerce cuando intervienen
+          <span class="font-semibold text-white">
+            contenido dinámico, filtros complejos, checkout y gestión externa de catálogo
+          </span>.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Headless CMS -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Enfoque Headless CMS
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Se utilizó
+          <span class="font-semibold text-white">
+            Sanity como CMS headless
+          </span>,
+          permitiendo modelar productos, variantes, imágenes y atributos de forma desacoplada del frontend.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Esta aproximación facilita escalabilidad, mantenimiento y autonomía de contenido, evitando hardcodear información dentro de la aplicación principal.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "funcionalidad",
+          label: "Funcionalidad",
+          body: `
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+
+  <!-- Compra -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Experiencia de compra
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El ecommerce fue diseñado para ofrecer una experiencia de compra simple y moderna, permitiendo navegar por categorías, visualizar detalles de producto y gestionar un carrito persistente.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El checkout se integra mediante
+          <span class="font-semibold text-white">
+            Stripe
+          </span>,
+          delegando el procesamiento seguro de pagos a una plataforma especializada.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Sistema de filtros
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El catálogo implementa filtros dinámicos por atributos del producto como
+          <span class="font-semibold text-white">
+            talle, color y categoría
+          </span>,
+          además de ordenamiento por precio y fecha.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          En lugar de resolver la sincronización mediante múltiples estados distribuidos entre componentes, el sistema se diseñó utilizando
+          <span class="font-semibold text-white">
+            query params en la URL
+          </span>,
+          permitiendo mantener navegación, estado y filtros completamente sincronizados.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Gestión del catálogo
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Los productos son administrados desde Sanity, permitiendo editar información como nombre, descripción, imágenes, variantes, talles, colores y precios desde una interfaz externa.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Esto elimina dependencia directa del código para cambios de contenido y acerca el funcionamiento del proyecto a flujos utilizados en ecommerce profesionales.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+
+        {
+          key: "arquitectura",
+          label: "Arquitectura",
+          body: `
+<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+
+  <!-- Stack -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Stack tecnológico
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          La aplicación fue desarrollada utilizando
+          <span class="font-semibold text-white">
+            Next.js 13, TypeScript, Sanity, Stripe y Tailwind CSS
+          </span>,
+          combinando renderizado moderno, contenido desacoplado y checkout seguro.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          También se incorporó
+          <span class="font-semibold text-white">
+            Radix UI
+          </span>
+          para construir componentes accesibles y
+          <span class="font-semibold text-white">
+            use-shopping-cart
+          </span>
+          para simplificar la gestión del carrito.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- URL State -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Estado derivado desde URL
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Una de las decisiones arquitectónicas principales fue resolver filtros y ordenamientos utilizando
+          <span class="font-semibold text-white">
+            estado derivado desde query params
+          </span>,
+          evitando complejidad innecesaria en la sincronización entre componentes.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          Este enfoque mejora previsibilidad, simplifica mantenimiento y permite compartir enlaces con filtros activos preservando completamente el estado de navegación.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CMS -->
+  <section>
+    <div class="flex flex-col gap-8">
+
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
+          Modelado desacoplado
+        </h3>
+
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El uso de un
+          <span class="font-semibold text-white">
+            Headless CMS
+          </span>
+          permitió modelar entidades dinámicas como productos y variantes sin acoplar la estructura del catálogo al frontend.
+        </p>
+
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
+          El principal aprendizaje del proyecto fue comprender patrones habituales en ecommerce modernos:
+          <span class="font-semibold text-white">
+            arquitectura desacoplada, contenido administrable y estado derivado
+          </span>,
+          prácticas ampliamente utilizadas en aplicaciones orientadas a catálogo y venta online.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+`,
+        },
+      ],
     },
   },
-
-  // prueba técnica libros
-  {
-    id: 18,
-    title: "Prueba Técnica Libros",
-    slug: "prueba-tecnica-libros",
-    liveSiteUrl: "https://challenge-books-midudev.vercel.app/",
-    githubUrl: "https://github.com/eduviana/Challenge-Books-Midudev",
-    desc: "Challenge extraído del creador de contenido Midudev que consiste en una página web de una editorial de libros.",
-    technologies: ["React", "Sass"],
-    categories: ["Prueba Técnica"],
-    thumbnail: "/projects/personales/libros/libros-1.webp", // Adaptado de 'image' a 'thumbnail'
-    images: [
-      "/projects/personales/libros/libros-1.webp",
-      "/projects/personales/libros/libros-2.webp",
-      "/projects/personales/libros/libros-3.webp",
-    ],
-    content: {
-      type: "single",
-      body: `
-    <p>
-      Este proyecto nace como un desafío técnico propuesto por Midudev, enfocado en crear una plataforma para una editorial multinacional donde los usuarios pueden explorar un catálogo y gestionar su propia lista de lectura.
-    </p>
-
-    <h3>El Desafío</h3>
-    <p>
-      El objetivo principal era construir una interfaz intuitiva y agradable utilizando un archivo JSON local. El reto incluía la necesidad de crear un código altamente reutilizable y modular, previendo posibles cambios de framework en el futuro.
-    </p>
-
-    <h3>Aprendizajes y Refactorización</h3>
-    <p>
-      Aunque a simple vista parecía un ejercicio sencillo, este challenge fue fundamental para mejorar mi capacidad de <strong>debugueo y optimización</strong> en React. 
-    </p>
-    <ul>
-      <li><strong>Arquitectura de carpetas:</strong> Implementación de una estructura más limpia y profesional.</li>
-      <li><strong>Optimización de Renders:</strong> Identificación y solución de re-renderizados infinitos causados por variables externas al estado de React dentro de useEffects.</li>
-      <li><strong>Persistencia de datos:</strong> Manejo de sincronización entre el estado global de la aplicación y el LocalStorage.</li>
-    </ul>
-
-    <h3>Características Principales</h3>
-    <ul>
-      <li>Filtrado dinámico de libros por género y rango de páginas.</li>
-      <li>Sistema de "Lista de lectura" con persistencia de datos.</li>
-      <li>Diseño responsive con enfoque prioritario en Desktop.</li>
-      <li>Interfaz construida con Sass para un manejo eficiente de estilos.</li>
-    </ul>
-
-    <p>
-      La lección más importante de este proyecto fue entender profundamente cómo el motor de React maneja las dependencias en los hooks. Comprender que cualquier variable no manejada por el estado puede romper el ciclo de vida del componente fue el punto más importante de este challenge.
-    </p>
-    `,
-    },
-  },
-
-  // admin-ui recharts
-  {
-    id: 17,
-    title: "Admin UI Recharts",
-    slug: "admin-ui-recharts",
-    liveSiteUrl: "https://react-dashboard-recharts-nff7.vercel.app/",
-    githubUrl: "https://github.com/eduviana/React-Dashboard-Recharts",
-    desc: "Panel de administración para visualización de datos mediante gráficos interactivos y tablas dinámicas.",
-    technologies: ["React", "Material UI", "Sass"],
-    categories: ["React"],
-    thumbnail: "/projects/fullstack/adminRecharts/adminUI-1.webp",
-    images: [
-      "/projects/fullstack/adminRecharts/adminUI-1.webp",
-      "/projects/fullstack/adminRecharts/adminUI-2.webp",
-      "/projects/fullstack/adminRecharts/adminUI-3.webp",
-      "/projects/fullstack/adminRecharts/adminUI-4.webp",
-    ],
-    content: {
-      type: "single",
-      body: `
-    <p>
-      Este proyecto consiste en un Dashboard de administración robusto desarrollado con Vite. El objetivo principal fue integrar diversas librerías del ecosistema React para resolver problemas comunes en interfaces de gestión de datos, como la visualización gráfica y el manejo de tablas complejas.
-    </p>
-
-    <h3>Stack Tecnológico</h3>
-    <ul>
-      <li><strong>React & Vite:</strong> Para un entorno de desarrollo ultra rápido.</li>
-      <li><strong>React Router DOM v6:</strong> Implementación de rutas avanzadas y protegidas.</li>
-      <li><strong>Material UI:</strong> Uso intensivo de componentes predefinidos, especialmente Data-Grid.</li>
-      <li><strong>Recharts:</strong> Generación de gráficos estadísticos dinámicos.</li>
-      <li><strong>Sass:</strong> Arquitectura de estilos modular y avanzada.</li>
-    </ul>
-
-    <h3>Innovación en el Flujo de Estilos</h3>
-    <p>
-      Durante el desarrollo, implementé una metodología avanzada de responsividad en <strong>Sass</strong>. En lugar de acumular media queries al final del archivo, utilicé un sistema de archivos separados con mixins personalizados.
-    </p>
-    <p>
-      Este enfoque permite importar y aplicar breakpoints directamente dentro de cada clase CSS. Aunque incrementa ligeramente la longitud del código, mejora drásticamente la <strong>mantenibilidad y legibilidad</strong>, permitiendo entender el comportamiento responsive de un componente de un solo vistazo sin desplazarse por el documento.
-    </p>
-
-    <h3>Componentes Dinámicos y Datos</h3>
-    <p>
-      Uno de los mayores retos fue la implementación del componente <strong>Data-Grid</strong> de Material UI. Lo diseñé de forma genérica y dinámica para que pudiera ser reutilizado tanto en la gestión de usuarios como en la de productos, abstrayendo la lógica de las columnas y filas.
-    </p>
-    <p>
-      Para garantizar que el proyecto sea 100% funcional de forma permanente sin depender de servicios de base de datos externos con limitaciones, opté por una arquitectura de datos local. Esto permite que la aplicación sea una vitrina perfecta de habilidades frontend, eliminando riesgos de caídas de servicio por suscripciones o límites de tráfico.
-    </p>
-
-    <h3>Funcionalidades Clave</h3>
-    <ul>
-      <li>Visualización de métricas en tiempo real mediante gráficos de área, barras y circulares.</li>
-      <li>Tablas de datos con soporte para ordenamiento, filtrado y paginación.</li>
-      <li>Interfaz limpia y profesional siguiendo los lineamientos de Material Design.</li>
-      <li>Estructura de navegación fluida gracias a las últimas funcionalidades de React Router v6.</li>
-    </ul>
-  `,
-    },
-  },
-
-  //car showcase
 ];

@@ -15,29 +15,29 @@ const education = [
 
 const courses = [
   {
-    name: "React Pro",
-    issuer: "Fernando Herrera",
-    year: "Udemy",
-  },
-  {
-    name: "React",
-    issuer: "Fernando Herrera",
-    year: "Udemy",
-  },
-  {
-    name: "React",
-    issuer: "Juan Pablo de la Torre Valdez",
-    year: "Udemy",
-  },
-  {
-    name: "Javascript Moderno",
-    issuer: "Juan Pablo de la Torre Valdez",
-    year: "Udemy",
-  },
-  {
     name: "CSS3",
     issuer: "Jordan Alexander",
     year: "Udemy",
+  },
+  {
+    name: "Javascript",
+    issuer: "Juan Pablo de la Torre Valdez",
+    year: "Udemy",
+  },
+  {
+    name: "React",
+    issuer: "Juan Pablo de la Torre Valdez",
+    year: "Udemy",
+  },
+  {
+    name: "React",
+    issuer: "Fernando Herrera",
+    year: "Udemy",
+  },
+  {
+    name: "React Pro",
+    issuer: "Fernando Herrera",
+    year: "DevTalles",
   },
 ];
 
@@ -92,7 +92,7 @@ export const Education = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-base leading-8 text-text-muted md:text-lg">
+                  <p className="text-base leading-8 text-text-muted lg:text-lg">
                     {edu.description}
                   </p>
 
@@ -120,19 +120,19 @@ export const Education = () => {
               {courses.map((course, index) => (
                 <div
                   key={index}
-                  className="group flex items-center justify-between rounded-2xl border border-zinc-800 bg-zinc-900 p-6 transition-all duration-300 hover:border-brand-primary/30 hover:shadow-[0_0_30px_-15px_rgba(194,65,12,0.3)]"
+                  className="group flex flex-col items-center lg:flex-row lg:items-center lg:justify-start lg:gap-8 rounded-2xl border border-zinc-800 bg-zinc-900 p-4 md:p-5 lg:p-6 transition-all duration-300 hover:border-brand-primary/30 hover:shadow-[0_0_30px_-15px_rgba(194,65,12,0.3)]"
                 >
-                  <div className="flex min-w-0 items-center gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
                     <div className="h-2 w-2 shrink-0 rounded-full bg-brand-primary" />
-
-                    <span className="truncate text-lg font-semibold text-white">
+                    <span className="truncate text-base md:text-lg font-semibold text-white">
                       {course.name}
                     </span>
                   </div>
 
-                  <div className="shrink-0 text-right text-sm font-medium text-text-muted">
-                    <p>{course.issuer}</p>
-                    <p className="text-white/80">{course.year}</p>
+                  <div className="mt-1 lg:mt-0 text-sm font-medium text-text-muted lg:text-right">
+                    <span className="text-white/80">{course.issuer}</span>
+                    <span className="text-white/40 mx-1">·</span>
+                    <span>{course.year}</span>
                   </div>
                 </div>
               ))}

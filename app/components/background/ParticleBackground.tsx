@@ -22,7 +22,6 @@ export const ParticleBackground = () => {
 
     let animationFrameId: number;
     let particles: Particle[] = [];
-    const particleCount = 80;
     const connectionDistance = 150;
     const mouseDistance = 200;
 
@@ -34,8 +33,9 @@ export const ParticleBackground = () => {
     };
 
     const createParticles = () => {
+      const count = Math.max(20, Math.floor(canvas.width / 24));
       particles = [];
-      for (let i = 0; i < particleCount; i++) {
+      for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
@@ -58,7 +58,7 @@ export const ParticleBackground = () => {
 
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(249, 115, 22, 0.5)";
+        ctx.fillStyle = "rgba(251, 146, 60, 0.35)";
         ctx.fill();
 
         for (let j = index + 1; j < particles.length; j++) {
@@ -71,7 +71,7 @@ export const ParticleBackground = () => {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(249, 115, 22, ${opacity})`;
+            ctx.strokeStyle = `rgba(251, 146, 60, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -86,7 +86,7 @@ export const ParticleBackground = () => {
           ctx.beginPath();
           ctx.moveTo(particle.x, particle.y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(249, 115, 22, ${opacity})`;
+          ctx.strokeStyle = `rgba(251, 146, 60, ${opacity})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
