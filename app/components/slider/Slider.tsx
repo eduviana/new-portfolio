@@ -112,7 +112,7 @@ export default function Slider({ images }: SliderProps) {
               
               {/* 1. CAPA DE FONDO (El "truco"): Imagen desenfocada para rellenar barras */}
               <div 
-                className="absolute inset-0 z-0 opacity-40 blur-3xl scale-110"
+                className="absolute inset-0 z-0 opacity-40 blur-3xl"
                 style={{ 
                     backgroundImage: `url(${src})`,
                     backgroundPosition: 'center',

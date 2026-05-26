@@ -83,11 +83,11 @@ export default async function ProjectDetailsPage({
   return (
     <section className="pt-20 pb-12 md:pt-24">
       {/* Botón Back - arriba a la izquierda con mismos márgenes */}
-      <div className="custom-container mb-6">
+      <div className="max-w-7xl mx-auto px-6 mb-6">
         <Back />
       </div>
 
-      <div className="custom-container">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Título del proyecto */}
         <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-8">
           {title}

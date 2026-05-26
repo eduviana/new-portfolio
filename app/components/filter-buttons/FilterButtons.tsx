@@ -3,7 +3,7 @@ interface FilterButtonsProps {
   onChange: (filter: string) => void;
 }
 
-const filters = ["Todos", "React", "Nextjs", "Fullstack", "Freelance", "Prueba Técnica"];
+const filters = ["Todos", "React", "Nextjs", "Fullstack", "Freelance"];
 
 export const FilterButtons = ({
   selectedFilter,
