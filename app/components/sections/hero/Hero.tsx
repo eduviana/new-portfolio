@@ -110,7 +110,8 @@ export const Hero = () => {
             <div className="relative h-full w-full rounded-full border-2 border-brand-primary/30">
               <div className="h-full w-full overflow-hidden rounded-full bg-gradient-to-br from-zinc-800 to-zinc-900">
                 <Image
-                  src="/perfil-sin-fondo.png"
+                  /* src="/perfil-sin-fondo.png" */
+                  src="/profile-2.png"
                   alt="Eduardo Viana - Fullstack Developer"
                   width={400}
                   height={400}
