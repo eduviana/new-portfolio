@@ -814,3 +814,9 @@ id: 27,
   body: ``,
 }
 
+
+
+
+Portfolio | Eduardo Viana
+
+Desarrollador Frontend con experiencia Fullstack. Proyectos reales enfocados en interfaces modernas, arquitectura mantenible y experiencia de usuario.

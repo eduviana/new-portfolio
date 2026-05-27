@@ -11,9 +11,6 @@ export const Hero = () => {
         {/* Contenido de texto */}
         <div className="flex w-full flex-col items-center gap-8 text-center md:w-7/12 md:items-start md:text-left">
           <div className="flex flex-col gap-3">
-            {/* <span className="font-medium tracking-wide text-brand-primary">
-              Hola, soy
-            </span> */}
 
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
               Eduardo <span className="text-brand-primary">Viana</span>
@@ -77,7 +74,7 @@ export const Hero = () => {
             </a>
 
             <a
-              href="mailto:eduardoviana.dev@email.com"
+              href="mailto:eduardoviana83@gmail.com"
               className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg
@@ -105,13 +102,13 @@ export const Hero = () => {
               Ver Proyectos
             </Link>
 
-            <a
+            {/* <a
               href="/cv/cv.pdf"
               download
               className="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:border-brand-primary sm:px-6 sm:py-3 sm:text-base"
             >
               Descargar CV
-            </a>
+            </a> */}
           </div>
         </div>
 
