@@ -13,50 +13,69 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://eduardoviana.dev"),
+
   title: {
-    default: "Eduardo Viana | Fullstack Developer",
+    default: "Eduardo Viana | Frontend Developer with Fullstack Experience",
     template: "%s | Eduardo Viana",
   },
+
   description:
-    "Desarrollador web fullstack especializado en React y Next.js. Portfolio con proyectos, tecnologías y experiencia profesional.",
+    "Desarrollador Frontend con experiencia Fullstack especializado en React, Next.js y TypeScript. Portfolio con proyectos reales, arquitectura web y aplicaciones escalables.",
+
   keywords: [
+    "frontend developer",
     "fullstack developer",
     "react",
     "next.js",
     "typescript",
+    "tailwind",
     "portfolio",
     "web development",
     "frontend",
     "backend",
+    "postgresql",
+    "mysql",
+    "mongodb",
   ],
+
   authors: [{ name: "Eduardo Viana" }],
   creator: "Eduardo Viana",
   publisher: "Eduardo Viana",
+
   openGraph: {
     type: "website",
     locale: "es_AR",
     url: "https://eduardoviana.dev",
-    siteName: "Eduardo Viana - Fullstack Developer",
-    title: "Eduardo Viana | Fullstack Developer",
+    siteName: "Eduardo Viana Portfolio",
+
+    title:
+      "Eduardo Viana | Frontend Developer with Fullstack Experience",
+
     description:
-      "Desarrollador web fullstack especializado en React y Next.js. Portfolio con proyectos, tecnologías y experiencia profesional.",
+      "Portfolio de proyectos web modernos desarrollados con React, Next.js y TypeScript. Interfaces escalables, arquitectura modular y experiencia fullstack.",
+
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Eduardo Viana - Fullstack Developer",
+        alt: "Portfolio de Eduardo Viana",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Eduardo Viana | Fullstack Developer",
+
+    title:
+      "Eduardo Viana | Frontend Developer with Fullstack Experience",
+
     description:
-      "Desarrollador web fullstack especializado en React y Next.js",
-    creator: "@eduardoviana",
+      "Portfolio de proyectos web modernos desarrollados con React, Next.js y TypeScript.",
+
     images: ["/og-image.png"],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -75,9 +94,11 @@ export default function RootLayout({
       >
         <ParticleBackground />
         <Navbar />
+
         <main className="relative z-10">
           {children}
         </main>
+
         <Footer />
       </body>
     </html>
