@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Eduardo Viana - CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ── Full-width dark header ── */
+  .dark-header {
+    background: #1e1e2e;
+    display: flex;
+    align-items: center;
+    padding: 10mm 0;
+  }
+  .dark-header .photo-col {
+    width: 78mm;
+    padding-left: 11mm;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .dark-header .photo-col img {
+    width: 42mm;
+    height: 42mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2590b;
+  }
+  .dark-header .info-col {
+    flex: 1;
+    padding-left: 10mm;
+    padding-right: 8mm;
+  }
+  .header-name {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1mm;
+  }
+  .header-role {
+    font-size: 11pt;
+    color: #c4c4cc;
+    margin-bottom: 5mm;
+  }
+  .header-contact {
+    font-size: 9pt;
+    color: #a1a1aa;
+    line-height: 1.6;
+  }
+
+  /* ── Content area (sidebar + main) ── */
+  .content-area {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+  }
+
+  /* ── Left sidebar ── */
+  .sidebar {
+    width: 78mm;
+    background: #f4f4f5;
+    position: relative;
+    padding: 5mm 5mm 10mm 8mm;
+  }
+  .sidebar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #e2590b;
+  }
+
+  /* ── Right content ── */
+  .main {
+    flex: 1;
+    padding: 5mm 8mm 10mm 10mm;
+    background: #fff;
+  }
+
+  /* ── Section titles ── */
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #e2590b;
+    letter-spacing: 1.5px;
+    margin-bottom: 1mm;
+    padding-bottom: 2mm;
+    border-bottom: 2px solid #e2590b;
+    text-transform: uppercase;
+  }
+  .sidebar .section-title {
+    color: #1a1a1a;
+  }
+
+  /* ── Left column content ── */
+  .edu-item h4, .course-item h4 { font-size: 10pt; font-weight: 600; color: #1a1a1a; }
+  .edu-item p, .course-item p { font-size: 8pt; color: #666; }
+  .edu-item, .course-item { margin-bottom: 3mm; }
+  .languages p { font-size: 9.5pt; color: #333; }
+  .divider { border: none; height: 1px; background: #d4d4d8; margin: 4mm 0; }
+
+  /* ── About text ── */
+  .about-text { font-size: 9.5pt; color: #333; margin-bottom: 5mm; text-align: justify; }
+  .about-text p { margin-bottom: 2mm; }
+
+  /* ── Experience entry ── */
+  .exp-item { margin-bottom: 0; padding-bottom: 3mm; border-bottom: 1px solid #e0e0e0; }
+  .exp-item + .exp-item { padding-top: 3mm; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5mm; }
+  .exp-header h3 { font-size: 11pt; font-weight: 700; color: #1a1a1a; }
+  .exp-header .year { font-size: 9pt; color: #888; white-space: nowrap; margin-left: 2mm; }
+  .exp-subtitle { font-size: 9pt; font-weight: 600; color: #e2590b; margin-bottom: 0.5mm; }
+  .exp-meta { font-size: 9pt; color: #999; font-style: italic; margin-bottom: 2mm; }
+  .exp-desc { font-size: 9.5pt; color: #333; margin-bottom: 2mm; }
+  .tech-tags { display: flex; flex-wrap: wrap; gap: 2mm 3mm; font-size: 8pt; font-weight: 500; }
+  .tech-tags span { color: #333; background: #e5e5e5; padding: 1mm 2.5mm; border-radius: 2mm; }
+
+  /* ── Page 2 top margin ── */
+  .page + .page .main { padding-top: 10mm; }
+</style>
+</head>
+<body>
+
+<!-- ═══ PAGE 1 ═══ -->
+<div class="page">
+  <!-- Dark header: single block, photo left, info right -->
+  <div class="dark-header">
+    <div class="photo-col">
+      <img src="profile-photo.jpg" alt="Eduardo Viana">
+    </div>
+    <div class="info-col">
+      <div class="header-name">Eduardo Viana</div>
+      <div class="header-role">Desarrollador Full-Stack · Córdoba, Argentina</div>
+      <div class="header-contact">
+        &#9993; eduardoviana83@gmail.com &nbsp;&nbsp; &#128279; github.com/eduviana<br>
+        &#128188; linkedin.com/in/eduardo-viana83
+      </div>
+    </div>
+  </div>
+
+  <!-- Content: sidebar left, main right -->
+  <div class="content-area">
+    <div class="sidebar">
+      <h4 class="section-title">EDUCACIÓN</h4>
+      <div class="edu-item">
+        <h4>Analista de Sistemas de<br>Computación</h4>
+        <p>Institución Cervantes<br>2011 - 2018 | Córdoba, Argentina</p>
+      </div>
+      <hr class="divider">
+      <h4 class="section-title">CURSOS</h4>
+      <div class="course-item"><h4>React Pro</h4><p>Fernando Herrera · DevTalles</p></div>
+      <div class="course-item"><h4>React</h4><p>Fernando Herrera · Udemy</p></div>
+      <div class="course-item"><h4>React</h4><p>Juan Pablo de la Torre · Udemy</p></div>
+      <div class="course-item"><h4>Javascript Moderno</h4><p>Juan Pablo de la Torre · Udemy</p></div>
+      <div class="course-item"><h4>CSS3</h4><p>Jordan Alexander · Udemy</p></div>
+      <hr class="divider">
+      <h4 class="section-title">IDIOMAS</h4>
+      <div class="languages">
+        <p>Español (Nativo)</p>
+        <p>Inglés (Técnico)</p>
+      </div>
+    </div>
+    <div class="main">
+      <h3 class="section-title">SOBRE MÍ</h3>
+      <div class="about-text">
+        <p>Desarrollador Frontend con experiencia Full-Stack con foco en el ecosistema React / Next.js y TypeScript. Construyo aplicaciones completas: desde el frontend con SSR/ISR y arquitectura modular, hasta APIs, modelado de dominio y bases de datos (PostgreSQL, MongoDB, MySQL). Mi base técnica proviene de mi formación como Analista de Sistemas de Computación y un constante camino autodidacta. Priorizo código claro, decisiones documentadas y estructuras que escalen sin complejidad.</p>
+      </div>
+
+      <h3 class="section-title">EXPERIENCIA PROFESIONAL</h3>
+
+      <div class="exp-item">
+        <div class="exp-header"><h3>Mediflow</h3><span class="year">2025 - 2026</span></div>
+        <div class="exp-subtitle">Plataforma de Gestión de Turnos Médicos</div>
+        <div class="exp-meta">Full-Stack · Freelance · Remoto</div>
+        <div class="exp-desc">MVP funcional para consultorio médico privado. Autenticación multi-rol (NextAuth), pagos con MercadoPago, calendario de citas, gestión de turnos y sincronización en tiempo real con TanStack Query.</div>
+        <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>Prisma</span> <span>PostgreSQL</span> <span>NextAuth</span> <span>MercadoPago</span> <span>TanStack Query</span> <span>Tailwind CSS</span></div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header"><h3>APEX / TELECOM Personal</h3><span class="year">2025</span></div>
+        <div class="exp-subtitle">Plataforma de Reportes Operativos</div>
+        <div class="exp-meta">Full-Stack · Freelance · Remoto</div>
+        <div class="exp-desc">Sistema de reportes operativos para call center con autenticación Google OAuth, formularios validados, dashboards analíticos con Recharts y persistencia en MongoDB.</div>
+        <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>MongoDB</span> <span>React Hook Form</span> <span>Zod</span> <span>Recharts</span> <span>Jest</span> <span>Tailwind CSS</span></div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header"><h3>Medical Health</h3><span class="year">2025</span></div>
+        <div class="exp-subtitle">Plataforma Operativa para Obra Social</div>
+        <div class="exp-meta">Full-Stack · Proyecto Personal</div>
+        <div class="exp-desc">Sistema multi-rol (operator, supervisor, admin) con turnero digital, visor de llamados en tiempo real mediante Pusher, dashboards operativos y sistema de auditorías.</div>
+        <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>Prisma</span> <span>PostgreSQL</span> <span>Pusher</span> <span>Clerk</span> <span>Shadcn UI</span> <span>Tailwind CSS</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PAGE 2 ═══ -->
+<div class="page">
+  <div class="content-area">
+    <div class="sidebar"></div>
+    <div class="main">
+      <div class="exp-item">
+        <div class="exp-header"><h3>Vivarium</h3><span class="year">2025</span></div>
+        <div class="exp-subtitle">Plataforma de Gestión de Catálogo</div>
+        <div class="exp-meta">Full-Stack · Freelance · Remoto</div>
+        <div class="exp-desc">Ecommerce con panel administrativo, categorías jerárquicas, gestión de imágenes con Cloudinary e integración desacoplada con MercadoPago.</div>
+        <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>MySQL</span> <span>NextAuth</span> <span>MercadoPago</span> <span>Cloudinary</span> <span>Tailwind CSS</span></div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header"><h3>Kass</h3><span class="year">2024</span></div>
+        <div class="exp-subtitle">Ecommerce de Accesorios</div>
+        <div class="exp-meta">Full-Stack · Freelance · Remoto</div>
+        <div class="exp-desc">Ecommerce con catálogo autogestionable vía Google Sheets API, pagos con Stripe y arquitectura orientada a simplicidad operativa.</div>
+        <div class="tech-tags"><span>Next.js</span> <span>JavaScript</span> <span>Google Sheets API</span> <span>Stripe</span> <span>Tailwind CSS</span></div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header"><h3>Hard360</h3><span class="year">2024</span></div>
+        <div class="exp-subtitle">Ecommerce Tecnológico</div>
+        <div class="exp-meta">Full-Stack · Proyecto Personal</div>
+        <div class="exp-desc">Ecommerce de hardware con navegación dinámica, filtros contextuales, tipado estricto, SSR y arquitectura modular desacoplada.</div>
+        <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>Tailwind CSS</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

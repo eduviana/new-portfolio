@@ -43,7 +43,7 @@ export const Navbar = () => {
             </ul>
 
             <a
-              href="/cv/cv.pdf"
+              href="/cv/Eduardo-Viana-CV.pdf"
               download
               className="inline-flex items-center rounded-md bg-brand-primary px-3 py-1.5 text-xs font-medium text-white transition-colors duration-200 hover:bg-brand-hover lg:px-4 lg:py-2 lg:text-sm"
             >
