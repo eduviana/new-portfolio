@@ -41,471 +41,235 @@ export const projects: Project[] = [
         {
           key: "resumen",
           label: "Resumen",
-          body: `
-<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+          body: `<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
-  <!-- Problema -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Problema
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Problema</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          La gestión de turnos médicos suele involucrar múltiples actores, procesos manuales y una fuerte dependencia de llamadas telefónicas, agendas fragmentadas y coordinación constante entre pacientes, secretarias y profesionales.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          En este contexto aparecen situaciones habituales que complejizan la operación diaria: pacientes que todavía no poseen cuenta, turnos gestionados por teléfono, horarios bloqueados por pagos incompletos o información dispersa entre distintos usuarios del sistema.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          <span class="font-semibold text-white">Mediflow</span>
-          fue desarrollado tomando como referencia conversaciones mantenidas con un centro médico privado real, buscando modelar procesos cotidianos de atención, organización de agenda y coordinación operativa dentro de una propuesta funcional de gestión médica.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">La gestion de turnos medicos suele involucrar multiples actores, procesos manuales y una fuerte dependencia de llamadas telefonicas, agendas fragmentadas y coordinacion constante entre pacientes, secretarias y profesionales.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">En este contexto aparecen situaciones habituales que complejizan la operacion diaria: pacientes que todavia no poseen cuenta, turnos gestionados por telefono, horarios bloqueados por pagos incompletos o informacion dispersa entre distintos usuarios del sistema.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg"><span class="font-semibold text-white">Mediflow</span> fue desarrollado tomando como referencia conversaciones mantenidas con un centro medico privado real, buscando modelar procesos cotidianos de atencion, organizacion de agenda y coordinacion operativa dentro de una propuesta funcional de gestion medica.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Solución -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-8">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Solución
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Solucion</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El sistema propone una experiencia centralizada donde los pacientes pueden
-          <span class="font-semibold text-white">
-            registrarse, iniciar sesión y gestionar turnos de forma online
-          </span>,
-          seleccionando especialidad, profesional, fecha y horario disponible desde una interfaz guiada.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          A su vez, contempla escenarios reales que suelen quedar fuera de una implementación idealizada. Por ejemplo, las secretarias pueden crear turnos para pacientes que llaman por teléfono, incluso cuando todavía no poseen una cuenta registrada, compartiendo posteriormente enlaces de pago externos para completar la reserva.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Uno de los desafíos más interesantes del proyecto fue resolver la continuidad de información: si un paciente creado manualmente decide registrarse más adelante, el sistema puede
-          <span class="font-semibold text-white">
-            vincular automáticamente la nueva cuenta con el historial existente
-          </span>,
-          evitando duplicados y preservando la consistencia de turnos, pagos e información previa.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El sistema propone una experiencia centralizada con <span class="font-semibold text-white">cuatro roles diferenciados</span>: pacientes, secretarias, profesionales medicos y administradores. Cada rol dispone de su propio dashboard, rutas protegidas y acciones especificas segun sus responsabilidades operativas.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Los pacientes pueden <span class="font-semibold text-white">registrarse, iniciar sesion y gestionar turnos de forma online</span>, seleccionando especialidad, profesional, fecha y horario disponible desde una interfaz guiada. A su vez, contempla escenarios reales como la creacion de turnos por telefono por parte de secretarias para pacientes sin cuenta, con envio posterior de enlaces de pago externos.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Uno de los desafios mas interesantes fue resolver la continuidad de informacion: si un paciente creado manualmente decide registrarse mas adelante, el sistema puede <span class="font-semibold text-white">vincular automaticamente la nueva cuenta con el historial existente</span>, evitando duplicados y preservando la consistencia de turnos, pagos e informacion previa.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Objetivo -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-8">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Objetivo
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Objetivo</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Más allá de la demo técnica, Mediflow fue concebido como una
-          <span class="font-semibold text-white">
-            propuesta funcional de validación
-          </span>
-          para explorar reglas del dominio médico, evaluar distintos flujos de atención y analizar cómo interactúan pacientes, secretarias y profesionales dentro de un mismo ecosistema operativo.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El proyecto fue pensado para acompañar conversaciones con un centro médico privado real, permitiendo iterar sobre procesos, detectar necesidades operativas y evolucionar progresivamente hacia una eventual implementación productiva.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Mas alla de la demo tecnica, Mediflow fue concebido como una <span class="font-semibold text-white">propuesta funcional de validacion</span> para explorar reglas del dominio medico, evaluar distintos flujos de atencion y analizar como interactuan pacientes, secretarias, profesionales y administradores dentro de un mismo ecosistema operativo.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El proyecto fue pensado para acompanar conversaciones con un centro medico privado real, permitiendo iterar sobre procesos, detectar necesidades operativas y evolucionar progresivamente hacia una eventual implementacion productiva.</p>
       </div>
-
     </div>
   </section>
 
-</div>
-`,
+</div>`,
         },
 
         {
           key: "funcionalidad",
           label: "Funcionalidad",
-          body: `
-<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+          body: `<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
-  <!-- Pacientes -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Pacientes
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Pacientes</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Los pacientes pueden
-          <span class="font-semibold text-white">
-            registrarse mediante credenciales tradicionales o autenticación con Google
-          </span>,
-          iniciar sesión y recuperar su contraseña en caso de ser necesario.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Una vez autenticados, acceden a un dashboard donde pueden consultar sus próximos turnos, visualizar estados de pago, fechas, horarios, especialidades y profesionales asignados, además de acceder al historial completo desde una sección dedicada.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El flujo de reserva permite seleccionar
-          <span class="font-semibold text-white">
-            especialidad, profesional, fecha y horario disponible
-          </span>,
-          para luego completar el pago mediante MercadoPago. Si el pago no se realiza dentro del tiempo establecido, el turno expira automáticamente y el horario vuelve a quedar disponible para otros pacientes.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Los pacientes pueden <span class="font-semibold text-white">registrarse mediante credenciales tradicionales o autenticacion con Google</span>, iniciar sesion y recuperar su contrasena en caso de ser necesario.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Una vez autenticados, acceden a un dashboard donde pueden consultar sus proximos turnos, visualizar estados de pago, fechas, horarios, especialidades y profesionales asignados, ademas de acceder al historial completo desde una seccion dedicada.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El flujo de reserva permite seleccionar <span class="font-semibold text-white">especialidad, profesional, fecha y horario disponible</span>, para luego completar el pago mediante MercadoPago. Si el pago no se realiza dentro del tiempo establecido, el turno expira automaticamente y el horario vuelve a quedar disponible para otros pacientes.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Secretaría -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Secretaría y operación diaria
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Secretaria y operacion diaria</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Uno de los objetivos principales del sistema fue contemplar escenarios reales de operación médica. Por esta razón, el rol de
-          <span class="font-semibold text-white">
-            secretaria
-          </span>
-          no depende exclusivamente de pacientes registrados en la plataforma.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Las secretarias pueden crear turnos manualmente para personas que llaman por teléfono o prefieren no utilizar la web, generando reservas incluso cuando el paciente todavía no posee una cuenta registrada. Posteriormente, el sistema permite compartir enlaces de pago externos para completar el proceso.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Además, disponen de una vista global del consultorio mediante dos formatos de trabajo:
-          <span class="font-semibold text-white">
-            próximas citas y calendario
-          </span>.
-          Desde allí pueden monitorear todos los turnos de todos los profesionales, facilitando la organización diaria y el seguimiento general de la agenda médica.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El rol de <span class="font-semibold text-white">secretaria</span> no depende exclusivamente de pacientes registrados en la plataforma. Las secretarias pueden crear turnos manualmente para personas que llaman por telefono, generando reservas incluso cuando el paciente todavia no posee una cuenta registrada. Posteriormente, el sistema permite compartir enlaces de pago externos para completar el proceso.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Ademas, disponen de una vista global del consultorio mediante dos formatos de trabajo: <span class="font-semibold text-white">proximas citas y calendario</span>. Desde alli pueden monitorear todos los turnos de todos los profesionales, aplicar filtros por profesional y gestionar la agenda medica completa.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Profesionales -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Profesionales médicos
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Profesionales medicos</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El rol <span class="font-semibold text-white">profesional</span> comparte parte de la experiencia de secretaría, pero adaptada únicamente a los turnos que le corresponden. Tanto en la vista de próximas citas como en el calendario, cada profesional visualiza exclusivamente su propia agenda.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Desde el panel de próximas citas, el profesional puede
-          <span class="font-semibold text-white">
-            iniciar una atención médica
-          </span>,
-          accediendo a una pantalla donde se muestra la información del paciente, observaciones relacionadas a la consulta y controles para cancelar o finalizar la atención.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Esto permite modelar un flujo de trabajo más cercano a un escenario real, donde el estado del turno evoluciona durante el proceso de atención y queda reflejado dentro del sistema.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Cada profesional visualiza exclusivamente su propia agenda, tanto en la vista de proximas citas como en el calendario. Desde el panel puede <span class="font-semibold text-white">iniciar una atencion medica</span>, accediendo a una pantalla con la informacion del paciente, un editor de notas clinicas, diagnosticos y controles para cancelar o finalizar la atencion.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Adicionalmente, los profesionales pueden <span class="font-semibold text-white">configurar sus horarios semanales de atencion</span> por dia, duracion de turno y estado activo/inactivo, asi como gestionar bloqueos de agenda por vacaciones o feriados.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Estado compartido -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Estado compartido del sistema
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Administracion del sistema</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          A medida que los turnos cambian de estado —por ejemplo, cuando un profesional inicia o finaliza una atención— la información se actualiza automáticamente entre usuarios conectados.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Esto permite que secretarias y profesionales trabajen sobre una visión sincronizada del estado actual del consultorio, manteniendo coherencia operativa sin necesidad de refrescar manualmente la aplicación.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El rol de <span class="font-semibold text-white">administrador</span> permite gestionar los usuarios del sistema desde una interfaz de administracion con tabla paginada, busqueda por nombre o email y filtrado por rol. Desde el modal de edicion es posible modificar datos del usuario, cambiar su rol y, para usuarios con rol profesional, <span class="font-semibold text-white">asignar la especialidad medica correspondiente</span>.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Las especialidades medicas se administran desde una seccion dedicada, permitiendo crear, editar nombre, activar o desactivar mediante un toggle switch, y eliminar aquellas que no tengan profesionales asociados. Las especialidades inactivas no aparecen como opcion al momento de reservar turnos.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El sistema incluye proteccion contra auto-eliminacion y auto-modificacion de rol: un administrador no puede eliminarse a si mismo ni cambiar su propio rol, evitando bloqueos accidentales del acceso administrativo.</p>
       </div>
-
     </div>
   </section>
 
-</div>
-`,
+  <section>
+    <div class="flex flex-col gap-8">
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Auditoria y trazabilidad</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Cada evento significativo del sistema queda registrado en un <span class="font-semibold text-white">log de auditoria inmutable</span>: creacion, confirmacion, inicio, finalizacion, cancelacion y expiracion de turnos, asi como creacion, aprobacion y rechazo de pagos. Los registros incluyen el actor responsable, el origen de la accion, el tipo de entidad afectada y su identificador.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Desde el panel de auditoria, los administradores pueden explorar el historial completo con filtros por tipo de evento, origen y entidad, visualizar graficos de distribucion y acceder a un modal de detalle que muestra la transicion antes/despues de cada cambio, permitiendo reconstruir que ocurrio ante cualquier error o reclamo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="flex flex-col gap-8">
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Estado compartido del sistema</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">A medida que los turnos cambian de estado la informacion se actualiza automaticamente entre usuarios conectados mediante <span class="font-semibold text-white">polling inteligente</span>, permitiendo que secretarias y profesionales trabajen sobre una vision sincronizada del estado actual del consultorio sin necesidad de refrescar manualmente la aplicacion.</p>
+      </div>
+    </div>
+  </section>
+
+</div>`,
         },
 
         {
           key: "arquitectura",
           label: "Arquitectura",
-          body: `
-<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
+          body: `<div class="flex flex-col gap-[3rem] md:gap-[6rem]">
 
-  <!-- Arquitectura del proyecto -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Arquitectura del proyecto
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Arquitectura del proyecto</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El proyecto fue desarrollado utilizando
-          <span class="font-semibold text-white">
-            Next.js App Router, TypeScript y Tailwind CSS
-          </span>,
-          siguiendo un enfoque modular orientado a separación de responsabilidades.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          La carpeta
-          <span class="font-semibold text-white"> app/ </span>
-          se utiliza únicamente para definir páginas y routing, mientras que toda la lógica de negocio se encuentra desacoplada dentro de una estructura
-          <span class="font-semibold text-white">
-            feature-first
-          </span>,
-          organizada por dominios funcionales.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Cada módulo encapsula sus propios componentes, hooks, schemas, helpers, tipos y servicios, permitiendo una estructura más mantenible, escalable y fácil de extender conforme el dominio evoluciona.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Desarrollado con <span class="font-semibold text-white">Next.js App Router, TypeScript y Tailwind CSS</span>, siguiendo un enfoque de Clean Architecture con organizacion feature-first. La carpeta <span class="font-semibold text-white">app/</span> se utiliza unicamente para paginas y routing, mientras que toda la logica de negocio se encuentra desacoplada dentro de modulos por dominio funcional.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Cada feature encapsula sus propios componentes, hooks, schemas Zod, reglas de negocio puras, tipos, utilidades y logica de servidor, permitiendo una estructura mantenible y escalable. Las reglas de negocio son funciones puras sin dependencias externas, reutilizadas tanto en el frontend como en webhooks y API routes.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Autenticación y permisos -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Autenticación y permisos
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Autenticacion y permisos</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          La autenticación fue implementada mediante
-          <span class="font-semibold text-white">
-            NextAuth
-          </span>,
-          soportando credenciales tradicionales, login con Google y recuperación de contraseña.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El sistema utiliza una estrategia multi-rol para diferenciar el comportamiento entre
-          <span class="font-semibold text-white">
-            pacientes, secretarias y profesionales médicos
-          </span>,
-          controlando tanto la navegación como las acciones disponibles para cada perfil.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Para reforzar seguridad y consistencia, las solicitudes son interceptadas mediante middleware, validando permisos antes de acceder a páginas protegidas y evitando accesos no autorizados según el rol autenticado.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Autenticacion mediante <span class="font-semibold text-white">NextAuth v4</span> con estrategia JWT, soportando credenciales tradicionales, login con Google y recuperacion de contrasena con tokens seguros hasheados. El sistema utiliza una estrategia multi-rol para diferenciar comportamiento entre <span class="font-semibold text-white">pacientes, secretarias, profesionales medicos y administradores</span>.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Las rutas estan protegidas mediante middleware con patrones regex, redirigiendo automaticamente segun el rol autenticado. A nivel de servidor, cada pagina y API route valida la sesion con el rol requerido antes de ejecutar cualquier logica.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Gestión de disponibilidad -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Gestión de disponibilidad
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Gestion de disponibilidad</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          En lugar de persistir horarios disponibles directamente en base de datos, el sistema almacena únicamente la
-          <span class="font-semibold text-white">
-            disponibilidad laboral del profesional
-          </span>
-          y los turnos existentes.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          La disponibilidad final se calcula dinámicamente combinando horarios configurados, reservas activas, estados de pago y expiración de turnos pendientes.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Este enfoque evita inconsistencias de sincronización, reduce datos redundantes y permite recalcular slots disponibles de forma flexible frente a cambios operativos.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">En lugar de persistir horarios disponibles directamente, el sistema almacena unicamente la <span class="font-semibold text-white">disponibilidad laboral del profesional</span> y los turnos existentes. La disponibilidad final se calcula dinamicamente combinando horarios configurados, reservas activas, estados de pago y expiracion de turnos pendientes, evitando inconsistencias de sincronizacion.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Sincronización multi-cliente -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Sincronización multi-cliente
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Sincronizacion multi-cliente</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Uno de los principales desafíos técnicos del proyecto fue mantener consistencia entre múltiples usuarios conectados simultáneamente, especialmente entre secretarias y profesionales visualizando agendas distintas.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Para resolverlo, se adoptó
-          <span class="font-semibold text-white">
-            TanStack Query
-          </span>
-          como capa de sincronización de datos, incorporando cache inteligente, invalidación automática luego de mutaciones y actualización periódica de información relevante.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          Aunque se evaluó una arquitectura basada en WebSockets, se decidió implementar
-          <span class="font-semibold text-white">
-            polling inteligente
-          </span>
-          como estrategia inicial, priorizando simplicidad operativa y menor complejidad de mantenimiento para el volumen actual del sistema.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El calendario y los horarios disponibles se sincronizan automáticamente cada
-          <span class="font-semibold text-white">
-            30 segundos con la pestaña activa y 60 segundos en segundo plano
-          </span>,
-          permitiendo mantener información consistente entre usuarios sin necesidad de recargar manualmente la aplicación.
-        </p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg"><span class="font-semibold text-white">TanStack Query</span> funciona como capa de sincronizacion de datos con cache inteligente, invalidacion automatica luego de mutaciones y <span class="font-semibold text-white">polling dinamico</span> (30 segundos con pestana activa, 60 segundos en segundo plano). Aunque se evaluo WebSockets, se opto por polling como estrategia inicial priorizando simplicidad operativa.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Persistencia -->
   <section>
     <div class="flex flex-col gap-8">
-
       <div class="flex items-center justify-center gap-4">
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
-
-        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">
-          Persistencia y entorno
-        </h3>
-
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Persistencia y entorno</h3>
         <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
       </div>
-
       <div class="flex flex-col gap-3">
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          La persistencia del sistema se implementó utilizando
-          <span class="font-semibold text-white">
-            PostgreSQL + Prisma ORM
-          </span>,
-          modelando entidades relacionadas con usuarios, pacientes, profesionales, especialidades, disponibilidad y turnos médicos.
-        </p>
-
-        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">
-          El entorno de desarrollo fue containerizado mediante
-          <span class="font-semibold text-white">
-            Docker
-          </span>,
-          acompañado de scripts de seed para poblar datos iniciales y facilitar escenarios de prueba reproducibles durante el desarrollo de nuevas funcionalidades.
-        </p>
-
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg"><span class="font-semibold text-white">PostgreSQL + Prisma ORM</span> con un modelo de datos que incluye usuarios, pacientes, profesionales, especialidades, disponibilidad semanal, bloqueos de agenda, turnos, pagos, historias clinicas y registros de auditoria. El entorno de desarrollo esta containerizado con Docker y dispone de seeds para poblar datos iniciales.</p>
       </div>
-
     </div>
   </section>
 
-</div>
-`,
+  <section>
+    <div class="flex flex-col gap-8">
+      <div class="flex items-center justify-center gap-4">
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+        <h3 class="text-xl md:text-2xl font-semibold leading-none text-white m-0 shrink-0">Testing</h3>
+        <span class="w-14 md:w-20 h-[1px] bg-brand-primary/60 rounded-full"></span>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">El proyecto cuenta con <span class="font-semibold text-white">233 tests automatizados</span> distribuidos en 36 archivos, utilizando <span class="font-semibold text-white">Vitest + Testing Library</span>. La cobertura abarca reglas de negocio, funciones utilitarias, schemas de validacion Zod, logica de servidor, API routes, hooks de React y componentes de UI.</p>
+        <p class="m-0 text-base text-text-muted !leading-[1.9] lg:text-lg">Los tests siguen la misma estructura feature-based del proyecto, ubicandose en directorios <span class="font-semibold text-white">__tests__/</span> dentro de cada modulo, manteniendo la cohesion entre codigo fuente y sus pruebas.</p>
+      </div>
+    </div>
+  </section>
+
+</div>`,
         },
       ],
     },
@@ -923,7 +687,6 @@ export const projects: Project[] = [
       "/projects/personales/hard360/nuevas/5.webp",
       "/projects/personales/hard360/nuevas/6.webp",
       "/projects/personales/hard360/nuevas/7.webp",
-      
     ],
     content: {
       type: "tabs",
