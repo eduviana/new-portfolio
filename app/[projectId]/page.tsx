@@ -4,7 +4,6 @@ import Slider from "../components/slider/Slider";
 import { getProjectBySlug } from "../helpers/getProject";
 import { getAllProjects } from "../helpers/getProject";
 import { Back } from "../components/back/Back";
-import { ProjectTabs } from "../components/project-tabs/ProjectTabs";
 import { SafeHtml } from "../components/safe-html/SafeHtml";
 import { TechBadge } from "../components/tech-badge/TechBadge";
 
@@ -155,10 +154,8 @@ export default async function ProjectDetailsPage({
           {content.type === "single" && <SafeHtml html={content.body} />}
           {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
         </div> */}
-        <div className="w-full bg-zinc-900/80 rounded-lg px-4 pb-10 border border-white/5 md:px-16 md:pb-14">
-          {content.type === "single" && <SafeHtml html={content.body} />}
-
-          {content.type === "tabs" && <ProjectTabs tabs={content.tabs} />}
+        <div className="w-full bg-zinc-900/80 rounded-lg px-4 pt-4 pb-10 border border-white/5 md:px-16 md:pt-16 md:pb-14">
+          <SafeHtml html={content} />
         </div>
       </div>
     </section>
