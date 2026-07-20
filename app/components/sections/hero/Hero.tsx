@@ -19,23 +19,19 @@ export const Hero = () => {
               <h2 className="text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-[1.7rem]">
                 Desarrollador{" "}
                 <span className="text-brand-primary">Frontend</span> con
-                experiencia Full-Stack
+                perfil Full-Stack
               </h2>
             </div>
           </div>
 
           <div className="flex flex-col gap-4">
             <p className="max-w-md text-base leading-7 text-text-muted sm:max-w-xl md:max-w-2xl lg:text-lg md:leading-8">
-              Desarrollo aplicaciones web modernas con foco en{" "}
-              <span className="font-semibold text-white">escalabilidad</span>,{" "}
-              <span className="font-semibold text-white">mantenibilidad</span> y
-              experiencia de usuario.
-              <br className="hidden sm:block" /> Trabajo principalmente con{" "}
-              <span className="font-semibold text-white">
-                React, Next.js y TypeScript
-              </span>
-              , construyendo interfaces robustas y soluciones pensadas para
-              crecer.
+              Desarrollo aplicaciones web con {" "}
+              <span className="font-semibold text-white">React</span>,{" "}
+              <span className="font-semibold text-white">Next.js</span> y {" "}
+              <span className="font-semibold text-white">TypeScript</span>. 
+              Disfruto transformar problemas de negocio en soluciones mantenibles, combinando interfaces cuidadas con una arquitectura clara y escalable.
+              
             </p>
           </div>
 

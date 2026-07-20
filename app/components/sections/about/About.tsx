@@ -8,49 +8,46 @@ export const About = () => {
           <Title title="Sobre Mí" />
 
           <p className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg">
-            Soy desarrollador{" "}
-            <strong className="text-brand-primary">
-              Frontend con experiencia Fullstack
-            </strong>
-            , enfocado principalmente en la construcción de aplicaciones web
-            modernas utilizando{" "}
+            Mi principal interés es construir aplicaciones web que no solo
+            funcionen correctamente, sino que puedan mantenerse, evolucionar y
+            adaptarse al crecimiento del producto con el paso del tiempo. Aunque
+            mi especialización está en el desarrollo Frontend utilizando{" "}
             <strong className="text-brand-primary">
               React, Next.js y TypeScript
             </strong>
-            .
+            , a lo largo de proyectos personales y freelance asumí también el
+            desarrollo completo de las aplicaciones, desde la arquitectura hasta
+            la implementación del backend.
             <br />
             <br />
-            Mi mayor fortaleza está en el frontend: diseño de interfaces
-            mantenibles, arquitectura de componentes, experiencia de usuario y
-            construcción de aplicaciones escalables. Al mismo tiempo, tanto en
-            proyectos freelance como personales, me he encargado del desarrollo
-            integral de sistemas, definiendo arquitectura, seleccionando
-            tecnologías y construyendo las bases técnicas necesarias para que
-            las aplicaciones sean sólidas y fáciles de evolucionar.
+            Disfruto especialmente analizar problemas antes de escribir código,
+            estructurar proyectos desde cero y tomar decisiones técnicas pensando
+            no solo en resolver una necesidad inmediata, sino en construir una
+            base sólida que facilite la evolución del software a largo plazo.
             <br />
             <br />
-            Tengo experiencia desarrollando APIs, modelado de dominio,
-            persistencia de datos y lógica de negocio utilizando tecnologías
-            como <strong className="text-brand-primary">
-              PostgreSQL
-            </strong>, <strong className="text-brand-primary">MySQL</strong> y{" "}
-            <strong className="text-brand-primary">MongoDB</strong>, siempre
-            priorizando código desacoplado, mantenibilidad y capacidad de
-            escalado a largo plazo.
+            Esa experiencia me permitió trabajar con diseño de APIs, modelado de
+            dominio, persistencia de datos, autenticación, integraciones con
+            servicios externos y reglas de negocio, siempre priorizando
+            soluciones desacopladas, mantenibles y fáciles de extender.
             <br />
             <br />
-            Disfruto especialmente resolver problemas complejos, estructurar
-            proyectos desde cero y tomar decisiones técnicas pensando no solo en
-            que una solución funcione hoy, sino en que siga siendo clara y
-            sostenible a medida que crece.
+            En cada proyecto intento encontrar el equilibrio entre una buena
+            experiencia de usuario y una arquitectura que permita incorporar
+            nuevas funcionalidades sin aumentar innecesariamente la complejidad
+            del sistema. Me interesa escribir código claro, reutilizable y
+            sencillo de mantener, entendiendo que las decisiones técnicas tienen
+            impacto tanto en el producto como en quienes lo desarrollan.
             <br />
             <br />
-            Mi base técnica proviene de mi formación como{" "}
+            Mi formación como{" "}
             <strong className="text-brand-primary">
               Analista de Sistemas de Computación
             </strong>{" "}
-            (Institución Cervantes), complementada con un fuerte camino
-            autodidacta y aprendizaje constante.
+            (Institución Cervantes), complementada con un aprendizaje autodidacta
+            constante, me permitió desarrollar una forma de trabajo orientada
+            tanto a la calidad técnica como a la comprensión del problema de
+            negocio que cada proyecto busca resolver.
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ const experiences = [
     period: "2025-2026",
     location: "Remoto",
     description:
-      'MVP funcional desarrollado a partir de requerimientos reales para un consultorio médico privado, orientado a la gestión integral de turnos y operación administrativa. Implementa autenticación con <span class="text-white font-bold">NextAuth</span> (credenciales, Google OAuth y recuperación de contraseña), pagos mediante <span class="text-white font-bold">MercadoPago Checkout Pro</span> con validación vía webhook y lógica de expiración automática de reservas para liberar disponibilidad horaria. Incluye un sistema multi-rol para pacientes, secretarias y profesionales con dashboards diferenciados, calendario de citas y seguimiento del estado de atención. La sincronización de datos se resolvió mediante <span class="text-white font-bold">TanStack Query</span> y polling adaptativo según actividad del usuario. Arquitectura feature-first desacoplada, con separación clara entre routing, lógica de negocio y persistencia de datos.',
+      "Desarrollé de forma integral una plataforma de gestión médica para un consultorio privado, participando desde el relevamiento de requerimientos hasta la definición de la arquitectura y la implementación de todas las funcionalidades principales. La aplicación centraliza la gestión de pacientes, secretarias y profesionales mediante un sistema multirol con calendario de turnos, historias clínicas e integración con Mercado Pago para el procesamiento de pagos y la liberación automática de reservas expiradas. Implementé una arquitectura Feature First inspirada en Clean Architecture, autenticación con NextAuth, sincronización de datos mediante TanStack Query e integración de servicios externos utilizando Webhooks, priorizando mantenibilidad, escalabilidad y reutilización de la lógica de negocio.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -30,7 +30,7 @@ const experiences = [
     period: "2025",
     location: "Remoto",
     description:
-      'Sistema web interno desarrollado para la operación de una obra social, diseñado para centralizar la gestión de turnos, atención de afiliados y monitoreo administrativo. Implementa un sistema multi-rol (operator, supervisor y admin) con permisos diferenciados, turnero digital, visor de llamados en tiempo real distribuido en salas de espera y dashboards operativos por área médica. La sincronización de eventos se resolvió mediante <span class="text-white font-bold">Pusher</span>, permitiendo actualizar turnos, estados y actividad de usuarios entre distintas interfaces del sistema. Incluye control de acceso basado en roles mediante <span class="text-white font-bold">proxy</span>, monitoreo de actividad para detección de usuarios activos/inactivos, módulo de órdenes, estadísticas operativas y un sistema de auditorías para garantizar trazabilidad sobre acciones críticas y accesos no autorizados.',
+      "Construí una plataforma interna para optimizar la operación de una obra social, centralizando la gestión de turnos, la atención de afiliados y el monitoreo administrativo en un único sistema. La aplicación incorpora un esquema multirol con módulos específicos para operadores, supervisores y administradores, además de un turnero digital y un visor de llamados en tiempo real para salas de espera. Implementé sincronización de eventos mediante Pusher, autenticación y control de acceso por roles, auditoría de acciones críticas y monitoreo de actividad de usuarios, priorizando trazabilidad, comunicación en tiempo real y una operación más eficiente del personal.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -50,7 +50,7 @@ const experiences = [
     period: "2025",
     location: "Remoto",
     description:
-      'Sistema web interno desarrollado para optimizar la carga y seguimiento de incidencias dentro de un entorno de call center, reemplazando procesos manuales con baja validación de datos. Implementa autenticación mediante <span class="text-white font-bold">Google OAuth</span>, formularios complejos validados con <span class="text-white font-bold">React Hook Form</span> y <span class="text-white font-bold">Zod</span>, garantizando integridad en el registro de información operativa. Incluye módulos diferenciados para operadores y supervisores, visualización tabular de reportes persistidos en <span class="text-white font-bold">MongoDB</span> y dashboards analíticos construidos con <span class="text-white font-bold">Recharts</span> para monitoreo de incidencias por servicio, ubicación, nodo y métricas operativas.',
+      "Implementé una plataforma interna para registrar, gestionar y analizar incidencias operativas dentro de un entorno de call center, reemplazando procesos manuales y mejorando la calidad de la información registrada. El sistema incorpora autenticación con Google, formularios validados, dashboards analíticos y módulos diferenciados para operadores y supervisores. Implementé validación de datos con React Hook Form y Zod, persistencia en MongoDB y visualizaciones mediante Recharts, priorizando consistencia de la información, mantenibilidad y facilidad de uso para los equipos operativos.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -70,7 +70,7 @@ const experiences = [
     period: "2025",
     location: "Remoto",
     description:
-      'Plataforma web desarrollada para un emprendimiento de jardinería y mantenimiento de espacios verdes, orientada a la gestión autónoma de catálogo y presencia digital. Implementa un panel administrativo protegido mediante <span class="text-white font-bold">NextAuth</span>, permitiendo crear, editar y eliminar productos sin conocimientos técnicos. El catálogo se organiza mediante categorías jerárquicas multinivel, generando navegación dinámica basada en datos. Incluye gestión optimizada de imágenes con <span class="text-white font-bold">Cloudinary</span> and una integración desacoplada con <span class="text-white font-bold">MercadoPago</span>, temporalmente deshabilitada debido a un cambio en el modelo comercial, manteniendo intacta la arquitectura principal del sistema.',
+      "Desarrollé una plataforma de gestión de catálogo para un emprendimiento de jardinería, orientada a que el propio cliente pudiera administrar productos y contenido sin depender de conocimientos técnicos ni asistencia externa. La aplicación incorpora un panel administrativo protegido, organización mediante categorías jerárquicas y gestión optimizada de imágenes para facilitar el mantenimiento del catálogo. Además, diseñé la arquitectura contemplando la integración con Mercado Pago, que posteriormente fue deshabilitada debido a un cambio en el modelo comercial del negocio, preservando la flexibilidad del sistema para futuras necesidades.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -170,3 +170,4 @@ export const Experience = () => {
     </section>
   );
 };
+

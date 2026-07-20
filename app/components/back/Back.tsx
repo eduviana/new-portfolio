@@ -4,23 +4,13 @@ import { useRouter } from "next/navigation";
 export const Back = () => {
   const router = useRouter();
   return (
-    <div onClick={() => router.back()} className="flex items-center gap-1 bg-brand-primary w-fit rounded-md py-2 px-4 hover:bg-brand-hover cursor-pointer transition-colors duration-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
-        />
-      </svg>
-
-      <span className="font-semibold">Volver</span>
+    <div onClick={() => router.back()} className="inline-flex items-center gap-2 text-white mb-8 group cursor-pointer">
+      <span className="bg-brand-primary/20 p-2 rounded-full group-hover:bg-brand-primary/30 transition-all">
+        <svg fill="none" height="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+      </span>
+      <span className="font-bold">Volver</span>
     </div>
   );
 };
