@@ -31,13 +31,13 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
       </h3>
 
       {/* Imagen */}
-      <div className="relative w-full h-[250px] sm:h-[340px] md:h-[440px] lg:h-[560px] min-[1440px]:h-[380px] min-[1440px]:flex-1 rounded-md overflow-hidden group ring-2 ring-white/20 shadow-xl shadow-black/20 order-2 min-[1440px]:order-1">
+      <div className="relative w-full aspect-video min-[1440px]:flex-1 rounded-md overflow-hidden group ring-2 ring-white/20 shadow-xl shadow-black/20 order-2 min-[1440px]:order-1">
         <Image
           src={item.thumbnail}
           alt={item.title}
           fill
           sizes="(max-width: 1439px) 100vw, 50vw"
-          className="transition-transform duration-500 group-hover:scale-105"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
 

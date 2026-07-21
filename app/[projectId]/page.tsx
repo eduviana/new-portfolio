@@ -80,12 +80,12 @@ export default async function ProjectDetailsPage({
 
   return (
     <section className="pt-20 pb-12 md:pt-24">
-      <div className="max-w-7xl mx-auto px-6 mb-6">
+      <div className="max-w-7xl mx-auto px-6 mb-0">
         <Back />
       </div>
 
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-end gap-4 mb-4">
+        <div className="flex justify-end gap-4 mb-4 min-h-[40px]">
           {liveSiteUrl && (
             <a
               href={liveSiteUrl}
@@ -97,17 +97,19 @@ export default async function ProjectDetailsPage({
             </a>
           )}
 
-          <a
-            href={githubUrl}
-            className="bg-brand-primary text-white px-6 py-2 rounded text-sm font-medium transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositorio
-          </a>
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              className="bg-brand-primary text-white px-6 py-2 rounded text-sm font-medium transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repositorio
+            </a>
+          )}
         </div>
 
-        <div className="w-full mb-8">
+        <div className="w-full mb-3">
           {video ? (
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <iframe

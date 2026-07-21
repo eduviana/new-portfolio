@@ -7,7 +7,7 @@ export type Project = {
   title: string;
   slug: string;
   liveSiteUrl?: string;
-  githubUrl: string;
+  githubUrl?: string;
   desc: string;
   technologies: string[];
   categories: string[];

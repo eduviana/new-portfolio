@@ -14,6 +14,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://eduardoviana.dev"),
 
+  icons: {
+    icon: '/favicon.ico',
+  },
+
   title: {
     default: "Eduardo Viana | Frontend Developer with Fullstack Experience",
     template: "%s | Eduardo Viana",
