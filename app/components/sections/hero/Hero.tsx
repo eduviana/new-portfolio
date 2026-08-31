@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex min-h-screen w-full items-center bg-black/20 pt-16 sm:pt-20 md:pt-24"
+      className="flex min-h-screen w-full items-center bg-zinc-900/50 pt-16 sm:pt-20 md:pt-24"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 px-6 py-12 sm:gap-10 sm:py-16 md:flex-row md:gap-12 md:py-24">
         {/* Contenido de texto */}
@@ -41,6 +41,7 @@ export const Hero = () => {
               href="https://github.com/eduviana"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
               className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg
@@ -56,6 +57,7 @@ export const Hero = () => {
               href="https://linkedin.com/in/eduardo-viana83"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg
@@ -69,6 +71,7 @@ export const Hero = () => {
 
             <a
               href="mailto:eduardoviana83@gmail.com"
+              aria-label="Email"
               className="rounded-lg border border-white/10 bg-white/5 p-2.5 transition-all hover:border-brand-primary hover:bg-white/10 sm:p-3"
             >
               <svg

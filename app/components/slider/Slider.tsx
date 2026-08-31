@@ -7,9 +7,10 @@ import Image from "next/image";
 
 interface SliderProps {
   images: string[];
+  title?: string;
 }
 
-export default function Slider({ images }: SliderProps) {
+export default function Slider({ images, title }: SliderProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -34,7 +35,7 @@ export default function Slider({ images }: SliderProps) {
               <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-zinc-900">
                 <Image
                   src={src}
-                  alt={`Slide ${index + 1}`}
+                  alt={title ? `${title} - Captura ${index + 1}` : `Captura ${index + 1}`}
                   fill
                   sizes="100vw"
                   className="object-contain"

@@ -83,7 +83,7 @@ export const MyProjects = () => {
         );
 
   return (
-    <section id="projects" className="w-full py-16 bg-black/20 md:py-24">
+    <section id="projects" className="w-full py-16 bg-zinc-900/50 md:py-24">
       <div className="w-full max-w-7xl mx-auto px-6">
         <Title
           title="Mis Proyectos"

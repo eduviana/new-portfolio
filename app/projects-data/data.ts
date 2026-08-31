@@ -156,7 +156,7 @@ export const projects: Project[] = [
   {
     id: 27,
     title: "Medical Health",
-    slug: "medical-healt",
+    slug: "medical-health",
     githubUrl: "https://github.com/eduviana/turnero-realtime",
     desc: "Sistema multirol para gestión de obra social con turnos, paneles operativos y sincronización en tiempo real.",
     technologies: [
@@ -481,7 +481,7 @@ export const projects: Project[] = [
       {
         title: "Catálogo y navegación",
         description:
-          "El catálogo se o/resumerganiza mediante un sistema de categorías dinámicas, permitiendo estructurar productos por tipo y facilitar la navegación del usuario.",
+          "El catálogo se organiza mediante un sistema de categorías dinámicas, permitiendo estructurar productos por tipo y facilitar la navegación del usuario.",
         list: [
           "Categorías gestionadas desde panel administrativo.",
           "Navegación generada dinámicamente desde base de datos.",
@@ -786,7 +786,7 @@ export const projects: Project[] = [
     slug: "movix",
     liveSiteUrl: "https://movix-nu-six.vercel.app/",
     githubUrl: "https://github.com/eduviana/movix",
-    desc: "Aplicación web de de películas y series, enfocada en arquitectura frontend, consumo de APIs externas y gestión eficiente del estado global.",
+    desc: "Aplicación web de películas y series, enfocada en arquitectura frontend, consumo de APIs externas y gestión eficiente del estado global.",
     technologies: ["React", "Sass", "Redux"],
     categories: ["React"],
     thumbnail: "/projects/fullstack/movix/1.webp",

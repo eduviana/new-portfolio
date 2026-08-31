@@ -1,3 +1,17 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre mí | Eduardo Viana",
+  description:
+    "Conocé mi camino profesional: Analista de Sistemas, desarrollador frontend con experiencia fullstack especializado en React, Next.js y TypeScript.",
+  openGraph: {
+    title: "Sobre mí | Eduardo Viana",
+    description:
+      "Conocé mi camino profesional: Analista de Sistemas, desarrollador frontend con experiencia fullstack especializado en React, Next.js y TypeScript.",
+    url: "https://eduardoviana.dev/about",
+  },
+};
+
 const About = () => {
   return (
     <section className="mx-auto my-16 max-w-3xl px-6 flex flex-col gap-10 text-text-muted text-base md:my-20 lg:text-lg">

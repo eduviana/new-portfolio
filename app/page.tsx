@@ -9,9 +9,13 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <div className="h-16 bg-gradient-to-b from-zinc-900/50 to-zinc-950" />
       <About />
+      <div className="h-16 bg-gradient-to-b from-zinc-950 to-zinc-900/50" />
       <Experience />
+      <div className="h-16 bg-gradient-to-b from-zinc-900/50 to-zinc-950" />
       <Education />
+      <div className="h-16 bg-gradient-to-b from-zinc-950 to-zinc-900/50" />
       <MyProjects />
     </main>
   );

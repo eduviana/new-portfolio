@@ -121,7 +121,7 @@ export default async function ProjectDetailsPage({
               />
             </div>
           ) : (
-            <Slider images={images} />
+            <Slider images={images} title={title} />
           )}
         </div>
 

@@ -39,7 +39,7 @@ const experiences = [
       "Prisma",
       "PostgreSQL",
       "Pusher",
-      "Clerk",
+      "NextAuth.js",
     ],
   },
   {
@@ -70,12 +70,12 @@ const experiences = [
     period: "2025",
     location: "Remoto",
     description:
-      "Desarrollé una plataforma de gestión de catálogo para un emprendimiento de jardinería, orientada a que el propio cliente pudiera administrar productos y contenido sin depender de conocimientos técnicos ni asistencia externa. La aplicación incorpora un panel administrativo protegido, organización mediante categorías jerárquicas y gestión optimizada de imágenes para facilitar el mantenimiento del catálogo. Además, diseñé la arquitectura contemplando la integración con Mercado Pago, que posteriormente fue deshabilitada debido a un cambio en el modelo comercial del negocio, preservando la flexibilidad del sistema para futuras necesidades.",
+      "Desarrollé una plataforma de gestión de catálogo para un emprendimiento de jardinería, orientada a que el propio cliente pudiera administrar productos y contenido sin depender de conocimientos técnicos ni asistencia externa. La aplicación incorpora un panel administrativo protegido, organización mediante categorías dinámicas y gestión optimizada de imágenes para facilitar el mantenimiento del catálogo. Además, diseñé la arquitectura contemplando la integración con Mercado Pago, que posteriormente fue deshabilitada debido a un cambio en el modelo comercial del negocio, preservando la flexibilidad del sistema para futuras necesidades.",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "MySQL",
+      "MongoDB",
       "NextAuth",
       "MercadoPago",
       "Cloudinary",
@@ -103,7 +103,7 @@ const experiences = [
       'Ecommerce desarrollado para un emprendimiento de accesorios y productos tecnológicos, diseñado para permitir la autogestión del catálogo sin requerir conocimientos técnicos. A partir del relevamiento con el cliente, se optó por integrar <span class="text-white font-bold">Google Sheets API</span> como fuente de datos, permitiendo administrar productos, precios y categorías desde una planilla familiar para el usuario final, sin necesidad de un panel administrativo tradicional. Implementa pagos online mediante <span class="text-white font-bold">Stripe</span> con procesamiento seguro del lado del servidor y una arquitectura orientada a priorizar simplicidad operativa, facilidad de adopción y mantenimiento autónomo por parte del cliente.',
     technologies: [
       "Next.js",
-      "JavaScript",
+      "TypeScript",
       "Tailwind CSS",
       "Google Sheets API",
       "Stripe",
@@ -113,7 +113,7 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="w-full py-16 bg-black/20 md:py-24">
+    <section id="experience" className="w-full py-16 bg-zinc-900/50 md:py-24">
       <div className="w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col gap-12">
           <Title title="Experiencia Profesional" />
@@ -151,7 +151,7 @@ export const Experience = () => {
 
               <div className="mb-8">
                 <p
-                  className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg"
+                  className="text-base text-text-muted break-words leading-[2.0] md:!leading-[2.1] lg:text-lg"
                   dangerouslySetInnerHTML={{
                     __html: exp.description,
                   }}

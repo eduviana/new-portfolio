@@ -112,16 +112,18 @@ export const ParticleBackground = () => {
     createParticles();
     animate();
 
-    window.addEventListener("resize", () => {
+    const handleResize = () => {
       resizeCanvas();
       createParticles();
-    });
+    };
+
+    window.addEventListener("resize", handleResize);
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener("resize", resizeCanvas);
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseleave", handleMouseLeave);
     };

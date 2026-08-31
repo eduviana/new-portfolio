@@ -16,7 +16,7 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
   });
 
   const titleClasses =
-    "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-orange-400 to-orange-600 bg-clip-text text-transparent";
+    "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-orange-500";
 
   return (
     <div
@@ -31,7 +31,7 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
       </h3>
 
       {/* Imagen */}
-      <div className="relative w-full aspect-video min-[1440px]:flex-1 rounded-md overflow-hidden group ring-2 ring-white/20 shadow-xl shadow-black/20 order-2 min-[1440px]:order-1">
+      <div className="relative w-full aspect-video min-[1440px]:flex-1 rounded-lg overflow-hidden group shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
         <Image
           src={item.thumbnail}
           alt={item.title}
