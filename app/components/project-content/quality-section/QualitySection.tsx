@@ -26,6 +26,7 @@ export const QualitySection = ({ title, intro, tags }: QualitySectionProps) => {
                   strokeWidth="3"
                   viewBox="0 0 24 24"
                   width="16"
+                  aria-hidden="true"
                 >
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>

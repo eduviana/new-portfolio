@@ -131,7 +131,7 @@ export const Education = () => {
 
                   <div className="mt-1 lg:mt-0 text-sm font-medium text-text-muted lg:text-right">
                     <span className="text-white/80">{course.issuer}</span>
-                    <span className="text-white/40 mx-1">·</span>
+                    <span className="text-white/60 mx-1">·</span>
                     <span>{course.year}</span>
                   </div>
                 </div>

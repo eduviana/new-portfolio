@@ -48,7 +48,7 @@ export const ProjectCard = ({ item }: ProjectItemProps) => {
           {item.title}
         </h3>
 
-        <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl lg:text-lg">
+        <p className="text-base text-zinc-300 leading-relaxed max-w-xl lg:text-lg">
           {item.desc}
         </p>
 
