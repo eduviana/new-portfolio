@@ -12,7 +12,7 @@ export const About = () => {
             funcionen correctamente, sino que puedan mantenerse, evolucionar y
             adaptarse al crecimiento del producto con el paso del tiempo. Aunque
             mi especialización está en el desarrollo Frontend utilizando{" "}
-            <strong className="text-brand-primary">
+            <strong className="italic">
               React, Next.js y TypeScript
             </strong>
             , a lo largo de proyectos personales y freelance asumí también el
@@ -41,7 +41,7 @@ export const About = () => {
             <br />
             <br />
             Mi formación como{" "}
-            <strong className="text-brand-primary">
+            <strong className="italic">
               Analista de Sistemas de Computación
             </strong>{" "}
             (Institución Cervantes), complementada con un aprendizaje autodidacta
