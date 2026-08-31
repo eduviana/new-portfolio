@@ -89,7 +89,7 @@ export default async function ProjectDetailsPage({
           {liveSiteUrl && (
             <a
               href={liveSiteUrl}
-              className="bg-brand-primary text-white py-2 px-4 rounded-md hover:bg-brand-hover transition-colors duration-300"
+              className="bg-brand-primary text-white py-2 px-4 rounded-md text-sm font-medium hover:bg-brand-hover transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -100,7 +100,7 @@ export default async function ProjectDetailsPage({
           {githubUrl && (
             <a
               href={githubUrl}
-              className="bg-brand-primary text-white px-6 py-2 rounded text-sm font-medium transition-colors"
+              className="bg-brand-primary text-white py-2 px-4 rounded-md text-sm font-medium hover:bg-brand-hover transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
