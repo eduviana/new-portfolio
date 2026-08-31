@@ -116,6 +116,7 @@ export const Hero = () => {
                   height={400}
                   className="h-full w-full object-cover"
                   priority
+                  fetchPriority="high"
                 />
               </div>
             </div>
