@@ -2,6 +2,173 @@ import { Project } from "./data.interface";
 
 export const projects: Project[] = [
   {
+  id: 29,
+  title: "Royal Prestige",
+  slug: "royal-prestige",
+  githubUrl: "",        // ← lo completás después
+  liveSiteUrl: "",      // ← lo completás después
+  desc: "Plataforma interna de gestión de ventas multinivel construida con arquitectura hexagonal y un flujo de desarrollo orquestado con agentes de IA especializados. Modela el ciclo completo de la operación comercial: visitas, ventas con aprobación por etapas, comisiones versionadas, progresión de empleados y capacitación.",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Prisma",
+    "PostgreSQL",
+    "Zod",
+    "Recharts",
+    "Vitest",
+  ],
+  categories: ["Fullstack", "Nextjs"],
+  thumbnail: "/projects/fullstack/royal-prestige/01-admin-dashboard-1.webp",
+  images: [
+    "/projects/fullstack/royal-prestige/01-admin-dashboard-1.webp",
+    "/projects/fullstack/royal-prestige/02-admin-dashbaord-2.webp",
+    "/projects/fullstack/royal-prestige/03-admin-employees.webp",
+    "/projects/fullstack/royal-prestige/04-admin-employees-details.webp",
+    "/projects/fullstack/royal-prestige/05-admin-sales.webp",
+    "/projects/fullstack/royal-prestige/06-admin-training.webp",
+    "/projects/fullstack/royal-prestige/07-admin-audit.webp",
+    "/projects/fullstack/royal-prestige/08-n3-dashboard.webp",
+    "/projects/fullstack/royal-prestige/09-n3-visits.webp",
+    "/projects/fullstack/royal-prestige/10-n3-visit-details.webp",
+    "/projects/fullstack/royal-prestige/11-n3-sales.webp",
+    "/projects/fullstack/royal-prestige/12-n3-clients.webp",
+    "/projects/fullstack/royal-prestige/13-n3-team.webp",
+    "/projects/fullstack/royal-prestige/14-n3-sales.webp",
+    "/projects/fullstack/royal-prestige/15-n3-visits.webp",
+    "/projects/fullstack/royal-prestige/16-n3-assign-visit.webp",
+    "/projects/fullstack/royal-prestige/17-n1-dashboard.webp",
+    "/projects/fullstack/royal-prestige/18-n1-visits.webp",
+    "/projects/fullstack/royal-prestige/19-n1-sales.webp",
+    "/projects/fullstack/royal-prestige/20-n1-catalog.webp",
+  ],
+  metrics: [
+    { value: "Hexagonal", label: "Arquitectura", color: "purple", icon: "flask" },
+    { value: "4 Agentes", label: "IA por Faceta", color: "orange", icon: "users" },
+    { value: "10 Módulos", label: "Dominios Funcionales", color: "blue", icon: "globe" },
+    { value: "TS Strict", label: "Calidad", color: "green", icon: "check" },
+  ],
+  intro: [
+    "Royal Prestige es una plataforma interna de gestión de ventas para una organización comercial con estructura jerárquica de siete niveles. Reemplaza procesos manuales y hojas de cálculo centralizando el ciclo completo de la operación comercial: desde la visita domiciliaria y la carga de la venta hasta su aprobación, el cálculo de comisiones, la progresión de niveles y la capacitación continua de los empleados.",
+    "El requisito central era la trazabilidad: por cada venta debe poder responderse quién la realizó, cuándo, bajo qué regla de comisión correspondía y qué historial de nivel tenía el empleado en ese momento. Eso exige conservar el pasado sin reescribirlo —por eso las reglas de negocio se versionan y la auditoría es inmutable— y aplicar la autorización en el servidor, nunca en la interfaz.",
+    "El proyecto se desarrolla con un flujo de trabajo asistido por inteligencia artificial: cuatro agentes especializados —cada uno con un modelo asignado y una responsabilidad única: arquitectura, implementación, depuración y revisión— ejecutan el trabajo bajo una arquitectura hexagonal y una documentación que actúa como fuente de verdad. La IA funciona como fuerza de ejecución; las decisiones de negocio y arquitectónicas quedan registradas y verificables dentro del repositorio.",
+  ],
+  features: [
+    {
+      title: "Ventas y visitas con flujo de aprobación",
+      description:
+        "El sistema acompaña el ciclo de vida completo de una operación comercial con control de calidad obligatorio: nadie vende sin una visita domiciliaria previa registrada, y ninguna venta cuenta definitivamente sin la aprobación de un supervisor.",
+      list: [
+        "Flujo por etapas: borrador → pendiente de revisión → aprobada o rechazada; las rechazadas pueden corregirse y reenviarse.",
+        "Regla de negocio central: toda venta nace de una visita completada, validada en el servidor y no en la interfaz.",
+        "Catálogo de productos con categorías, gestión de clientes con datos de contacto y programa de referidos con descuento.",
+        "Las ventas pendientes o rechazadas no alimentan estadísticas ni comisiones: sólo las aprobadas son definitivas.",
+      ],
+    },
+    {
+      title: "Jerarquía comercial y comisiones versionadas",
+      description:
+        "La organización se modela con siete niveles comerciales y relaciones de supervisor–subordinado con historial completo. Las comisiones se calculan con reglas versionadas por fechas de vigencia, garantizando que una actualización de tasas nunca altere los cálculos históricos.",
+      list: [
+        "Siete niveles con historial de cambios; el sistema calcula indicadores, pero las promociones las decide siempre una persona.",
+        "Reglas de comisión con vigencia por fechas: cada entrada referencia la regla exacta que la generó.",
+        "Trazabilidad total: cualquier cálculo pasado puede auditarse o recalcularse sin ambigüedad.",
+        "Objetivos mensuales de ventas configurables por nivel, con medición de avance y estados de cumplimiento.",
+      ],
+    },
+    {
+      title: "Capacitación y progresión de empleados",
+      description:
+        "Un catálogo de capacitación estructurado y un sistema de progresión por puntos incentivan el crecimiento dentro de la organización, generando datos que alimentan las decisiones de promoción.",
+      list: [
+        "Jerarquía de capacitación: categorías → cursos → módulos → materiales en PDF, video, documento o enlace.",
+        "Puntos de progresión por antigüedad, visitas realizadas, ventas aprobadas y objetivos alcanzados.",
+        "Historial completo por empleado para identificar candidatos a promoción.",
+        "La decisión final de promoción o descenso siempre es humana: el sistema sugiere, no decide.",
+      ],
+    },
+    {
+      title: "Seguridad y auditoría como requisito transversal",
+      description:
+        "La autorización se ejecuta exclusivamente en el servidor y cada operación relevante queda registrada en un log inmutable con correlación de eventos, pensado para resolver incidentes y dar cumplimiento normativo.",
+      list: [
+        "Modelo de permisos con alcances jerárquicos: cada usuario accede sólo a lo que su rol y posición en la organización autorizan.",
+        "Principio explícito: la interfaz no es un mecanismo de seguridad —ocultar botones no es autorización—.",
+        "Auditoría de solo escritura con identificadores de correlación que agrupan los eventos de una misma operación.",
+        "Sesiones mínimas: la identidad completa se resuelve en cada petición, por lo que suspender una cuenta surte efecto inmediato.",
+      ],
+    },
+  ],
+  engineering: [
+    {
+      title: "Desarrollo con agentes de IA especializados",
+      paragraphs: [
+        "El proyecto se construye con un equipo de agentes de inteligencia artificial, cada uno con un modelo asignado y una responsabilidad única dentro del flujo de desarrollo.",
+        "La separación de responsabilidades que define la arquitectura del sistema se aplica también al proceso de desarrollo: especialización por faceta, modelo adecuado para cada tipo de tarea y la documentación del proyecto como contexto obligatorio de todo agente.",
+      ],
+      list: [
+        "Architect (GPT-5.6 Luna): toma las decisiones técnicas y de diseño con impacto en la evolución del sistema —estructura de módulos, autorización, modelo de datos—, documentándolas antes de implementarse.",
+        "Developer (Qwen 3.8 Flash): implementa cada funcionalidad bajo la arquitectura, las reglas de negocio y las convenciones existentes.",
+        "Debugger (DeepSeek V4 Flash): busca la causa raíz de cada problema en lugar de aplicar parches que oculten el síntoma.",
+        "Reviewer (GPT-5.6 Luna): revisa cada cambio antes de darlo por terminado.",
+      ],
+    },
+    {
+      title: "Documentación como fuente de verdad",
+      paragraphs: [
+        "El repositorio incluye una estructura documental en la que cada tipo de información tiene un único documento responsable. En el área de producto: requisitos funcionales, preguntas abiertas y la matriz de permisos. En el dominio: el modelo organizacional y las reglas de negocio. En arquitectura: las decisiones registradas como ADR, la arquitectura general, la autorización técnica y la arquitectura de datos. Y en base de datos: el modelo conceptual.",
+        "Cada regla lleva identificadores permanentes que permiten trazabilidad completa: un requisito se enlaza con su regla de negocio, su permiso, su implementación y su prueba. Cuando el código y la documentación divergen, prevalece la documentación y se corrige el código.",
+        "Un archivo de convenciones obliga a todo agente a leer la documentación relevante antes de escribir código y a mantenerla sincronizada con cada cambio. El proceso de desarrollo entero parte de la documentación, no de interpretaciones improvisadas.",
+      ],
+    },
+    {
+      title: "Arquitectura hexagonal con capas de responsabilidad única",
+      paragraphs: [
+        "Cada módulo del sistema está organizado en capas con dependencias unidireccionales. El dominio contiene las reglas puras del negocio —entidades, máquina de estados de la venta, validadores— sin ninguna dependencia de frameworks, y define los puertos: contratos que declaran qué necesita el núcleo del mundo exterior, sin importar quién los implemente.",
+        "La aplicación contiene los casos de uso: orquestan cada operación, validan la autorización en el servidor contra el contexto autenticado del usuario y aplican las reglas del dominio. La infraestructura implementa los puertos con adaptadores concretos —bases de datos reales en producción, objetos simulados en los tests— y el núcleo desconoce cuál está conectado.",
+        "La presentación se limita a traducir la interfaz a casos de uso mediante acciones del servidor, y un punto de ensamblaje por módulo visibiliza todas las dependencias en un solo lugar. La flecha de dependencias apunta siempre hacia adentro: cambiar la base de datos o el framework no toca las reglas de negocio.",
+      ],
+    },
+    {
+      title: "Sesiones mínimas con resolución server-side",
+      paragraphs: [
+        "La sesión almacena únicamente el identificador del usuario dentro de una cookie cifrada con iron-session; la identidad completa —cuenta, empleado, nivel y contexto organizacional— se resuelve desde la base de datos en cada petición.",
+        "Este enfoque garantiza que cualquier cambio de estado (suspensión de cuenta, cambio de nivel) surta efecto inmediato sin necesidad de invalidar sesiones activas, y reduce al mínimo la superficie de ataque de una cookie robada.",
+      ],
+    },
+    {
+      title: "Comisiones versionadas y auditoría inmutable",
+      paragraphs: [
+        "Las reglas de comisión utilizan un patrón de versionado con fechas de vigencia: una tasa actualizada no reescribe el historial, y cada entrada de comisión referencia la regla exacta que la generó, permitiendo recalcular o auditar cualquier operación pasada.",
+        "Toda operación relevante genera eventos de auditoría de solo escritura con identificadores de correlación que agrupan los hechos de una misma transacción —por ejemplo, la aprobación de una venta y la comisión que de ella nace—, registrando actor, resultado y marca de tiempo.",
+      ],
+    },
+  ],
+  architecture: [
+    "La plataforma es un monolito modular con principios de Domain-Driven Design y arquitectura hexagonal: el negocio se separa en diez módulos autocontenidos, cada uno con sus reglas, casos de uso, contratos de persistencia y punto de ensamblaje propio.",
+    "Capa de dominio: las reglas puras del negocio —entidades, máquina de estados de la venta, validadores y constantes—, sin ninguna dependencia de Prisma, React o Next.js. El dominio define también los puertos: contratos que declaran qué necesita el núcleo del mundo exterior, sin importar quién los implemente.",
+    "Capa de aplicación: los casos de uso que orquestan cada operación, validan la autorización en el servidor contra el contexto autenticado del usuario y aplican las reglas del dominio.",
+    "Capa de infraestructura: adaptadores concretos que implementan los puertos del dominio —acceso a datos con Prisma en producción y objetos simulados en los tests—. El núcleo desconoce qué adaptador está conectado en cada momento.",
+    "Capa de presentación y ensamblaje: las acciones del servidor son el único puente entre la interfaz y los casos de uso, y cada módulo ensambla sus dependencias en un único punto visible, sin frameworks de inyección.",
+    "La flecha de dependencias apunta hacia adentro: presentación → aplicación → dominio ← infraestructura. Ningún archivo del núcleo importa un framework, lo que permite reemplazar tecnologías sin tocar las reglas de negocio.",
+    "La autenticación utiliza iron-session con cookies cifradas y resolución de identidad server-side, mientras que la autorización se implementa con un modelo de permisos y scopes jerárquicos ejecutado exclusivamente en el servidor.",
+    "La persistencia se gestiona mediante Prisma 7 con PostgreSQL, utilizando el adaptador PrismaPg para compatibilidad con hot-reload de Next.js.",
+    "El frontend utiliza React Hook Form con Zod para validación type-safe, y Recharts para los dashboards analíticos.",
+    "TypeScript en modo strict durante todo el proyecto, con path aliases y estructura de módulos que facilitan el refactorizado seguro.",
+  ],
+  quality: [
+    "Arquitectura hexagonal con inversión de dependencias",
+    "Domain-Driven Design con diez módulos autocontenidos",
+    "Documentación con trazabilidad de requisito a prueba",
+    "Desarrollo orquestado con cuatro agentes de IA especializados",
+    "Autorización server-side con permisos y scopes jerárquicos",
+    "Comisiones versionadas con trazabilidad completa",
+    "Auditoría inmutable con correlación de eventos",
+    "TypeScript strict mode en todo el proyecto",
+    "Testing con Vitest y cobertura",
+  ],
+},
+  {
     id: 28,
     title: "Mediflow",
     slug: "mediflow",

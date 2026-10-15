@@ -17,6 +17,16 @@ export const EngineeringSection = ({ title, items }: EngineeringSectionProps) =>
                   {p}
                 </p>
               ))}
+              {item.list && (
+                <ul className="flex flex-col gap-3 text-base text-text-muted mt-2">
+                  {item.list.map((li, j) => (
+                    <li key={j} className="flex gap-2">
+                      <span className="text-brand-primary">–</span>
+                      {li}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
