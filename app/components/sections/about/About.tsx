@@ -7,48 +7,40 @@ export const About = () => {
         <div className="flex flex-col gap-12">
           <Title title="Sobre Mí" />
 
-          <p className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg">
-            Mi principal interés es construir aplicaciones web que no solo
-            funcionen correctamente, sino que puedan mantenerse, evolucionar y
-            adaptarse al crecimiento del producto con el paso del tiempo. Aunque
-            mi especialización está en el desarrollo Frontend utilizando{" "}
-            <strong className="italic">
-              React, Next.js y TypeScript
-            </strong>
-            , a lo largo de proyectos personales y freelance asumí también el
-            desarrollo completo de las aplicaciones, desde la arquitectura hasta
-            la implementación del backend.
-            <br />
-            <br />
-            Disfruto especialmente analizar problemas antes de escribir código,
-            estructurar proyectos desde cero y tomar decisiones técnicas pensando
-            no solo en resolver una necesidad inmediata, sino en construir una
-            base sólida que facilite la evolución del software a largo plazo.
-            <br />
-            <br />
-            Esa experiencia me permitió trabajar con diseño de APIs, modelado de
-            dominio, persistencia de datos, autenticación, integraciones con
-            servicios externos y reglas de negocio, siempre priorizando
-            soluciones desacopladas, mantenibles y fáciles de extender.
-            <br />
-            <br />
-            En cada proyecto intento encontrar el equilibrio entre una buena
-            experiencia de usuario y una arquitectura que permita incorporar
-            nuevas funcionalidades sin aumentar innecesariamente la complejidad
-            del sistema. Me interesa escribir código claro, reutilizable y
-            sencillo de mantener, entendiendo que las decisiones técnicas tienen
-            impacto tanto en el producto como en quienes lo desarrollan.
-            <br />
-            <br />
-            Mi formación como{" "}
-            <strong className="italic">
-              Analista de Sistemas de Computación
-            </strong>{" "}
-            (Institución Cervantes), complementada con un aprendizaje autodidacta
-            constante, me permitió desarrollar una forma de trabajo orientada
-            tanto a la calidad técnica como a la comprensión del problema de
-            negocio que cada proyecto busca resolver.
-          </p>
+          <div className="flex flex-col gap-6">
+            <p className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg">
+              Me especializo en el desarrollo de aplicaciones web, con foco en
+              Frontend y capacidad para abordar proyectos Full-Stack. Trabajo
+              principalmente con{" "}
+              <strong className="italic">React, Next.js y TypeScript</strong>, y
+              también desarrollo el backend, la persistencia de datos y la
+              lógica de negocio de las aplicaciones.
+            </p>
+            <p className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg">
+              Me gusta analizar los problemas antes de empezar a programar,
+              comprender las necesidades del producto y tomar decisiones
+              técnicas con criterio. Busco que cada solución no solo resuelva el
+              requerimiento actual, sino que también tenga una estructura clara
+              y pueda evolucionar sin sumar complejidad innecesaria.
+            </p>
+            <p className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg">
+              He trabajado con diseño de APIs, modelado de dominio, persistencia
+              de datos, autenticación e integración con servicios externos. En
+              cada proyecto procuro mantener una separación clara de
+              responsabilidades y un código legible, reutilizable y fácil de
+              mantener.
+            </p>
+            <p className="text-base text-text-muted break-words [hyphens:auto] leading-[1.8] md:!leading-[1.9] lg:text-lg">
+              Mi formación como{" "}
+              <strong className="italic">
+                Analista de Sistemas de Computación
+              </strong>
+              , graduado en Institución Cervantes, complementada con aprendizaje
+              autodidacta continuo, me permite abordar cada proyecto tanto desde
+              la implementación técnica como desde la comprensión del problema
+              de negocio que el software busca resolver.
+            </p>
+          </div>
         </div>
       </div>
     </section>

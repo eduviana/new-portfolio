@@ -26,12 +26,13 @@ export const Hero = () => {
 
           <div className="flex flex-col gap-4">
             <p className="max-w-md text-base leading-7 text-text-muted sm:max-w-xl md:max-w-2xl lg:text-lg md:leading-8">
-              Desarrollo aplicaciones web con {" "}
+              Desarrollo aplicaciones web con{" "}
               <span className="font-semibold text-white">React</span>,{" "}
-              <span className="font-semibold text-white">Next.js</span> y {" "}
-              <span className="font-semibold text-white">TypeScript</span>. 
-              Disfruto transformar problemas de negocio en soluciones mantenibles, combinando interfaces cuidadas con una arquitectura clara y escalable.
-              
+              <span className="font-semibold text-white">Next.js</span> y{" "}
+              <span className="font-semibold text-white">TypeScript</span>,
+              combinando interfaces cuidadas, arquitectura clara y soluciones
+              pensadas para evolucionar. Me interesa transformar necesidades de
+              negocio en software funcional, mantenible y preparado para crecer.
             </p>
           </div>
 

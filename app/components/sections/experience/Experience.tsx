@@ -6,6 +6,26 @@ const experiences = [
     role: "Full-Stack",
     engagement: "Freelance",
     company:
+      'Plataforma de Gestión Comercial — <span class="text-brand-primary">Royal Prestige</span>',
+    period: "2026",
+    location: "Remoto",
+    description:
+      "Desarrollé de forma integral una plataforma interna de gestión de ventas para una organización comercial jerárquica, participando desde el relevamiento con el cliente hasta la definición de la arquitectura y la implementación de todas las funcionalidades principales. El sistema centraliza el ciclo operativo completo: visitas domiciliarias, ventas con aprobación por etapas, comisiones versionadas por fechas de vigencia, progresión de empleados entre niveles y capacitación continua. Implementé una arquitectura hexagonal con separación estricta entre dominio, aplicación e infraestructura, autorización server-side con permisos jerárquicos, auditoría inmutable y un flujo de desarrollo orquestado con agentes de IA especializados, guiado por una documentación que funciona como fuente de verdad, priorizando trazabilidad total, seguridad y más de 500 pruebas automáticas.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "React Hook Form",
+      "Zod",
+      "Recharts",
+    ],
+  },
+  {
+    role: "Full-Stack",
+    engagement: "Freelance",
+    company:
       'Plataforma de Gestión de Turnos Médicos — <span class="text-brand-primary">Mediflow</span>',
     period: "2025-2026",
     location: "Remoto",
